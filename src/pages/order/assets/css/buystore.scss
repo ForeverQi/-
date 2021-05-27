@@ -1,0 +1,193 @@
+.buystore-box{
+    .weixinAdress_closeIcon{
+        display: flex;
+    }
+    .changeCityClass {
+        height: 8.65rem;
+        background-color: #fff;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+
+    .changeCityClass .changeCityBox {
+        height: 8.65rem;
+    }
+
+    .changeCityClass .changeCityBox .changeCityBox_content {
+        height: 7rem;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .changeCityBox_top_right {
+        padding: 0.3rem;
+        padding-right: 0;
+    }
+
+    .changeCityBox_top .changeCityBox_top_right .weixinAdress_closeIcon span {
+        background-color: #cccccc;
+    }
+
+    .changeCityBox_top .changeCityBox_top_left {
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    .changeCityBox_top_left_heng {
+        flex-direction: inherit !important;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .changeCityBox_top_left_heng span {
+        // line-height: 1;
+        max-width: 6.5rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        word-wrap: break-word;
+    }
+    .changeCityBox_top_left_heng img{
+        width: 0.51rem;
+        height: 0.51rem;
+        margin-left: 0.21rem;
+    }
+
+    .changeCityBox_top .changeCityBox_top_left .allShopChildren {
+        font-size: 0.24rem;
+        color: #999999;
+        margin-left: 0.23rem;
+    }
+    .changeCityBox_content {
+        height: 6.51rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .weixinAdress_closeIcon {
+        flex: none;
+        position: relative;
+        align-items: center;
+    }
+    .openPermissions{
+        margin-bottom: 0.14rem !important;
+    }
+
+    .weixinAdress_closeIcon .weixinAdress_closeIcon_left {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0.3rem;
+        height: 0.03rem;
+        background-color: #cccccc;
+        transform: rotate(45deg);
+        z-index: 20;
+    }
+    .distribution_ListTop_left{
+        flex: auto;
+        padding: 0 1rem 0 0.33rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #000;
+        font-weight: 400;
+    }
+    .distribution_ListTop_left div:last-child{
+        font-size: 0.24rem;
+        color: #A9A9A9;
+        font-weight: 400;
+    }
+    .distribution_ListTop_left div:first-child{
+        font-weight: bold;
+        margin-bottom: 0.03rem;
+    }
+    .distribution_ListTop_left div:nth-child(2){
+        font-size: 0.24rem;
+        margin-bottom: 0.04rem;
+    }
+    .distribution_ListTop_right{
+        flex: none;
+    }
+
+    .weixinAdress_closeIcon .weixinAdress_closeIcon_right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0.3rem;
+        height: 0.03rem;
+        background-color: #cccccc;
+        transform: rotate(-45deg);
+        z-index: 21;
+    }
+    .shoppingContent_radio {
+        margin-right: 0.23rem;
+        flex: none;
+        width: 0.35rem;
+        height: 0.35rem;
+        border: 1px solid #cccccc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .customFrom_content_checkbox {
+        border-radius: 0.06rem !important;
+    }
+
+    .shoppingContent_checkRadio {
+        background-color: #fc273c;
+        border: 1px solid #fc273c;
+    }
+
+    .shoppingContent_checkRadio img {
+        width: 0.2rem;
+        height: 0.14rem;
+    }
+    .distribution_content{
+        height: 7rem;
+        overflow-y: scroll;
+    }
+    .distribution_ListValue {
+        padding: 0.3rem 0;
+        border-bottom: 1px solid #ededed;
+    }
+
+    .distribution_ListValue:last-child {
+        border-bottom: 0;
+    }
+    // vant的样式
+    .van-loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 15000000;
+    }
+    .van-overlay {
+        position: fixed;
+        z-index: 14500000 !important;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .van-dialog {
+        border-radius: 8px;
+        top: 50% !important;
+        z-index: 17000000;
+    }
+    .dixian{
+        width: 100%;
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        transform: translateX(-0.26rem);
+    }
+}

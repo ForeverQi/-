@@ -1,0 +1,2644 @@
+/*
+ * @Author       : fengting
+ * @description  : distribution文件的scss文件
+ * @Date         : 2020-11-04 10:59
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-11-30 18:49:45
+ * @FilePath     : /vue-test_qian/src/pages/distribution/assets/css/distribution.scss
+ */
+//公用头部
+.cen-head1 {
+    height:0.88rem;
+    background-color: #FFF;
+    position: relative;
+    border-bottom: 1px solid #ededed;
+}
+
+.link-return1 {
+    height: 0.38rem;
+    width: 0.21rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding:0.25rem;
+    display: block;
+}
+
+.link-return1 img {
+    height: 0.38rem;
+    width: 0.21rem;
+    display: block;
+}
+
+.head-tit1{
+    width: 50%;
+    font-size: 0.32rem;
+    color:#333;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 0.88rem;
+    font-weight: 600;
+}
+// 分销中心首页
+ .distribution-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .dis-head{
+        overflow: hidden;
+        position: relative;
+    }
+    .dis-head-bg{
+        width: 100%;   
+    }
+    .dis-head-bg img{
+        width: 100%;
+        display: block;
+    }
+    .max-head{
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        right: 0;
+    }
+    .cen-head {
+        height: 1.14rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        margin-bottom: 0.08rem;
+    }
+
+    .link-return {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding:0.3rem;
+        display: block;
+    }
+
+    .link-return img {
+        width: 0.54rem;
+        height: 0.54rem;
+        display: block;
+    }
+
+    .head-tit{
+        width: 50%;
+        font-size: 0.34rem;
+        color:#FFF;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.14rem;
+    }
+
+    .Brush {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding:0.3rem;
+        display: block;
+    }
+
+    .Brush img {
+        width: 0.54rem;
+        height: 0.54rem;
+        display: block;
+    }
+    .dis-head-cen{
+    }
+    .dis-head-r{
+        float: right;
+        border-radius: 0.08rem;
+        background: rgba(255,255,255,0.2);
+        padding:0.16rem 0.17rem 0.05rem 0.17rem;
+        margin-top: 0.05rem;
+        margin-left: 0.5rem;
+    }
+    .dis-head-r span{
+        overflow: hidden;
+        display: block;
+        margin-bottom: 0.05rem;
+    }
+    .dis-head-r span em ,.dis-head-r span p{
+        float: left;
+    }
+    .dis-head-r span em{
+        font-size: 0.22rem;
+        color:#FFF;
+        height: 0.26rem;
+        line-height: 0.26rem;
+        margin-right: 0.1rem;
+    }
+    .dis-head-r span p{
+        display: block;
+        width: 0.2rem;
+        height: 0.2rem;
+        margin-top: 0.03rem;
+    }
+    .dis-head-r span p img{
+        width: 100%;
+        display: block;
+    }
+    .dis-head-r strong{
+        font-size: 0.34rem;
+        color:#FFF;
+    }
+    .dis-head-l{
+        overflow: hidden;
+        padding-left:0.3rem;
+    }
+    .dis-head-photo{
+        width: 1.05rem;
+        height: 1.05rem;
+        position: relative;
+        margin-right: 0.25rem;
+        float: left;
+    }
+    .dis-head-photo span{
+        display: block;
+        width: 1.05rem;
+        height: 1.05rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .dis-head-photo a{
+        display: block;
+        width: 0.51rem;
+        height: 0.51rem;
+        position: absolute;
+        left: 0.65rem;
+        top: 0.65rem;
+    }
+    .dis-head-photo span img ,.dis-head-photo a img{
+        display: block;
+        width: 100%;
+    }
+    .dis-head-user{
+        overflow: hidden;
+        padding-top: 0.18rem;
+    }
+    .dis-head-info{
+        overflow: hidden;
+    }
+    .dis-head-vip{
+        float: left;
+        overflow: hidden;
+        padding:0rem 0.08rem;
+        background: linear-gradient(to right, #FEE5C7 0%,#FFF7EE 100%);
+        border-radius: 0.05rem;
+        margin-left: 0.1rem;
+    }
+    .dis-head-vip span , .dis-head-vip p{
+        float: left;
+    }
+    .dis-head-vip span{
+        width: 0.17rem;
+        height: 0.17rem;
+        margin-right:0.05rem;
+        margin-top: 0.08rem;
+    }
+    .dis-head-vip span img{
+        width: 100%;
+        display: block;
+    }
+    .dis-head-vip p{
+        font-size: 0.22rem;
+        color:#8A4D34;
+    }
+    .dis-head-name{
+        overflow: hidden;
+        font-size: 0.36rem;
+        color:#FFF;
+        font-weight: 600;
+        line-height: 1;
+        max-width: 56%;
+        float: left;
+    }
+    .superior{
+        font-size: 0.22rem;
+        color:#FFF;
+        padding-top: 0.1rem;
+        display: block;
+    }
+    .Cash-top{
+        overflow: hidden;
+        padding:0.2rem 0.25rem 0.1rem 0.3rem;
+        border-bottom: 1px solid #ededed;
+        background: #FFFFFF;
+        box-shadow: 0rem -0.05rem 0.26rem 0rem rgba(0, 0, 0, 0.12);
+        border-radius: 0.2rem 0.2rem 0rem 0rem;
+        margin: 0rem 0.25rem;
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+        right: 0;
+    }
+    .Cash-but1 ,.Cash-but2{
+        width: 1.50rem;
+        height: .52rem;
+        border-radius: 0.26rem;
+        font-size: 0.24rem;
+        text-align: center;
+        line-height: 0.54rem;
+        float: right;
+        margin-left: 0.15rem;
+        margin-top: 0.26rem;
+    }
+    .Cash-but1{  
+        background: #FC273C;
+        box-shadow: 0rem -0.03rem 0.2rem 0rem rgba(252, 39, 60, 0.2);
+        color:#FFF; 
+    }
+    .Cash-but2{
+        color:#333;
+        border: 1px solid #EDEDED;
+        box-sizing: border-box;
+    }
+    .Cash-mony{
+        overflow: hidden;
+    }
+    .Cash-mony span{
+        font-size: 0.24rem;
+        color:#888
+    }
+    .Cash-mony p{
+        font-size: 0.48rem;
+        color:#333;
+        font-weight: 600;
+    }
+    .dis-content{
+        padding:0rem 0.25rem;
+    }
+    .profit{
+        overflow: hidden;
+        background-color: #FFF;
+        border-radius: 0rem 0rem 0.25rem 0.25rem;
+        margin-bottom: 0.2rem;
+        display: block;
+    }
+    .triangle{
+        float: right;
+        padding: 0.62rem 0.36rem;
+    }
+    .triangle img{
+        width: 0.2rem;
+        height: 0.36rem;
+    }
+    .profit_ul{
+        overflow: hidden;
+    }
+    .profit_li{
+        width:49.9%;
+        float: left;
+        border-right: 1px solid #ededed;
+        height: 1.69rem;
+        padding-top: 0.35rem;
+    }
+    .profit_li p ,.profit_li span{
+        padding-left:0.32rem;
+    }
+    .profit_li p{
+        font-size: 0.24rem;
+        color:#888;
+    }
+    .profit_li span{
+        font-size: 0.48rem;
+        color:#333;
+        font-weight: 600;;
+    }
+    .dis-hot{
+        background: #FFFFFF;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .dis-hot-tit{
+        height: 0.87rem;
+        padding:0rem 0.3rem;
+        font-size: 0.3rem;
+        color:#111;
+        line-height: 0.87rem;
+        font-weight: 600;
+    }
+    .dis-hot-con{
+        padding:0rem 0.3rem;
+    }
+    .dis-hot-ul{
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto;
+        padding-bottom: 0.39rem;
+    }
+    .dis-hot-li{
+        width: 1.8rem;
+        margin-right:0.2rem;
+    }
+    .hot-li-img{
+        width: 1.8rem;
+        height: 1.8rem;
+        position: relative;
+        box-shadow: 0.02rem 0.03rem 0.12rem 0rem rgba(0, 0, 0, 0.08);
+        margin-bottom: 0.2rem;
+    }
+    .hot-li-img span{
+        width: 1.8rem;
+        height: 1.8rem;
+        display: block;
+        border-radius: 0.06rem;
+        overflow: hidden;
+    }
+    .hot-li-img span img{
+        display: block;
+        width: 100%;
+    }
+    .hot-li-img p{
+        font-size: 0.22rem;
+        color:#FFF;
+        background: linear-gradient(to right, #FF3522 0%,#FA9169 100%);
+        border-radius: 0rem 0.25rem 0.25rem 0rem;
+        padding:0.02rem 0.1rem;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0.1rem;
+    }
+    .dis-hot-li strong{
+        display: block;
+        font-size: 0.24rem;
+        color:#111;
+        margin-bottom: 0.1rem;
+        word-break: break-all;
+        font-weight: 500;
+    }
+    .hot-li-mony{
+        color:#FF3636;
+        font-size: 0.24rem;
+        font-weight: 600;
+    }
+    .hot-li-mony em{
+        font-size: 0.28rem;
+    }
+    .dis-bring{   
+        background: #FFFFFF;
+        border-radius: 0.2rem;
+        overflow: hidden;
+        margin-bottom: 0.2rem;
+    }
+    .dis-bring-img{
+        width: 1.8rem;
+        height: 1.2rem;
+        float: left;
+        margin-top:0.08rem;
+        margin-left:0.09rem;
+    }
+    .dis-bring-img img{
+        display: block;
+        width: 100%;
+    }
+    .dis-bring-txt{
+        float: left;
+        padding-top: 0.3rem;
+    }
+    .dis-bring-txt strong{
+        display: block;
+        font-size:0.34rem;
+        color:#222;
+        font-weight: 600;
+        height: 0.36rem;
+        line-height: 0.36rem;
+    }
+    .dis-bring-txt p{
+        font-size:0.24rem;
+        color:#666;
+    }
+    .dis-bring-choice{
+        float: right;
+        width: 1.05rem;
+        height: 0.52rem;
+        background: rgba(255, 255, 255, 0);
+        border: 0.01rem solid #EDEDED;
+        border-radius: 0.26rem;
+        font-size: 0.24rem;
+        color:#333;
+        text-align: center;
+        line-height: 0.48rem;
+        margin-right: 0.4rem;
+        margin-top: 0.38rem;
+        display: block;
+    }
+    .dis-poster-ul{
+        display: flex;
+        overflow: hidden;
+        overflow-x: auto;
+        padding-bottom: 0.39rem;
+    }
+    .dis-poster-li{
+        width: 1.81rem;
+        margin-right:0.2rem;
+        position: relative;
+        height: 2.3rem;
+    }
+    .dis-poster-li span{
+        width: 1.81rem;
+        height: 2.3rem;
+        display: block;
+        background: #C0C0C0;
+        border-radius: 0.06rem;
+        overflow: hidden;
+    }
+    .dis-poster-li span img{
+        display: block;
+        width: 100%;
+    }
+    .dis-poster-li p{
+        height: 0.4rem;
+        font-size: 0.22rem;
+        color:#FFF;
+        text-align: center;
+        line-height: 0.38rem;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 0rem 0 0.06rem 0.06rem;
+        display:block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .dis-team{
+        background: #FFFFFF;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .dis-team-tit{
+        height: 0.88rem;
+        border-bottom: 1px solid #ededed;
+        padding:0rem 0.3rem;
+    }
+    .dis-team-tit span ,.dis-team-tit p{
+        line-height: 0.88rem;
+        height: 0.88rem;
+    }
+    .dis-team-tit span{
+        float: left;
+        font-size: 0.32rem;
+        color:#111;
+        font-weight: 600;
+    }
+    .dis-team-tit p{
+        float: right;
+        font-size: 0.24rem;
+        color:#666;
+        text-align: right;
+    }
+    .dis-team-tit p em{
+        font-size: 0.28rem;
+        color:#FC273C;
+        padding-left: 0.05rem;
+        font-weight: 600;
+    }
+    .dis-team-con{
+        padding:0rem 0.3rem;
+    }
+    .dis-team-li{
+        padding:0.35rem 0.12rem;
+        overflow: hidden;
+        border-bottom:1px solid #ededed;
+        display: block;
+    }
+    .team-li-l{
+        float: left;
+        height: 0.43rem;
+    }
+    .team-li-l span{
+        width: 0.43rem;
+        height: 0.43rem;
+        margin-right: 0.24rem;
+        float: left;
+    }
+    .team-li-l span img{
+        width: 100%;
+        display: block;
+    }
+    .team-li-l em{ 
+        float: left;
+    }
+    .team-li-l em ,.team-li-r strong{
+        font-size: 0.28rem;
+        color:#222;
+        font-weight: 600;
+    }
+    .team-li-r{
+        overflow: hidden;
+    }
+    .team-li-r p ,.team-li-r strong{
+        float: right;
+    }
+    .team-li-r p{
+        width: 0.11rem;
+        height: 0.19rem;
+        margin-left: 0.13rem;
+        margin-top: 0.13rem;
+    }
+    .team-li-r p img{
+        width: 100%;
+        display: block;
+    }
+}
+// 编辑
+.edit-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    
+    .edit-content{
+        width: 100%;
+    }
+    .edit_ul{
+        padding-top: 0.2rem;
+    }
+    .editbutton{
+        padding:0.4rem 0.25rem;
+    }
+    .editbutton .van-button--info{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+    }
+}
+// 我的上级
+.mysuperior-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    
+    .mysuperior-content{
+        width: 100%;
+    }
+    .mysuperior-ul{
+        background-color: #FFF;
+        border-radius: 0.2rem;
+        margin: 0.2rem 0.25rem 0rem 0.25rem;
+    }
+    .mysuperior-li{
+        border-bottom: 1px solid #ededed;
+        margin-left: 0.25rem;
+        height: 0.87rem;
+        padding-right: 0.25rem;
+    }
+    .mysuperior-li:last-child{
+        border-bottom: 0;
+    }
+    .mysuperior-li1{
+        height: 0.99rem;
+    }
+    .mysuperior-li span ,.mysuperior-li1 span{
+        float: left;
+        font-size: 0.28rem;
+        color:#68686A;
+    }
+    .mysuperior-li span{
+        line-height: 0.87rem;
+    }
+    .mysuperior-li1 span{
+        line-height: 0.99rem;
+    }
+    .mysuperior-li p{
+        width: 0.6rem;
+        height: 0.6rem;
+        float: right;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: 0.19rem;
+    }
+    .mysuperior-li p img{
+        display: block;
+        width: 100%;
+    }
+    .mysuperior-li em{
+        overflow: hidden;
+        font-size: 0.28rem;
+        color:#1A1A1B;
+        text-align: right;
+        display: block;
+        line-height: 0.87rem;
+    }
+    .mysuperior-li em.size-color{
+        color:#FF4646;
+    }
+    .mysuperior-li2{
+        height: 1.87rem;
+    }
+    .mysuperior-li2 p{
+        width: 1.2rem;
+        height: 1.2rem;
+        overflow: hidden;
+        margin-top: 0.35rem;
+        border-radius: 0;
+    }
+    .mysuperior-li2 p img{
+        display: block;
+        width: 100%;
+    }
+}
+// 订单明细
+.orderdetailed-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .orderdetailed-time{
+        background-color: #FFF;
+        padding:0.28rem 0.25rem;
+        overflow: hidden;
+    }
+    .max-mony{
+        float: right;
+    }
+    .mony-li{
+        font-size: 0.24rem;
+        color: #C8C8CB;
+        line-height: 1;
+        margin-bottom: 0.15rem;
+        text-align: right;
+    }
+    .mony-li:last-child{
+        margin-bottom: 0;
+    }
+    .mony-li em{
+        color: #68686A;
+        padding-left:0.05rem;
+    }
+    .orderdetailed-l{
+        padding:0.08rem 0.25rem 0.12rem 0.25rem;
+        border: 1px solid #EDEDED;
+        border-radius: 0.3rem;
+        float: left;
+    }
+    .orderdetailed-l i{
+        float: left;
+        font-size: 0.3rem;
+        margin-top: 0.04rem;
+    }
+    .txt-time{
+        padding-left: 0.08rem;
+        font-size: 0.24rem;
+        float: left;
+    }
+    .txt-time input{
+        border: 0;
+    }
+    .orderdetailed-content{
+        width: 100%;
+    }
+    .orderdetailed-ul{
+        margin: 0.2rem 0.25rem 0rem 0.25rem;
+    }
+    .orderdetailed-li{
+        background-color: #FFF;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .detailed-li-top{
+        margin-left: 0.3rem;
+        padding-right: 0.3rem;
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #ededed;
+    }
+    .detailed-li-top span ,.detailed-li-top em{
+        height: 0.88rem;
+        line-height: 0.88rem;
+        font-size: 0.28rem;
+    }
+    .detailed-li-top span{
+        color:#68686A;
+        float: left;
+    }
+    .detailed-li-top p{
+        float: right;
+        width: 0.13rem;
+        height: 0.23rem;
+        display: block;
+        margin-top: 0.32rem;
+    }
+    .detailed-li-top p img{
+        display: block;
+        width: 100%;
+    }
+    .detailed-li-top em{
+        color:#FC273C;
+        float: right;
+        padding-right: 0.18rem;
+    }
+    .detailed-li-bottom{
+        padding:0.12rem 0.3rem;
+    }
+    
+    .detailed-li-txt{
+        overflow: hidden;
+        padding:0.18rem 0rem;
+    }
+    .detailed-li-txt span ,.detailed-li-txt p{
+        font-size: 0.28rem;
+        line-height: 1;
+    }
+    .detailed-li-txt span{
+        color:#C8C8CB;
+        float: left;
+    }
+    .detailed-li-txt p{
+        color:#68686A;
+        float: right;
+    }
+}
+// 立即提现
+.Withdrawal-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .Withdrawal-content{
+        width: 100%;
+    }
+    .action-tit .van-action-sheet__header{
+        text-align: left;
+        font-size: 0.28rem;
+        padding:0rem 0.3rem;
+        color:#999;
+    }
+    .alert-content{
+        width: 100%;
+    }
+    .alert-action-li{
+        height: 1.05rem;
+        border-bottom: 1px solid #ededed;
+        margin-left: 0.25rem;
+    }
+    .alert-action-li span ,.alert-action-li p{
+        float: left;
+    }
+    .alert-action-li span{
+        width: 0.4rem;
+        height: 0.4rem;
+        background: #FFFFFF;
+        border: 0.02rem solid #CCCCCC;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin-top: 0.3rem;
+    }
+    .alert-action-li span img{
+        display: block;
+        width: 0.22rem;
+        height: 0.16rem;
+        margin-left: 0.07rem;
+        margin-top: 0.11rem;
+    }
+    .alert-action-li p{
+        font-size: 0.28rem;
+        color:#222;
+        line-height: 1.05rem;
+        padding-left: 0.08rem;
+    }
+    .alert-action-but{
+        margin: 0.37rem 0.25rem;
+        
+    }
+    .action-cur span{
+        background-color:#FC273C;
+        border: 0.02rem solid #FC273C;
+    }
+    .alert-action-but .van-button{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+    }
+    .expect{
+        padding:0.2rem 0.25rem 0.43rem 0.25rem;
+        overflow: hidden;
+    }
+    .expect span ,.expect a{
+        font-size: 0.24rem;
+        line-height: 1;
+    }
+    .expect span{
+        float: left;
+        color: #C8C8CB;
+    }
+    .expect a{
+        float: right;
+        color: #68686A;
+    }
+    .Withdrawal-mony{
+        padding:0rem 0.25rem;
+        background-color: #FFF;
+    }
+    .Withdrawal-mony-tit{
+        overflow: hidden;
+    }
+    .Withdrawal-mony-tit span ,.Withdrawal-mony-tit p{
+        line-height: 0.9rem;
+    }
+    .Withdrawal-mony-tit span{
+        float: left;
+        font-size: 0.28rem;
+        color: #68686A;
+    }
+    .Withdrawal-mony-tit p{
+        float: right;
+        font-size: 0.24rem;
+        color: #c8c8cb;
+    }
+    .Withdrawal-mony-tit p em{
+        padding-left: 0.15rem;
+        color:#FC273C;
+    }
+    .Withdrawal-input{
+        height: 1rem;
+        background: #FFFFFF;
+        border: 1px solid #EDEDED;
+        box-shadow: 0rem 0.03rem 0.08rem 0rem rgba(6, 0, 1, 0.06);
+        border-radius: 0.1rem;
+        overflow: hidden;
+    }
+    .Withdrawal-input span{
+        float: left;
+        font-size: 0.28rem;
+        color:#222;
+        font-weight: 600;
+        margin: 0.41rem 0.15rem 0rem 0.32rem;
+    }
+    .Withdrawal-input p{
+        overflow: hidden;
+        padding-right: 0.1rem;
+    }
+    .Withdrawal-input input{
+        width: 100%;
+        font-size: 0.48rem;
+        color:#222;
+        line-height: 1rem;
+        font-weight: 600;
+        border:0;
+        outline:none;
+    }
+    .Withdrawal-text{
+        overflow: hidden;
+        height: 0.9rem;
+    }
+    .Withdrawal-text em{   
+        font-size: 0.24rem;
+        color:#C8C8CB;
+        line-height: 0.9rem;
+    }
+    .Withdrawal-text em:nth-child(1){
+        float: left;
+    }
+    .Withdrawal-text em:nth-child(2){
+        float: right;
+    }
+    .no-data{
+        padding:0.8rem 0rem;
+        text-align: center;
+    }
+    .no-data p{
+        display: block;
+        text-align: center;
+        font-size:0.28rem;
+        color:#68686A;
+        margin-bottom: 0.35rem;
+    }
+    .no-data button{
+        padding:0rem 0.43rem;
+        font-size: 0.24rem;
+        height: 0.6rem;
+    }
+}
+
+
+// 提现记录
+.Withdrawallist-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .Withdrawallist-content{
+        width: 100%;
+    }
+    .Withdrawallist-ul{
+        background-color: #FFF;
+        overflow: hidden;
+        padding:0.49rem 0rem;
+    }
+    .Withdrawallist-ul li{
+        width: 49.5%;
+        border-right: 1px solid #ededed;
+        float: left;
+    }
+    .Withdrawallist-ul li:last-child{
+        border-right: 0;
+    }
+    .Withdrawallist-ul li span ,.Withdrawallist-ul li p{
+        display: block;
+        text-align: center;
+    }
+    .Withdrawallist-ul li span{
+        font-size:0.48rem;
+        color:#222;
+        font-weight: 600;
+    }
+    .Withdrawallist-ul li p{
+        font-size: 0.24rem;
+        color:#68686A;
+    }
+    .orderdetailed-ul{
+        margin: 0.2rem 0.25rem 0rem 0.25rem;
+    }
+    .orderdetailed-li{
+        background-color: #FFF;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .detailed-li-top{
+        margin-left: 0.3rem;
+        padding-right: 0.3rem;
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #ededed;
+    }
+    .detailed-li-top span ,.detailed-li-top em{
+        height: 0.88rem;
+        line-height: 0.88rem;
+        font-size: 0.28rem;
+    }
+    .detailed-li-top span{
+        color:#68686A;
+        float: left;
+    }
+    .detailed-li-top em{
+        color:#C8C8CB;
+        float: right;
+    }
+    .detailed-li-top em.colorred{
+        color:#FC273C;
+    }
+    .detailed-li-bottom{
+        padding:0.12rem 0.3rem;
+    }
+    .detailed-li-txt{
+        overflow: hidden;
+        padding:0.18rem 0rem;
+    }
+    .detailed-li-txt span ,.detailed-li-txt p{
+        font-size: 0.28rem;
+        line-height: 1;
+    }
+    .detailed-li-txt span{
+        color:#C8C8CB;
+        float: left;
+    }
+    .detailed-li-txt p{
+        color:#68686A;
+        float: right;
+    }
+    .no-data .van-empty__image{
+        width: 1.71rem;
+        height: 1.71rem;
+    }
+    .no-data .van-empty__description{
+        font-size: 0.28rem;
+        color:#555;
+        margin-top: 0.4rem;
+    }
+    .no-data .van-empty__bottom{
+        margin-top: 0.4rem;
+    }
+    .no-data .van-empty__bottom .van-button{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+        padding:0rem 1.1rem;
+    }
+}
+// 一级分销商
+.onedistribution-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .onedistribution-content{
+        width: 100%;
+    }
+    .DevelopVip-server .van-icon{
+        font-size: 0.34rem;
+    }
+    .onedistribution-ul{
+        padding:0.2rem 0.25rem 0rem 0.25rem;
+    }
+    .onedistribution-li{
+        background-color: #FFF;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    .onedistribution-top{
+        padding:0.3rem;
+        overflow: hidden;
+        border-bottom: 1px solid #ededed;
+    }
+    .onedistribution-img{
+        width: 0.8rem;
+        height: 0.8rem;
+        overflow: hidden;
+        float: left;
+        margin-right:0.15rem;
+        border-radius: 50%;
+    }
+    .onedistribution-img img{
+        display: block;
+        width: 100%;
+    }
+    .onedistribution-text{
+        overflow: hidden;
+    }
+    .onedistribution-text span ,.onedistribution-text p{
+        display: block;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .onedistribution-text span{
+        font-size: 0.3rem;
+        color:#222;
+        font-weight: 600;
+    }
+    .onedistribution-text span em{        
+        border: 1px solid #FF8C8C;
+        border-radius: 0.04rem;
+        font-size: 0.24rem;
+        color: #FF0000;
+        padding:0rem 0.13rem 0.01rem 0.13rem;
+        margin-left: 0.05rem;
+    }
+    .onedistribution-text p{
+        font-size: 0.24rem;
+        color:#999;
+    }
+    .onedistribution-bottom{
+        padding:0.2rem;
+        overflow: hidden;
+    }
+    .onedistribution-bottom .van-button{
+        font-size: 0.24rem;
+        height: 0.6rem;
+        float: right;
+        margin: 0rem 0.1rem;
+    }
+}
+// 我发展的会员
+.MyDevelopVip-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .MyDevelopVip-content{
+        width: 100%;
+    }
+    .DevelopVip-server .van-icon{
+        font-size: 0.34rem;
+    }
+    .MyDevelopVip-ul{
+        padding:0.2rem 0.25rem 0rem 0.25rem;
+    }
+    .MyDevelopVip-li{
+        background-color: #FFF;
+        border-radius: 0.2rem;
+        padding:0.3rem;
+        margin-bottom: 0.2rem;
+    }
+    .MyDevelopVip-r{
+        float: right;
+        margin-left: 0.1rem;
+    }
+    .MyDevelopVip-r .van-button{
+        height: 0.6rem;
+        margin-top: 0.1rem;
+    }
+    .MyDevelopVip-l{
+        overflow: hidden;
+    }
+    .onedistribution-img{
+        width: 0.8rem;
+        height: 0.8rem;
+        overflow: hidden;
+        float: left;
+        margin-right:0.15rem;
+    }
+    .onedistribution-img img{
+        display: block;
+        width: 100%;
+    }
+    .onedistribution-text{
+        overflow: hidden;
+    }
+    .onedistribution-text span ,.onedistribution-text p{
+        display: block;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .onedistribution-text span{
+        font-size: 0.3rem;
+        color:#222;
+        font-weight: 600;
+    }
+    .onedistribution-text p{
+        font-size: 0.24rem;
+        color:#999;
+    }
+}
+// 分销带货
+.BringGoods-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .BringGoods-content{
+        width: 100%;
+    }
+    .BringGoods-select{
+        background-color: #FC273C;
+    }
+    .BringGoods-link{
+        float: left;
+        margin-right: .1rem;
+        padding: .2rem .07rem .08rem;
+        text-align: center;
+        font-size: .42rem;
+    }
+
+    .BringGoods-r{
+        overflow: hidden;
+    }
+    .BringGoods-r .van-search{
+        padding:0.14rem 0.24rem 0.14rem 0rem;
+        height: 0.88rem;
+    }
+    .BringGoods-r .van-cell{
+        padding: 0;
+    }
+    .BringGoods-r .van-cell input{
+        height: 0.59rem;
+        line-height: 0.59rem;
+        font-size: 0.24rem;
+    }
+    .one-search .van-field__right-icon{
+        margin-right: 0;
+    }
+    .BringGoods-r .van-icon{
+        font-size: 0.34rem;
+        line-height: 0.6rem;
+    }
+    .BringGoods-head{
+        height: 2.49rem;
+        position: relative;
+        margin-bottom: 0.1rem;
+    }
+    .BringGoods-bg{
+        background-color: #FC273C;
+        height: 1.33rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+    .BringGoods-head-cen{     
+        height: 2.49rem;
+        background: #FFFFFF;
+        border-radius: 0.2rem;
+        padding: 0.25rem 0.25rem 0rem 0.25rem;
+        position: absolute;
+        left: 0.25rem;
+        right: 0.25rem;
+        top: 0;
+    }
+    .Small-shop{
+        overflow: hidden;
+    }
+    .Small-shop span ,.Small-shop p{
+        float: left;
+    }
+    .Small-shop span{
+        width: 1.08rem;
+        height: 1.08rem;
+        overflow: hidden;
+        margin-right: 0.2rem;
+        border-radius: 0.08rem;
+    }
+    .Small-shop span img{
+        width: 100%;
+        display: block;
+    }
+    .Small-shop p {
+        line-height: 1.08rem;
+        font-size: 0.36rem;
+        color:#222;
+        font-weight: 600;
+    }
+    .Small-shop .van-button{
+        float: right;
+    }
+    .Small-share{
+        width: 1.30rem;
+        height: 0.49rem;
+        background: #FC273C;
+        border-radius: 0.3rem;
+        margin-top: 0.28rem;
+        float: right;
+    }
+    .Small-share em{
+        float: left;
+        width: 0.23rem;
+        height: 0.23rem;
+        margin: 0.13rem 0.12rem 0.13rem 0.25rem;
+    }
+    .Small-share img{
+        display: block;
+        width: 100%;
+    }
+    .Small-share strong{
+        display: block;
+        overflow: hidden;
+        line-height: 0.49rem;
+        color:#FFF;
+        font-size: 0.24rem;
+        
+    }
+    .Small-tab{
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .Small-tab li{
+        width: 25%;
+        float: left;
+        text-align: center;
+        position: relative;
+        height: 0.7rem;
+    }
+    .Small-tab li::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0.1rem;
+        width: 1px;
+        height: 0.3rem;
+        border-right: 1px solid #ededed;
+    }
+    .Small-tab li:last-of-type:after{
+        border-right: 0;
+    }
+    .Small-tab li p{
+        display: inline;
+        font-size: 0.28rem;
+        color:#666;
+        position: relative;
+    }
+    .Small-tab .cur p{
+        color:#222;
+        font-weight: 600;
+    }
+    .Small-tab .cur p::after{
+        border-bottom: 0.05rem solid #FC273C;
+        width: 100%;
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -0.26rem;    
+    }
+    .BringGoods-ul-list{
+        overflow: hidden;
+        padding:0rem 0.2rem
+    }
+    .BringGoods-ul-l ,.BringGoods-ul-r{
+        float: left;
+        width: 50%;
+    }
+    .BringGoods-li{
+        background-color: #FFF;
+        border-radius: 0.06rem;
+        margin: 0rem 0.05rem 0.1rem 0.05rem;
+        padding-bottom: 0.18rem;
+    }
+    .BringGoods-li-img{
+        width: 100%;
+        margin-bottom: 0.2rem;
+        display: block;
+    }
+    .BringGoods-li-img img{
+        display: block;
+        width: 100%;
+    }
+    .BringGoods-li-tit{
+        font-size: 0.24rem;
+        color:#222;
+        padding:0rem 0.21rem;
+        margin-bottom: 0.1rem;
+    }
+    .BringGoods-mony{
+        overflow: hidden;
+        padding:0rem 0.21rem;
+    }
+    .BringGoods-mony-float{
+        float: left;
+        margin-bottom: 0.05rem;
+    }
+    .BringGoods-mony em ,.BringGoods-mony strong ,.BringGoods-mony i ,.BringGoods-mony p{
+        float: left;
+    }
+    .BringGoods-mony em ,.BringGoods-mony strong ,.BringGoods-mony i {
+        line-height: 1;
+    }
+    .BringGoods-mony em ,.BringGoods-mony strong{
+        color: #FC273C;
+    }
+    .BringGoods-mony em{
+        font-size: 0.24rem;
+        
+        margin-top: 0.05rem;
+    }
+    .BringGoods-mony strong{
+        font-size: 0.3rem;
+        font-weight: 600;
+        margin-right: 0.1rem;
+    }
+    .BringGoods-mony i{
+        font-size: 0.24rem;
+        color:#D4A064;
+        margin-top: 0.03rem;
+        line-height: 0.3rem;
+    }
+    .BringGoods-mony p{
+        width: 0.76rem;
+        height: 0.26rem;
+        margin-top: 0.05rem;
+    }
+    .BringGoods-mony p img{
+        display: block;
+        width: 100%;
+    }
+    .float-but{
+        width: 1.18rem;
+        height: 1.18rem;
+        background: #FC273C;
+        box-shadow: 0.05rem 0.09rem 0.3rem 0rem rgba(252, 39, 60, 0.48);
+        border-radius: 50%;
+        font-size:0.28rem;
+        color:#FFF;
+        position: fixed;
+        right: 0.24rem;
+        bottom: 0.77rem;
+    }
+    .float-but p{
+        font-size: 0.28rem;
+        color: #FFF;
+        display: block;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin: 0 auto;
+        padding-top: 0.15rem;
+    }
+    .no-data .van-empty__image{
+        width: 1.71rem;
+        height: 1.71rem;
+    }
+    .no-data .van-empty__description{
+        font-size: 0.28rem;
+        color:#555;
+        margin-top: 0.4rem;
+    }
+    .no-data .van-empty__bottom{
+        margin-top: 0.4rem;
+    }
+    .no-data .van-empty__bottom .van-button{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+        padding:0rem 1.1rem;
+    }
+    .Share-con{
+        padding-top: 1.85rem;
+    }
+    .Share-img{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 4.5rem;
+        background-color: #FFF;
+        width: 5.72rem;
+        height: 8.53rem;
+        margin: 0 auto;
+        z-index: 10000;
+    }
+    .Share-con strong{
+        font-size: 0.24rem;
+        color:#999;
+        text-align: center;
+        margin-bottom: 0.32rem;
+        font-weight: 500;
+        display: block;
+    }
+    .Share-ul{
+        padding:0rem 0.8rem;
+    }
+    .Share-li{
+        padding:0rem 0.86rem;
+        float: left;
+    }
+    .Share-li span ,.Share-li p{
+        display: block;
+    }
+    .Share-li span{
+        width: 1.23rem;
+        height: 1.23rem;
+        margin: 0 auto;
+        margin-bottom: 0.05rem;
+    }
+    .Share-li span img{
+        display: block;
+        width: 100%;
+    }
+    .Share-li p{
+        text-align: center;
+        font-size: 0.24rem;
+        color:#333;
+        padding-bottom: 0.58rem;
+    }
+    .van-action-sheet__cancel{
+        font-size: 0.24rem;
+    }
+}
+
+
+// 带货
+.Selection-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F7F8FB;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .Selection-content{
+        width: 100%;
+    }
+    .Selection-select{
+        background-color: #FC273C;
+        overflow: hidden;
+    }
+    .Selection-link{
+        float: left;
+        margin-right: 0.05rem;
+        padding: 0.2rem 0.07rem 0.16rem 0.07rem;
+        text-align: center;
+        font-size: 0.36rem;
+    }
+
+    .Selection-r{
+        overflow: hidden;
+    }
+    .Selection-r .van-search{
+        padding:0.14rem 0.24rem 0.14rem 0rem;
+        height: 0.88rem;
+    }
+    .Selection-r .van-cell{
+        padding: 0;
+    }
+    .Selection-r .van-cell input{
+        height: 0.59rem;
+        line-height: 0.59rem;
+        font-size: 0.24rem;
+    }
+    .Selection-r .van-icon{
+        font-size: 0.34rem;
+        line-height: 0.6rem;
+    }
+    .Selection-column{
+        background: #FFFFFF;
+        border-radius: 0rem 0rem 0.2rem 0.2rem;
+        overflow: hidden;
+        height: 0.88rem;
+        padding:0rem 0.25rem;
+    }
+    .Selection-column span{
+        float: left;
+        line-height: 0.88rem;
+        font-size: 0.28rem;
+        color:#222;
+    }
+    .Selection-column p{
+        float: right;
+        width: 0.12rem;
+        height: 0.22rem;
+        margin-top: 0.33rem;
+    }
+    .Selection-column p img{
+        display: block;
+        width: 100%;
+    }
+    .screen{
+        height: 0.8rem;
+        padding:0rem 0.25rem
+    }
+    .screen-r{
+        float: right;
+    }
+    .screen-r p ,.screen-r i{
+        float: left;
+    }
+    .screen-r p{
+        width: 0.23rem;
+        height: 0.22rem;
+        float: left;
+        margin-top: 0.29rem;
+    }
+    .screen-r p img{
+        width: 100%;
+        display: block;
+    }
+    .screen-r i{
+        float: left;
+        padding-left: 0.11rem;
+        font-size: 0.26rem;
+        color:#666;
+        line-height: 0.8rem;
+    }
+
+    .screen-l{
+        overflow: hidden;
+    }
+    .screen-ul{
+        overflow: hidden;
+        height: 0.8rem;
+        float: left;
+    }
+    .screen-ul li{
+        float: left;
+        margin-right: 0.5rem;
+        font-size: 0.26rem;
+        color:#666;
+        line-height: 0.8rem;
+        position: relative;
+    }
+    .screen-ul .cur{
+        color:#FC273C;
+        font-weight: 600;
+    }
+    .screen-ul .cur::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        border-top:0.05rem solid #FC273C;
+    }
+    .sales-volume{
+        float: left;
+        font-size: 0.26rem;
+        color:#666;
+        line-height: 0.8rem;
+        position: relative;
+    }
+    .sales-volume::before{
+        width: 0;
+        height: 0;
+        border-left: 0.08rem solid transparent;
+        border-right: 0.08rem solid transparent;
+        border-bottom: 0.08rem solid #D8D8D8;
+        content: '';
+        position: absolute;
+        right: -0.25rem;
+        top: 0.29rem;
+    }
+    .sales-volume::after{
+        width: 0;
+        height: 0;
+        border-left: 0.08rem solid transparent;
+        border-right: 0.08rem solid transparent;
+        border-top: 0.08rem solid #D8D8D8;
+        content: '';
+        position: absolute;
+        right: -0.25rem;
+        top: 0.41rem;
+    }
+
+    .sales-volume-up::before{
+        border-bottom: 0.08rem solid #7A7A7A;
+    }
+    .sales-volume-down::after{
+        border-top: 0.08rem solid #7A7A7A;
+    }
+
+    .Selection-ul{
+        border-radius: 0.2rem 0.2rem 0rem 0rem;
+        padding-left: 0.25rem;
+        background-color: #FFF;
+    }
+    .Selection-li{
+        border-bottom: 1px solid #ededed;
+        padding:0.31rem 0.25rem 0.31rem 0rem;
+    }
+    .Selection-li-l{
+        width: 2rem;
+        height: 2rem;
+        overflow: hidden;
+        float: left;
+        margin-right: 0.3rem;
+        box-sizing: border-box;
+        border: 1px solid #EDEDED;
+        border-radius: 0.08rem;
+    }
+    .Selection-li-l img{
+        display: block;
+        width: 100%;
+    }
+    .Selection-li-r{
+        overflow: hidden;
+    }
+    .Selection-li-r span{
+        font-size: 0.26rem;
+        color:#222;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .Selection-li-mony{
+        overflow: hidden;
+        padding:0.13rem 0rem;
+    }
+    .Selection-li-mony em{
+        font-size: 0.24rem;
+        color:#999;
+    }
+    .Selection-li-mony em:nth-child(1){
+        float: left;
+    }
+    .Selection-li-mony em:nth-child(2){
+        float: right;
+    }
+    .Coin{
+        height: 0.58rem;
+        overflow: hidden;
+    }
+    .Coin-l{
+        overflow: hidden;
+        padding:0.06rem 0.1rem;
+        border: 1px solid #FFDE81;
+        border-radius: 0.22rem;
+        float: left;
+        margin-top: 0.07rem;
+    }
+    .Coin-l p ,.Coin-l i{
+        float: left;
+    }
+    .Coin-l p{
+        width: 0.33rem;
+        height: 0.33rem;
+        margin-right: 0.14rem;
+    }
+    .Coin-l p img{
+        width: 100%;
+        display: block;
+    }
+    .Coin-l i{
+        font-size: 0.24rem;
+        color: #FFBB00;
+        line-height: 0.33rem;
+    }
+    .Coin strong{
+        float: right;
+        border-radius: 0.29rem;
+        font-size: 0.24rem;
+        padding:0rem 0.45rem;
+        height: 0.58rem;
+        text-align: center;
+        line-height: 0.56rem;
+        font-weight: 500;
+    }
+    .Coin .Selection-red{
+        background: #FC273C;
+        border: 1px solid #FC273C; 
+        color:#FFF;  
+    }
+    .Selection-cancel{
+        border: 1px solid #dbdbdb; 
+        color:#555;
+    }
+    .no-data .van-empty__image{
+        width: 1.71rem;
+        height: 1.71rem;
+    }
+    .no-data .van-empty__description{
+        font-size: 0.28rem;
+        color:#555;
+        margin-top: 0.4rem;
+    }
+    .action-content{
+        padding:0rem 0.15rem;
+    }
+    .selection-shop{
+        padding:0rem 0.1rem;
+        overflow: hidden;
+    }
+    .selection-shop span{
+        display: block;
+        float: left;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.3rem;
+    }
+    .selection-shop span img{
+        width: 100%;
+        display: block;
+    }
+    .selection-shop-r{
+        overflow: hidden;
+    }
+    .selection-shop-r p{
+        font-size: 0.28rem;
+        color:#222;
+        margin-bottom: 0.7rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .election-shop-mony{
+        overflow: hidden;
+    }
+    .election-shop-mony em{
+        font-size: 0.24rem;
+        color:#999;
+    }
+    .election-shop-mony em:nth-child(1){
+        float: left;
+    }
+    .election-shop-mony em:nth-child(2){
+        float: right;
+    }
+    .scale{
+        overflow: hidden;
+        padding-top: 0.4rem;
+    }
+    .scale span{
+        display: block;
+        float: left;
+        background: #FFEEF0;
+        border-radius: 0.2rem;
+        margin: 0 0.1rem;;
+        width: calc(50% - 0.2rem);
+        padding:0.4rem 0rem;
+    }
+    .scale span em ,.scale span i{
+        display: block;
+        text-align: center;
+        line-height: 1;
+    }
+    .scale span em{
+        font-size: 0.48rem;
+        color:#FC273C;
+        font-weight: 600;
+        margin-bottom: 0.15rem;
+    }
+    .scale span i{
+        font-size: 0.24rem;
+        color:#555;
+    }
+    .danger-button{
+        padding:0.46rem 0.1rem 0.33rem 0.1rem;
+    }
+    .danger-button button{
+        width: 100%;
+    }
+    .van-action-sheet__header{
+        text-align: left;
+        font-size: 0.28rem;
+        padding:0rem 0.3rem;
+        color:#999;
+    }
+    .popup-bg{
+        position: absolute;
+        z-index: 9;
+        background: rgba(0, 0, 0, 0.07);
+        left: 0;
+        right: 0;
+        top: 2.56rem;
+        height: 100%;
+        width: 100%;
+    }
+    .popup-ul{
+        padding: 0.3rem 0.1rem 0.1rem 0.1rem;
+        overflow: hidden;
+        background-color: #FFF;
+        border-radius: 0rem 0rem 0.2rem 0.2rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 2.56rem;
+        z-index: 10;
+    }
+    .popup-ul li{
+        width: calc(33.33% - 0.2rem);
+        float: left;
+        margin: 0rem 0.1rem 0.2rem 0.1rem;
+        height: 0.68rem;
+        background: #F6F7F9;
+        border-radius:0.05rem;
+        font-size: 0.26rem;
+        color:#555;
+        text-align: center;
+        line-height: 0.68rem;
+    }
+    .popup-ul .cur{
+        background: #FFEFF1;
+        font-size: 0.26rem;
+        color:#FC273C;
+    }
+    .van-popup--top{top: 2.56rem;}
+    .action-tit .van-action-sheet__header{
+        text-align: left;
+        font-size: 0.28rem;
+        padding:0rem 0.3rem;
+        color:#999;
+    }
+    .alert-content{
+        width: 100%;
+    }
+    .alert-action-li{
+        height: 1.05rem;
+        border-bottom: 1px solid #ededed;
+        margin-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+    .alert-action-li span{
+        width: 0.4rem;
+        height: 0.4rem;
+        background: #FFFFFF;
+        border: 0.02rem solid #CCCCCC;
+        border-radius: 50%;
+        box-sizing: border-box;
+        margin-top: 0.3rem;
+        float: right;
+    }
+    .alert-action-li span img{
+        display: block;
+        width: 0.22rem;
+        height: 0.16rem;
+        margin-left: 0.07rem;
+        margin-top: 0.11rem;
+    }
+    .alert-action-li p{
+        font-size: 0.28rem;
+        color:#222;
+        line-height: 1.05rem;
+        padding-left: 0.08rem;
+        float: left;
+    }
+    .alert-action-but{
+        margin: 0.37rem 0.25rem;
+        
+    }
+    .action-cur span{
+        background-color:#FC273C;
+        border: 0.02rem solid #FC273C;
+    }
+    .alert-action-but .van-button{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+    }
+}
+// 海报物料
+.PosterList-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F6F7F9;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .PosterList-content{
+        width: 100%;
+    }
+    .PosterList-ul{
+        padding:0.3rem 0.13rem 0.1rem 0.13rem;
+        overflow: hidden;
+    }
+    .PosterList-ul li{
+        width: calc(50% - 0.22rem);
+        float: left;
+        margin: 0rem 0.11rem 0.2rem 0.11rem;
+        height: 4.32rem;
+        position: relative;
+    }
+    .PosterList-ul li span{
+        display: block;
+        height: 4.32rem;
+        background: #C0C0C0;
+        border-radius:0.06rem;
+        overflow: hidden;
+    }
+    .PosterList-ul li span img{
+        width: 100%;
+    }
+    .PosterList-ul li p{
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 0.6rem;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 0.05rem;
+        font-size: 0.28rem;
+        color:#FFF;
+        text-align: center;
+        line-height: 0.6rem;
+    }
+    .alert-bg{
+        background: rgba(0,0,0,0.7);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+    .alert-con{
+        width: 5.2rem;
+        position: fixed;
+        left: 50%;
+        z-index: 11;
+        border-radius: 0.2rem;
+        top: 50%;
+        transform: translate(-50% ,-50%);
+    }
+    .alert-con img{
+        width: 100%;
+        display: block;
+    }
+    .alert-bottom{
+        z-index: 12;
+        position: fixed;
+        left: 0.25rem;
+        right: 0.25rem;
+        bottom: 0.45rem;
+    }
+    .alert-bottom p{
+        display: block;
+        font-size: 0.28rem;
+        color:#999;
+        margin-bottom: 0.38rem;
+    }
+    .alert-bottom .van-button{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+        width: 100%;
+    }
+    .alert-bottom .van-button span{
+        color:#FFF;
+    }
+}
+
+// 成为分销商
+.distribution-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F6F7F9;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .distribution-content{
+        width: 100%;
+        height: calc(100vh - 0.89rem);
+    }
+    .distribution-one{
+        height: 100%;
+        background-color: #FFF;
+    }
+    .distribution-one p{
+        padding-top: 1.17rem;
+        display: block;
+        width: 2.65rem;
+        margin: 0 auto;
+        margin-bottom: 0.7rem;
+    }
+    .distribution-one p img{
+        width: 100%;
+        display: block;
+    }
+    .distribution-one strong{
+        font-size: 0.28rem;
+        color:#222;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-align: center;
+    }
+    .distribution-one strong i{
+        color:#FC273C;
+    }
+    .distribution-one-but{
+        width: 3rem;
+        margin: 0 auto;
+    }
+    .distribution-one-but .van-button{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+        width: 100%;
+    }
+    .distribution-two{
+        height: 100%;
+        background-color: #F6F7F9;
+    }
+    .distribution_ul{
+        padding-top: 0.2rem;
+    }
+    .distribution-button{
+        padding:0.4rem 0.25rem;
+    }
+    .distribution-button .van-button--info{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        height: 0.8rem;
+        font-size: 0.28rem;
+    }
+    .treaty{
+        overflow: hidden;
+        display: table;
+        margin: 0.45rem auto 0rem auto;
+        padding-bottom: 0.02rem;
+    }
+    .treaty span{
+        width: 0.4rem;
+        height: 0.4rem;
+        background: #FFFFFF;
+        border: 0.02rem solid #CCCCCC;
+        border-radius: 50%;
+        border-radius: 50%;
+        box-sizing: border-box;
+        float: left;
+        display: block;
+        margin-right: 0.15rem;
+    }
+    .treaty p{
+        display: block;
+        float: left;
+        font-size: 0.24rem;
+        color: #68686A;
+    }
+    .treaty p i{
+        color: #3D9EE8;
+    }
+    .van-dialog__header ,.van-button__content .van-button__text{font-size: 0.28rem;}
+    .treaty-txt{
+        font-size: 0.26rem;
+        color:#222;
+        padding:0.27rem 0.45rem .40rem 0.45rem;
+    }
+    .distribution-data{
+        padding-top: 1.09rem;
+    }
+    .distribution-data .van-empty__image{
+        width: 1.82rem;
+        height: 1.82rem;
+    }
+    .distribution-data .van-empty__description{
+        font-size: 0.28rem;
+        color:#555;
+        font-weight: 500;
+        margin-top: 0.4rem;
+    }
+    .distribution-data .van-empty__bottom{
+        margin-top: 0.4rem;
+    }
+    .distribution-data .van-empty__bottom .van-button{
+        background-color:#FC273C;
+        border: 1px solid #FC273C;
+        width: 3rem;
+        height: 0.8rem;
+        font-size: 0.28rem;
+    }
+    .wait-txt{
+        font-size: 0.28rem;
+        color:#888;
+        margin-top: -0.3rem;
+    }
+}
+
+
+// 成为分销商
+.BuyDistribution-home {
+    min-width: 3.2rem;
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+
+    .wrapper-c {
+        max-width: 7.5rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .bg-div {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0px;
+    }
+
+    .bg-div p {
+        display: block;
+        max-width: 7.5rem;
+        height: 100%;
+        background-color: #F6F7F9;
+        margin: 0 auto;
+    }
+
+    .max-center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    .BuyDistribution-content{
+        width: 100%;
+        height: calc(100vh - 0.89rem);
+    }
+    .BuyDistribution-ul{
+        border-radius:0rem 0rem 0.2rem 0.2rem;
+        padding-left: 0.25rem;
+        background-color: #FFF;
+    }
+    .BuyDistribution-li{
+        border-bottom: 1px solid #ededed;
+        padding:0.31rem 0.25rem 0.31rem 0rem;
+        overflow: hidden;
+    }
+    .BuyDistribution-li-l{
+        width: 1.8rem;
+        height: 1.8rem;
+        overflow: hidden;
+        float: left;
+        margin-right: 0.3rem;
+        box-sizing: border-box;
+        border: 1px solid #EDEDED;
+        border-radius: 0.08rem;
+    }
+    .BuyDistribution-li-l img{
+        display: block;
+        width: 100%;
+    }
+    .BuyDistribution-li-r{
+        overflow: hidden;
+        position: relative;
+        height: 1.8rem;
+    }
+    .BuyDistribution-li-r span{
+        font-size: 0.26rem;
+        color:#222;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        margin-bottom: 0.5rem;
+    }
+    .BuyDistribution-mony{
+        overflow: hidden;
+        padding-top: 0.1rem;
+    }
+    .BuyDistribution-mony em ,.BuyDistribution-mony strong ,.BuyDistribution-mony i ,.BuyDistribution-mony p{
+        float: left;
+    }
+    .BuyDistribution-mony em ,.BuyDistribution-mony strong ,.BuyDistribution-mony i {
+        line-height: 1;
+    }
+    .BuyDistribution-mony em ,.BuyDistribution-mony strong{
+        color: #FC273C;
+    }
+    .BuyDistribution-mony em{
+        font-size: 0.24rem;
+        
+        margin-top: 0.05rem;
+    }
+    .BuyDistribution-mony strong{
+        font-size: 0.3rem;
+        font-weight: 600;
+        margin-right: 0.1rem;
+    }
+    .BuyDistribution-mony i{
+        font-size: 0.24rem;
+        color:#D4A064;
+        margin-top: 0.08rem;
+    }
+    .BuyDistribution-mony p{
+        width: 0.76rem;
+        height: 0.26rem;
+        margin-top: 0.05rem;
+    }
+    .BuyDistribution-mony p img{
+        display: block;
+        width: 100%;
+    }
+    .Buy-cart{
+        width: 0.48rem;
+        height: 0.48rem;
+        background: #FC273C;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .Buy-cart img{
+        width: 0.25rem;
+        height: 0.25rem;
+        margin: 0.11rem 0.11rem;
+    }
+}
+

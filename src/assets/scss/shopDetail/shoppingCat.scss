@@ -1,0 +1,1757 @@
+body {
+    font-size: 0;
+  }
+  
+  // 顶部标题
+  .shoppingCat_title {
+    display: flex;
+    justify-content: space-between;
+    color: #222222;
+    width: 100%;
+    height: 0.88rem;
+    align-items: center;
+    padding-left: 0.27rem;
+    padding-right: 0.25rem;
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    box-sizing: border-box;
+    background-color: #fff;
+  
+  
+    .shoppingCat_back {
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+    }
+  
+    .shoppingCat_back::after {
+      content: '';
+      display: block;
+      width: 0.2rem;
+      height: 0.2rem;
+      border-left: 2px solid #000;
+      border-top: 2px solid #000;
+      transform: rotate(-45deg);
+      margin-left: 0.1rem;
+    }
+  
+    .shoppingCat_text {
+      font-size: 0.34rem;
+      flex: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .shoppingCat_management {
+      font-size: 0.26rem;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+  }
+  
+  // 商铺前面单选框,公用
+  .shoppingContent_radio {
+    margin-right: 0.23rem;
+    flex: none;
+    width: 0.35rem;
+    height: 0.35rem;
+    border: 2px solid rgba(204, 204, 204, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // 商品前面单选框,公用
+  .shoppingContent_shopRadio {
+    margin-right: 0.23rem;
+    flex: none;
+    width: 0.35rem;
+    height: 0.35rem;
+    border: 2px solid rgba(204, 204, 204, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -0.6rem;
+  }
+  
+  //   单选按钮被选中样式,公用
+  .shoppingContent_checkRadio {
+    background-color: #FF9900;
+    border: 2px solid #FF9900 !important;
+  
+    img {
+      width: 0.2rem;
+      height: 0.14rem;
+    }
+  }
+  
+  // 不可点击单选框,公用
+  .notClickRadio {
+    margin-right: 0.23rem;
+    flex: none;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    left: -0.6rem;
+    top: 0;
+    background-color: #F0F0F0;
+    border: 1px solid #E6E6E6;
+  }
+  
+  // 已售罄不可点击单选框
+  .notInventory {
+    background-color: #F0F0F0 !important;
+    border: 1px solid #E6E6E6 !important;
+  }
+  
+  // 当优惠抽奖显示时,减少top值
+  // .reduceTopValue{
+  //   padding-top: 0.85rem !important;
+  // }
+  .container {
+    background-color: #F5F5F5;
+    padding-top: 0.87rem;
+    padding-bottom: 1.2rem;
+    min-height: calc(100vh - 1.08rem - 1.2rem);
+  
+    // 满减转盘
+    .rotaryTable {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FFFAF1;
+      font-size: 0.24rem;
+      color: #FF7800;
+      padding: 0.23rem 0.27rem;
+  
+      img {
+        width: 0.19rem;
+        height: 0.09rem;
+        flex: none;
+      }
+    }
+  
+    // .shopping_ifNotEmpty{
+    //   margin-bottom: 1rem;
+    // }
+  
+    //   商品内容
+    .shoppingCat_content {
+      margin-bottom: 0.2rem;
+      background-color: #fff;
+      padding: 0.27rem 0rem 0.26rem 0.27rem;
+  
+      // 顶部全选、店铺名称、优惠券
+      .shoppingCat_contentTop {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.24rem;
+        align-items: center;
+        padding-right: 0.23rem;
+        margin-bottom: 0.23rem;
+        overflow: hidden;
+        height: 0.6rem;
+        position: relative;
+  
+  
+        // 商品名称
+        .shoppingContent_status {
+          flex: auto;
+          color: #000;
+          -webkit-tap-highlight-color:rgba(0,0,0,0);
+  
+          img {
+            width: 0.28rem;
+            height: 0.24rem;
+            vertical-align: middle;
+          }
+  
+          span {
+            vertical-align: middle;
+            -webkit-tap-highlight-color:rgba(0,0,0,0);
+          }
+        }
+  
+        //   优惠券
+        .shoppingContent_quan {
+          flex: none;
+          display: flex;
+          align-items: center;
+          font-size: 0.24rem;
+          color: #000;
+          -webkit-tap-highlight-color:rgba(0,0,0,0);
+  
+          span {
+            color: #FF7800;
+            padding: 0.07rem 0.17rem;
+            background-color: #FFFAF1;
+            border-radius: 0.3rem;
+          }
+  
+          img {
+            width: 0.27rem;
+            height: 0.26rem;
+            margin-right: 0.09rem;
+          }
+        }
+      }
+  
+      // 商品信息
+      .shoppingCat_main {
+        padding-left: 0.6rem;
+  
+        // 满减,微团购
+        .shoppingMain_bulkTime {
+          font-size: 0.24rem;
+          margin-bottom: 0.26rem;
+          position: relative;
+          // padding-right: 0.23rem;
+          -webkit-tap-highlight-color:rgba(0,0,0,0);
+  
+          // 满减
+          .shoppingMain_bulk {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.18rem;
+            padding-right: 0.23rem;
+            // padding-top: 0.3rem;
+  
+            .shoppingMain_bulkLeft {
+              padding: 0rem 0.06rem;
+              background-color: #FF9900;
+              border-radius: 4px;
+              color: #fff;
+              font-size: 0.22rem;
+              margin-right: 0.37rem;
+              flex: none;
+            }
+  
+            .shoppingMain_bulkReduction {
+              flex: auto;
+              color: #333;
+              font-weight: bold;
+              margin-right: 0.32rem;
+              display: flex;
+              align-items: center;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+  
+            .shoppingMain_bulkDetail {
+              flex: none;
+              color: #333333;
+              display: flex;
+              align-items: center;
+  
+              img {
+                width: 0.09rem;
+                height: 0.19rem;
+                margin-left: 0.11rem;
+              }
+            }
+          }
+  
+          // 微团购
+          .shoppingMain_time {
+            display: flex;
+            align-items: center;
+            font-size: 0.24rem;
+            padding-right: 0.23rem;
+  
+  
+            .shoppingMain_timeLeft {
+              color: #222222;
+              margin-right: 0.22rem;
+              font-weight: bold;
+            }
+  
+            .shoppingMain_timeRight {
+              color: #333;
+  
+              .shoppingMain_timeText {
+                margin-right: 0.13rem;
+              }
+  
+              .shoppingMain_timeDate {
+                padding: 0.01rem 0.06rem;
+                // display: inline-block;
+                // line-height: 0.35rem;
+                // text-align: center;
+                // width: 0.35rem;
+                // height: 0.35rem;
+                border: 1px solid #DBDBDB;
+                border-radius: 3px;
+              }
+            }
+          }
+  
+        }
+  
+        .shoppingCat_mainBox {
+          // display: flex;
+          // justify-content: space-between;
+          // align-items: center;
+          margin-bottom: 0.4rem;
+          // padding-right: 0.23rem;
+  
+          .shoppingMain_BoxMain {
+  
+            // 商品信息
+            .shoppingMain_Box {
+              display: flex;
+  
+              // 商品图片
+              .shoppingMain_picture {
+                flex: none;
+                margin-right: 0.26rem;
+  
+                .shoppingMain_pictureBox {
+                  width: 2rem;
+                  height: 2rem;
+                  position: relative;
+  
+  
+                  // 已售罄
+                  .shoppingMain_pictureOver {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0.24rem;
+                    color: #FFFEFE;
+                    background: rgba(255, 255, 255, 0.6);
+                    box-shadow: 0.03rem 0.04rem 0.15rem 0px rgba(0, 0, 0, 0.04);
+                    border-radius: 0.14rem;
+                    left: 0;
+                    top: 0;
+                    line-height: 2rem;
+                    text-align: center;
+  
+                    span {
+                      width: 1rem;
+                      height: 1rem;
+                      text-align: center;
+                      line-height: 1rem;
+                      background-color: rgba(0, 0, 0, 0.6);
+                      border-radius: 50%;
+                      display: inline-block;
+                    }
+                  }
+  
+                  >img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: 0.03rem 0.04rem 0.15rem 0 rgba(0, 0, 0, 0.04);
+                    border-radius: 0.14rem;
+                    overflow: hidden;
+                  }
+                }
+  
+  
+  
+              }
+  
+              // 商品信息
+              .shoppingMain_information {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                flex: auto;
+                overflow: hidden;
+                padding-right: 0.23rem;
+  
+                .shoppingMain_informationTop {
+                  height: 1rem;
+  
+                  // 标题
+                  .shoppingMain_title {
+                    font-size: 0.24rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    margin-bottom: 0.14rem;
+                    -webkit-tap-highlight-color:rgba(0,0,0,0);
+                  }
+  
+                  // 规格
+                  .shoppingMain_status {
+                    // padding: 0.08rem 0.07rem 0.17rem 0.2rem;
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                    background-color: #F5F5F5;
+                    font-size: 0.24rem;
+                    color: #888888;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex: none;
+                    border-radius: 0.29rem;
+                    width: fit-content;
+                    margin-bottom: 0.18rem;
+                    max-width: calc(100% - 0.4rem);
+                    overflow: hidden;
+                    flex: 1;
+  
+                    .shoppingMain_statusText {
+                      // flex: auto;
+                      overflow: hidden;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      display: inline-block;
+                      // max-width: calc(100% - 1rem)
+                    }
+  
+                    .shoppingMain_statusArrow::after {
+                      content: '';
+                      display: block;
+                      width: 0.1rem;
+                      height: 0.1rem;
+                      border-left: 2px solid #666;
+                      border-bottom: 2px solid #666;
+                      transform: rotate(-45deg);
+                      margin-left: 0.1rem;
+                      margin-top: -0.1rem;
+                    }
+  
+                  }
+  
+                }
+  
+                // 必须使用积分
+                .shoppingMain_informationCenter {
+                  font-size: 0.22rem;
+                  color: #333333;
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 0.19rem;
+                  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  
+                  img {
+                    width: 0.21rem;
+                    height: 0.21rem;
+                    margin-right: 0.1rem;
+                  }
+                }
+  
+                // 价钱
+                .shoppingMain_price {
+                  font-size: 0.24rem;
+                  color: #000;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+  
+                  // 价格
+                  .shoppingMain_priceBox {
+                    flex: none;
+  
+                    span {
+                      font-size: 0.32rem;
+                      font-weight: 600;
+                    }
+  
+                    .smallText {
+                      font-size: 0.24rem;
+                    }
+                  }
+  
+                  // 增加和减少
+                  .shoppingMain_priceNum {
+                    display: flex;
+                    align-items: center;
+  
+                    .shoppingMain_priceReduce {
+                      padding-top: 0.15rem;
+                      padding-bottom: 0.15rem;
+  
+                      img {
+                        width: 0.19rem;
+                        height: 0.19rem;
+                      }
+                    }
+  
+                    .shoppingMain_priceInput {
+                      margin: 0 0.11rem;
+  
+                      input {
+                        font-size: 0.24rem;
+                        color: #222;
+                        background-color: #F8F8F8;
+                        border-radius: 3px;
+                        width: 0.6rem;
+                        height: 0.4rem;
+                        text-align: center;
+                      }
+                    }
+  
+                    .shoppingMain_priceAdd {
+                      padding-top: 0.15rem;
+                      padding-bottom: 0.15rem;
+  
+                      img {
+                        width: 0.19rem;
+                        height: 0.19rem;
+                      }
+                    }
+  
+  
+                  }
+  
+                  // 重选
+                  .shoppingMain_election {
+  
+                    button {
+                      padding: 0.11rem 0.2rem !important;
+                      border: 1px solid #DBDBDB !important;
+                      border-radius: 0.3rem;
+                      font-size: 0.24rem;
+                      color: #000;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      -webkit-tap-highlight-color: transparent;
+                    }
+  
+                    button:active {
+                      background-color: transparent;
+                    }
+                  }
+                }
+  
+              }
+  
+  
+            }
+  
+            // 失效商品
+            .shoppingMain_BoxFailure {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+  
+  
+              .shoppingMain_information {
+                .shoppingMain_informationTop {
+                  width: 3.51rem;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+  
+                  .shoppingMain_title {
+                    color: #888888 !important;
+                    -webkit-tap-highlight-color:rgba(0,0,0,0);
+                  }
+                }
+  
+              }
+  
+              .shoppingMain_price {
+                color: #888888 !important;
+              }
+  
+              // 过期商品,清除
+              .shoppingMain_clear {
+                display: flex;
+                align-items: center;
+                padding-right: 0.2rem;
+  
+                span {
+                  color: #000000;
+                  font-size: 0.24rem;
+                }
+              }
+            }
+  
+  
+  
+          }
+  
+          // 起购数量
+          .shoppingMain_buyNum {
+            flex: none;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.24rem;
+            // margin-bottom: 0.3rem;
+            margin-right: 0.2rem;
+  
+            span {
+              color: #FF9900;
+            }
+          }
+        }
+  
+  
+  
+      }
+  
+      // 去掉最后一个下划线
+      &>div:last-child {
+        .shoppingCat_mainBox:last-child {
+          .shoppingMain_BoxMain_on {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  
+    // 上拉加载
+    .loadingMore {
+      height: 0.88rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        width: 0.26rem;
+        height: 0.24rem;
+        margin-right: 0.14rem;
+      }
+  
+      span {
+        font-size: 0.24rem;
+        color: #999999;
+      }
+  
+    }
+  
+  
+  
+  }
+  
+  // 底部
+  .footer {
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    font-size: 0.26rem;
+    color: #333333;
+    padding-left: 0.28rem;
+    padding-right: 0.25rem;
+    box-sizing: border-box;
+  
+    // 单选框
+    .footer_change {
+      display: flex;
+      align-items: center;
+    }
+  
+    // 合计价钱
+    .footer_price {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.29rem;
+  
+      .footer_allPrice {
+        font-size: 0.26rem;
+        color: #333;
+  
+        span {
+          em {
+            font-size: 0.34rem;
+            font-weight: bold;
+          }
+        }
+      }
+  
+      .footer_priceReduction {
+        font-size: 0.24rem;
+        color: #FF9900;
+      }
+    }
+  
+    // 去结算
+    .footer_settlement {
+      button {
+        background-origin: border-box;
+      }
+  
+      // 结算(有数据)
+      .footer_settlementBtn {
+        // padding: 0.15rem 0.46rem !important;
+        width: 2.1rem;
+        height: 0.7rem;
+        background: linear-gradient(90deg, rgba(252, 79, 30, 1), rgba(253, 125, 44, 1));
+        border-radius: 0.55rem;
+        font-size: 0.28rem;
+        color: #fff;
+        background-origin: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+  
+      // 结束,没数据
+      .footer_settlementEmpty {
+        padding: 0.15rem 0.64rem !important;
+        background: #CCCCCC !important;
+        border-radius: 0.55rem;
+        font-size: 0.28rem;
+        color: #fff;
+        -webkit-tap-highlight-color: transparent;
+      }
+  
+      // 删除
+      span {
+        color: #333333;
+        font-size: 0.26rem;
+        margin-right: 0.3rem;
+      }
+  
+      .footer_deleteBtn {
+        padding: 0.15rem 0.63rem !important;
+        color: #333333;
+        font-size: 0.28rem;
+        border: 1px solid #BFBFBF !important;
+        border-radius: 44rem;
+        -webkit-tap-highlight-color: transparent;
+      }
+    }
+  }
+  
+  
+  // // 底部边框
+  // .shoppingMain_BoxBorder {
+  //   // border-bottom: 1px solid #ededed;
+  //   // padding-bottom: 0.3rem;
+  // }
+  
+  
+  // 没数据显示图片
+  .shopping_ifEmpty {
+    height: calc(100vh - 1.08rem - 1rem);
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    flex-direction: column;
+    -webkit-tap-highlight-color: transparent;
+  
+    img {
+      width: 2.44rem;
+      height: 1.95rem;
+      margin-bottom: 0.22rem;
+    }
+  
+    span {
+      font-size: 0.26rem;
+      color: #A9A9A9;
+      margin-bottom: 0.55rem;
+      display: inline-block;
+    }
+  
+    button {
+      padding: 0.22rem 0.53rem !important;
+      background-color: #fff;
+      border-radius: 0.4rem;
+      font-size: 0.26rem;
+      color: #333333;
+      border: 1px solid #D2D2D2 !important;
+    }
+  }
+  
+  
+  // 优惠券弹出框
+  .PoperContentView {
+    background: #ffffff;
+    position: relative;
+    // padding-bottom: 1rem;
+  
+  }
+  
+  .manjianXsg {
+    min-height: 4.29rem;
+  }
+  
+  .ServiceNoteTitle {
+    height: 1rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #999999;
+    font-size: 0.28rem;
+  }
+  
+  .PoperContentBtn {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    width: 100%;
+    line-height: 0.9rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #000;
+    height: 0.9rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 -0.03rem 0.15rem 0 rgba(220, 213, 206, 0.3);
+  }
+  
+  .vouchersContentBtn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .vouchersContentText {
+    padding-left: 0.25rem;
+    padding-right: 0.3rem;
+  
+    .vouchersDetails {
+      padding: 0.38rem 0.3rem 0.3rem 0.4rem;
+      background-color: #fff;
+      border-radius: 0.18rem;
+      margin-bottom: 0.31rem;
+      font-size: 0;
+  
+      .vouchersDetails_top {
+        display: flex;
+        justify-content: space-between;
+  
+        .vouchersDetails_price {
+          flex: none;
+          margin-right: 0.39rem;
+          color: #ff6200;
+          font-size: 0.56rem;
+          display: flex;
+          flex-direction: column;
+  
+          .vouchersDetails_symbol {
+            font-size: 0.28rem;
+            margin-bottom: 0.09rem;
+          }
+  
+          .vouchersDetails_text {
+            font-size: 0.24rem;
+          }
+        }
+  
+        .vouchersDetails_rules {
+          flex: auto;
+          padding-left: 0.37rem;
+          border-left: 1px solid #ededed;
+          padding-right: 0.2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          font-size: 0.24rem;
+          color: #333333;
+  
+          span {
+            line-height: 0.4rem;
+          }
+        }
+  
+        .vouchersDetails_btn {
+          flex: none;
+  
+          button {
+            padding: 0.18rem 0.1rem !important;
+            background-color: #fff;
+            color: #ff9900;
+            border-radius: 0.38rem;
+            font-size: 0.24rem;
+            border: 1px solid #ff9900 !important;
+            -webkit-tap-highlight-color: transparent;
+            width: 1.6rem;
+          }
+  
+          // 已领取
+          .vouchersAlearyBtn {
+            background-color: #f5f5f5 !important;
+            color: #888888 !important;
+            border: 0 !important;
+            -webkit-tap-highlight-color: transparent;
+          }
+        }
+      }
+  
+      .vouchersDetails_bottom {
+        margin-top: 0.42rem;
+  
+        >div {
+          margin-bottom: 0.08rem;
+  
+          img {
+            width: 0.23rem;
+            height: 0.23rem;
+            margin-right: 0.12rem;
+            vertical-align: middle;
+          }
+  
+          span {
+            font-size: 0.22rem;
+            color: #333333;
+            vertical-align: middle;
+          }
+  
+          .bottomTime {
+            color: #a9a9a9;
+          }
+        }
+      }
+    }
+  
+  
+  }
+  
+  // 可使用商品
+  .supportableGoods_box {
+    padding-left: 0.25rem;
+    margin-bottom: 0.32rem;
+  
+    // 可使用商品
+    .supportableGoods_title {
+      margin-bottom: 0.11rem;
+      font-size: 0.22rem;
+      color: #999;
+    }
+  
+    .supportableGoods {
+      overflow-y: scroll;
+      white-space: nowrap;
+      font-size: 0;
+  
+      &::-webkit-scrollbar {
+        display: none;
+      }
+  
+      .supportableGoods_shopping {
+        display: inline-block;
+        text-align: center;
+        margin-right: 0.2rem;
+  
+        // 商品图片
+        .supportableGoods_shoppingImg {
+          width: 1.3rem;
+          height: 1.3rem;
+          background-color: #fff;
+          border-radius: 0.14rem;
+          overflow: hidden;
+          margin-bottom: 0.13rem;
+  
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+  
+        // 商品价格
+        .supportableGoods_shoppingPrice {
+          font-size: 0.24rem;
+          color: #333333;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+  .vouchersContentView {
+    // overflow-y: scroll;
+    height: 8.19rem;
+    background-color: #f6f6f6;
+  }
+  
+  // 弹出框内容
+  .bouncedContent_text {
+    height: 2.23rem;
+    line-height: 2.23rem;
+    text-align: center;
+  
+    span {
+      font-size: 0.3rem;
+      color: #222222;
+    }
+  }
+  
+  // 删除内容弹出框
+  .customPopupContent_button {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 0.28rem;
+    color: #333333;
+    display: flex;
+    align-items: center;
+  
+    button {
+      color: #333333;
+      flex: 1;
+      height: 0.86rem;
+      border-top: 1px solid #EDEDED !important;
+  
+      &:nth-child(1) {
+        border-right: 1px solid #EDEDED !important;
+      }
+  
+      &:nth-child(2) {
+        color: #FF9900;
+      }
+    }
+  }
+  
+  // 输入数量弹出框
+  .bouncedContent_number {
+    .bouncedContent_numberTitle {
+      font-size: 0.26rem;
+      color: #222222;
+      width: 100%;
+      text-align: center;
+      padding-top: 0.38rem;
+    }
+  
+    .bouncedContent_changeNumber {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 0.45rem;
+  
+      img {
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+  
+      input {
+        width: 1rem;
+        height: 0.6rem;
+        margin-left: 0.35rem;
+        margin-right: 0.35rem;
+        text-align: center;
+        background-color: #F8F8F8;
+      }
+    }
+  }
+  
+  input {
+    outline: none;
+  }
+  
+  
+  // 规格弹窗
+  .shoppingStatusView {
+    // min-height: 6.21rem;
+    // max-height: 9.16rem;
+    // overflow-y: scroll;
+    font-size: 0.24rem;
+    
+    padding-top: 0.25rem;
+  
+    // 顶部商品信息
+    .shoppingStatus_top {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0.3rem;
+      padding-left: 0.25rem;
+    padding-right: 0.25rem;
+      // align-items: center;
+    }
+  
+    .shoppingStatus_topImg {
+      width: 1.8rem;
+      height: 1.8rem;
+      overflow: hidden;
+      border-radius: 0.16rem;
+      flex: none;
+      margin-right: 0.4rem;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .shoppingStatus_topStatus {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 0.5rem;
+      color: #111111;
+  
+      .shoppingStatus_topPrice {
+        display: flex;
+        flex-direction: column;
+  
+        .shoppingStatus_PriceBox {
+          display: flex;
+          align-items: center;
+  
+          span {
+            color: #F0250F;
+          }
+  
+          em {
+            font-size: 0.34rem;
+          }
+  
+          .shoppingStatus_topReduction {
+            margin-left: 0.18rem;
+            position: relative;
+  
+            >span {
+              font-size: 0.26rem !important;
+              color: #111111 !important;
+            }
+  
+            .status_thrid {
+              position: absolute;
+              // width: 0.78rem;
+              height: 0.33rem;
+              left: 130%;
+              top: 0;
+              padding: 0 0.1rem;
+  
+              .status_thrid_box {
+                background: linear-gradient(45deg, rgba(228, 191, 164, 1), rgba(244, 234, 217, 1));
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+                border-radius: 2px;
+                padding: 0 0.03rem;
+  
+  
+                span {
+                  color: #563C23;
+                  font-size: 0.2rem;
+                  white-space: nowrap;
+                }
+  
+                &:before {
+                  content: "";
+                  width: 0;
+                  height: 0;
+                  border-top: 0.1rem solid transparent;
+                  border-bottom: 0.1rem solid transparent;
+                  border-right: 0.1rem solid #E4BFA4;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: -5px;
+                  z-index: 2;
+  
+                }
+              }
+  
+              .status_thrid_box2 {
+                width: 100%;
+                height: 100%;
+                border-radius: 2px;
+                background: linear-gradient(90deg, #FF5C23, #FFA800);
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+                padding: 0 0.05rem;
+  
+                span {
+                  color: #fff;
+                  font-size: 0.2rem;
+                  white-space: nowrap;
+                }
+  
+                &:before {
+                  content: "";
+                  width: 0;
+                  height: 0;
+                  border-top: 0.1rem solid transparent;
+                  border-bottom: 0.1rem solid transparent;
+                  border-right: 0.1rem solid #FF5C23;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  left: -5px;
+                  z-index: 2;
+  
+                }
+              }
+  
+  
+            }
+  
+          }
+        }
+      }
+    }
+  
+    // 规格部分
+    .shoppingStatus_infos {
+      min-height: 3.27rem;
+      max-height: 7.21rem;
+      overflow-y: scroll;
+      box-sizing: border-box;
+      padding-top: 0.52rem;
+      padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  
+      // 未填写手机号
+      .shoppingStatus_Nophone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 3.27rem;
+  
+        span {
+          font-size: 0.28rem;
+          color: #999999;
+          margin-bottom: 0.29rem;
+        }
+  
+        button {
+          width: 2.2rem;
+          height: 0.65rem;
+          text-align: center;
+          line-height: 0.65rem;
+          border: 1px solid #FF6D1E !important;
+          border-radius: 0.4rem;
+          font-size: 0.26em;
+          color: #FF751B;
+        }
+  
+      }
+  
+      // 已填写手机号
+      .shoppingStatus_Yesphone {
+        >span {
+          font-size: 0.24rem;
+          color: #222222;
+          display: inline-block;
+          margin-bottom: 0.17rem;
+        }
+  
+        .shoppingStatus_changePhone {
+          .shoppingStatus_Phone {
+            width: 2.3rem;
+            height: 0.7rem;
+            display: inline-block;
+            text-align: center;
+            line-height: 0.7rem;
+            background-color: #FFF8EF;
+            border: 1px solid rgba(255, 173, 119, 1);
+            border-radius: 5px;
+            margin-right: 0.21rem;
+            color: #FF9900;
+            font-size: 0.28rem;
+          }
+  
+          em {
+            width: 1.2rem;
+            height: 0.7rem;
+            text-align: center;
+            line-height: 0.7rem;
+            display: inline-block;
+            background-color: #F5F5F5;
+            border-radius: 5px;
+            font-size: 0.28rem;
+            color: #111111;
+          }
+        }
+      }
+  
+      // 颜色尺码,购买数量等
+      // 颜色,尺码
+      .shoppingStatus_infosBox {
+        .shoppingStatus_colorSize {
+          border-bottom: 1px solid #ededed;
+          margin-bottom: 0.21rem;
+  
+  
+  
+        }
+  
+        .shoppingStatus_infosColor {
+          margin-bottom: 0.2rem;
+  
+          .shoppingStatus_colorTitle {
+            margin-bottom: 0.19rem;
+  
+            span {
+              font-size: 0.26rem;
+              color: #111111;
+  
+            }
+          }
+  
+          .shoppingStatus_colorValue {
+            display: flex;
+            flex-wrap: wrap;
+  
+            span {
+              background-color: #F5F5F5;
+              padding: 0.14rem 0.23rem;
+              border-radius: 0.12rem;
+              margin-right: 0.21rem;
+              display: inline-block;
+              margin-bottom: 0.2rem;
+              border: 1px solid #F5F5F5;
+            }
+  
+            .activeColor {
+              color: #FF6A1F;
+              background-color: #FFF8EF;
+              border: 1px solid rgba(255, 164, 58, 1);
+              border-radius: 0.12rem;
+            }
+          }
+        }
+  
+        // 购买数量
+        .shoppingStatus_infosNumbers {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0.21rem;
+  
+          // 标题
+          em {
+            font-size: 0.26rem;
+            color: #111111;
+          }
+  
+          // 加减
+          .shoppingStatus_numbersChange {
+            display: flex;
+            align-items: center;
+            flex: none;
+  
+            >span {
+              margin-right: 0.4rem;
+            }
+  
+            .shoppingStatus_numbersChangeBox {
+              flex: none;
+              display: flex;
+              align-items: center;
+  
+              .reduce,
+              .add {
+                width: 0.51rem;
+                height: 0.51rem;
+                border-radius: 50%;
+                // line-height: 0.55rem;
+                // text-align: center;
+                // display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+  
+              input {
+                width: 0.58rem;
+                text-align: center;
+                font-size: 0.26rem;
+                color: #111111;
+                margin-right: 0.1rem;
+                margin-left: 0.1rem;
+              }
+  
+              .reduce {
+                color: #555;
+                background: rgba(255, 255, 255, 1);
+                font-size: 0.25rem;
+                border: 1px solid rgba(237, 237, 237, 1);
+                box-sizing: border-box;
+              }
+  
+              .add {
+                color: #fff;
+                background: #FF9900;
+                font-size: 0.45rem;
+              }
+            }
+  
+          }
+        }
+      }
+  
+      // 批发商品
+      .shoppingStatus_infosWholesale {
+        // border-top: 1px solid #ededed;
+        padding-top: 0.19rem;
+        padding-bottom: 0.19rem;
+  
+        >span {
+          font-size: 0.26rem;
+          color: #111111;
+          margin-bottom: 0.11rem;
+          display: block;
+        }
+  
+        .shoppingStatus_wholesaleBox {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+  
+          span {
+            padding: 0.06rem 0.13rem;
+            background-color: #FFF8EF;
+            font-size: 0.22rem;
+            color: #FF9900;
+            margin-right: 0.1rem;
+            margin-bottom: 0.2rem;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  
+  
+    .shoppingStatus_colseBtn {
+      flex: none;
+      width: 0.45rem;
+      height: 0.45rem;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    // 立即购买按钮(可以购买的条件下)
+    .shoppingStatusPopup {
+      // position: absolute;
+      // bottom: 0;
+      // left: 0;
+      width: 100%;
+      line-height: 0.9rem;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #fff;
+      height: 0.9rem;
+      background: linear-gradient(90deg, rgba(255, 101, 33, 1), rgba(255, 161, 11, 1));
+      background-origin: border-box !important;
+    }
+  
+    .shoppingStatusPopupNot {
+      background: #ccc !important;
+      width: 100%;
+      line-height: 0.9rem;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #fff;
+      height: 0.9rem;
+      background-origin: border-box !important;
+    }
+  
+    // 立即购买按钮(不可以购买的条件下)
+    .shoppingNoPopup {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      line-height: 0.9rem;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #fff;
+      height: 0.9rem;
+      background: #CCCCCC;
+    }
+  
+    // 立即购买和加入购物车两个按钮
+    .shoppingChangeBtn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 0.9rem;
+      padding: 0 0.25rem 0.25rem;
+      box-sizing: border-box;
+  
+      button {
+        width: 3.4rem;
+        height: 0.8rem;
+        border-radius: 0.4rem;
+        color: #fff;
+        font-size: 0.28rem;
+        -webkit-tap-highlight-color: transparent;
+  
+        &:nth-child(1) {
+          background: linear-gradient(90deg, rgba(255, 78, 0, 1), rgba(255, 125, 24, 1));
+          background-origin: border-box !important;
+        }
+  
+        &:nth-child(2) {
+          background: linear-gradient(90deg, rgba(255, 161, 11, 1), rgba(255, 198, 44, 1));
+          background-origin: border-box !important;
+        }
+      }
+    }
+  }
+  
+  // 优惠弹窗
+  .rotaryBox {
+    position: relative;
+  
+    .rotaryContent {
+      margin-top: 0.88rem;
+      padding: 0.55rem 0.38rem 1rem;
+      font-size: 0.24rem;
+      color: #111111;
+  
+      span {
+        display: block;
+        margin-bottom: 0.45rem;
+      }
+    }
+  
+    .PoperRotaryBtn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      line-height: 0.8rem;
+      text-align: center;
+      font-size: 0.28rem;
+      color: #fff;
+      height: 0.8rem;
+      background: linear-gradient(90deg, rgba(252, 79, 30, 1), rgba(253, 125, 44, 1));
+    }
+  }
+  
+  // 当图片找不到时,alt文字显示的大小
+  img {
+    font-size: 0.2rem;
+  }
+  
+  // 满减弹窗
+  .ServiceTimeLimit {
+    // height: 1rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.34rem;
+    color: #222222;
+    font-size: 0.28rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.31rem;
+    padding-right: 0.31rem;
+    border-bottom: 1px solid #ededed;
+  
+    // 满减
+    .timeLimit_reduce {
+      padding: 0rem 0.09rem;
+      flex: none;
+      background-color: #fffaf7;
+      border: 1px solid #ffb574;
+      border-radius: 0.04rem;
+      font-size: 0.24rem;
+      color: #ff7200;
+      margin-right: 0.17rem;
+    }
+  
+    // 促销名称
+    .timeLimit_name {
+      color: #222222;
+      flex: auto;
+      font-weight: 600;
+      padding-right: 0.2rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  
+    // 更多可用商品
+    .timeLimit_more {
+      flex: none;
+  
+      span {
+        color: #333333;
+        font-size: 0.24rem;
+        margin-right: 0.1rem;
+      }
+  
+      img {
+        width: 0.1rem;
+        height: 0.24rem;
+        vertical-align: middle;
+      }
+    }
+  }
+  
+  // 活动时间
+  .TipContentTime {
+    padding-top: 0.27rem;
+    padding-bottom: 0.16rem;
+    padding-left: 0.29rem;
+  
+    span {
+      display: block;
+      font-size: 0.26rem;
+      color: #222222;
+      margin-bottom: 0.19rem;
+    }
+  }
+  
+  .TipContentText2 {
+    margin-left: 0.29rem;
+    padding-top: 0.34rem;
+    border-bottom: 1px solid #ededed;
+  
+    span {
+      display: block;
+      color: #222222;
+      font-size: 0.26rem;
+      margin-bottom: 0.29rem;
+    }
+  }
+  
+  
+  //批发弹窗
+  .wholesaleHuige {
+    border-bottom: 1px solid #ededed;
+  }
+  
+  .wholesaleTimeLimit {
+    font-size: 0.24rem;
+    color: #222222;
+    padding-top: 0.44rem;
+    margin-left: 0.31rem;
+    padding-right: 0.2rem;
+    border-bottom: 1px solid #ededed;
+  
+    >div {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 0.24rem;
+  
+      // 满减
+      .timeLimit_reduce {
+        padding: 0.05rem 0.09rem;
+        flex: none;
+        background-color: #fffaf7;
+        border: 1px solid #ffb574;
+        border-radius: 0.04rem;
+        font-size: 0.24rem;
+        color: #ff7200;
+        margin-right: 0.17rem;
+      }
+  
+      .timeLimit_name {
+        padding-top: 0.07rem;
+      }
+  
+      .wholesaleAleady {
+        font-size: 0.24rem;
+        color: #999999;
+      }
+    }
+  }
+  
+  .wholesaleContentText {
+    padding-top: 0.41rem;
+    padding-bottom: 0.21rem;
+    font-size: 0.26rem;
+  
+    div {
+      display: flex;
+      margin-bottom: 0.31rem;
+  
+      span {
+        width: 50%;
+        text-align: center;
+        flex: none;
+        padding-left: 0.15rem;
+        padding-right: 0.15rem;
+        box-sizing: border-box;
+  
+        &:first-child {
+          border-right: 1px solid #ededed;
+          text-align: center;
+  
+          .wholesaleContentText_buynum {
+            border-right: 0 !important;
+            width: 2.3rem;
+            text-align: left;
+            padding-left: 0;
+            display: inline-block;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  // 底部边线
+  .shoppingMain_BoxMain_on {
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #ededed;
+  }
+  
+  // 限时购和微团购顶部横线
+  .xianshigou_style {
+    padding-top: 0.3rem;
+    border-top: 1px solid #ededed;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  
+  // 点击放大蒙版
+  .amplification_box {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    // swiper
+    .amplification {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        // object-fit: contain;
+        // margin: 0.3rem;
+        width: 100%;
+        display: block;
+        height: auto;
+      }
+  
+    }
+  }
+  

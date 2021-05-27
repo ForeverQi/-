@@ -1,0 +1,394 @@
+.evaluation-box .van-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000001;
+}
+
+.evaluation-box .van-overlay {
+  position: fixed;
+  z-index: 1000000;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.evaluation-box .van-dialog {
+  border-radius: 8px;
+  top: 50% !important;
+  z-index: 1000005;
+}
+
+.evaluation-box textarea {
+  resize: none;
+  border: 0;
+}
+
+.evaluation-box .wrapper_c {
+  max-width: 7.68rem;
+  padding-top: 1rem;
+}
+
+.evaluation-box .wrapper_bg {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.evaluation-box .wrapper_bg_c {
+  background: #f8f8f8;
+  width: 100%;
+  height: 100%;
+}
+
+.evaluation-box .Max_Center {
+  z-index: 2;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.evaluation-box .order_list {
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+.evaluation-box .order_li {
+  background: #fff;
+  padding: 0rem 0.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.evaluation-box .order_top {
+  height: 0.85rem;
+  overflow: hidden;
+}
+
+.evaluation-box .shop_name {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.evaluation-box .home_img {
+  width: 0.25rem;
+  height: 0.24rem;
+  float: left;
+  /* margin-top:33*1px; */
+}
+
+.evaluation-box .home_img img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.evaluation-box .home_txt {
+  font-size: 0.28rem;
+  color: #222;
+  font-weight: bold;
+  line-height: 0.85rem;
+  padding: 0rem 0.15rem;
+  float: left;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.evaluation-box .arrow1 {
+  width: 0.1rem;
+  height: 0.16rem;
+  float: left;
+  /* margin-top:37*1px; */
+}
+
+.evaluation-box .arrow1 img {
+  width: 100%;
+  display: block;
+}
+
+.evaluation-box .order_center {
+  overflow: hidden;
+  height: 1.6rem;
+}
+
+.evaluation-box .order_money {
+  float: right;
+  padding-top: 0.5rem;
+  padding-left: 0.4rem;
+}
+
+.evaluation-box .money {
+  font-size: 0.32rem;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+}
+
+.evaluation-box .money span {
+  font-size: 0.24rem;
+}
+
+.evaluation-box .Number {
+  font-size: 0.22rem;
+  color: #999;
+  text-align: center;
+}
+
+.evaluation-box .order_name {
+  overflow: hidden;
+}
+
+.evaluation-box .shop_img {
+  float: left;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.25rem;
+}
+
+.evaluation-box .shop_img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.evaluation-box .shop_link {
+  overflow: hidden;
+}
+
+.evaluation-box .shop_link_tit {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 0.24rem;
+  color: #222;
+  line-height: 0.4rem;
+  padding-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.evaluation-box .shop_link_txt {
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.36rem;
+}
+
+.evaluation-box .level {
+  background: #fff;
+  padding-left: 0.25rem;
+  border-radius: 0rem 0rem 0.2rem 0.2rem;
+  padding-top: 0.3rem;
+}
+
+.evaluation-box .level_top {
+  overflow: hidden;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 0.3rem;
+}
+
+.evaluation-box .level_txt {
+  border: 1px solid #dbdbdb;
+  border-radius: 0.03rem;
+  float: left;
+  margin-right: 0.13rem;
+  font-size: 0.24rem;
+  color: #222;
+  padding: 0.07rem 0.12rem;
+}
+
+.evaluation-box .level_txt1 {
+  font-size: 0.24rem;
+  color: #222;
+  overflow: hidden;
+  line-height: 0.42rem;
+}
+
+.evaluation-box .level_bottom {
+  overflow: hidden;
+  padding: 0.3rem 0.25rem;
+}
+
+.evaluation-box .Stars_txt {
+  font-size: 0.26rem;
+  color: #222;
+  float: left;
+  margin-right: 0.29rem;
+  line-height: 0.44rem;
+}
+
+.evaluation-box .Stars {
+  float: left;
+  overflow: hidden;
+}
+
+.evaluation-box .Stars_li {
+  width: 0.47rem;
+  height: 0.44rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+
+.evaluation-box .Stars_li img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.evaluation-box .Stars_txt1 {
+  font-size: 0.24rem;
+  color: #ff9e20;
+  float: left;
+  line-height: 0.44rem;
+}
+
+.evaluation-box .evaluate {
+  background: #fff;
+  margin-bottom: 0.3rem;
+  padding-left: 0.25rem;
+  border-radius: 0.2rem;
+}
+
+.evaluation-box .evaluate_c {
+  width: 100%;
+  padding-top: 0.4rem;
+  border-bottom: 1px solid #ededed;
+}
+
+.evaluation-box .evaluate_img {
+  width: 0.24rem;
+  height: 0.21rem;
+  float: left;
+  margin-top: 0.05rem;
+  margin-right: 0.1rem;
+}
+
+.evaluation-box .evaluate_img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.evaluation-box .evaluate_txt {
+  overflow: hidden;
+}
+
+.evaluation-box .textarea_txt {
+  width: 100%;
+  font-size: 0.24rem;
+  color: #222;
+  height: 2rem;
+  overflow: hidden;
+  padding-top: 0;
+  /* border: 1px solid #f00; */
+  /* transform: translateY(-50*1px); */
+}
+
+.evaluation-box .mode1_ul {
+  /* height: 122*1px; */
+  padding: 0.3rem 0rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.evaluation-box .mode1_ul_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.evaluation-box .mode1_li {
+  width: 1.2rem;
+  height: 1.2rem;
+  /* float: left; */
+  position: relative;
+  margin-right: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.evaluation-box .mode1_li_add {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 0.06rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.evaluation-box .mode1_li_add input {
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.evaluation-box .mode1_li_add img {
+  width: 0.46rem;
+  height: 0.46rem;
+  margin: 0 auto;
+  margin-top: 0.37rem;
+  display: block;
+}
+
+.evaluation-box .mode1_li_img {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.06rem;
+  overflow: hidden;
+}
+
+.evaluation-box .mode1_li_img img {
+  width: 100%;
+  /* display: block; */
+  height: 100%;
+}
+
+.evaluation-box .delFather {
+  position: absolute;
+  right: -0.19rem;
+  top: -0.23rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.evaluation-box .del {
+  width: 0.26rem;
+  height: 0.26rem;
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  position: relative;
+}
+
+.evaluation-box .del img {
+  width: 55% !important;
+  height: 55% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.evaluation-box .button_a {
+  background: #fc273c;
+  border-radius: 44px;
+  line-height: 0.88rem;
+  margin: 0rem 0.25rem 0.3rem 0.25rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.28rem;
+}

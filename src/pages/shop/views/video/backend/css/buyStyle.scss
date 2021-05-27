@@ -1,0 +1,267 @@
+.buy-member-wrap{
+    background-color: rgba(245, 245, 245, 1);
+    .member-info-box{
+        padding: .3rem .2rem;
+        border-radius: 0 0 .25rem .25rem;
+        margin-bottom: .1rem;
+        .member-rank{
+            flex-grow: 0;
+        }
+    }
+    .version-tab{
+        margin: 0 0 .1rem;
+        border-radius: .25rem;
+        .tab-h{
+            ul{
+                margin: 0 1.35rem;
+            }
+            h5{
+                text-align: left;
+                padding: 0 .2rem;
+                em{
+                    margin-left: .2rem;
+                    font-size: .25rem;
+                    color: rgba(153, 153, 153, 1);
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+        .tab-b{
+            height: auto;
+        }
+        // 套餐选择
+        .version-select{
+            .select-item-box{
+                display: flex;
+                justify-content: center;
+            }
+            .select-item{
+                cursor: pointer;
+                background-color:rgba(255, 255, 255, 1);
+                width: 3.25rem;
+                height: 2.77rem;
+                border: 1px solid rgba(237, 237, 236, 1);
+                box-shadow:0px 6px 20px 0px rgba(0, 0, 0, 0.06);
+                margin: .3rem .15rem;
+                border-radius: .25rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                h6{
+                    font-size: .28rem;
+                    color: rgba(51, 51, 51, 1);
+                }
+                span{
+                    color: rgba(51, 51, 51, 1);
+                    i{
+                        font-size: .24rem;
+                    }
+                    b{
+                        font-size: .4rem;
+                    }
+                }
+                p{
+                    color: rgba(169, 169, 169, 1);
+                    text-decoration: line-through;
+                    font-size: .24rem;
+                    margin: 0;
+                }
+                &.selected{
+                    border-color: rgba(51, 51, 51, 1);
+                    .radio-select{
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        &::after{
+                            border-radius: .5rem 0 0 0;
+                            margin: 0;
+                            border: 0;
+                            width: .5rem;
+                            height: .5rem;
+                            vertical-align: top;
+                            background-color:  rgba(51, 51, 51, 1);
+                            background-position: 60% 60%;
+                            background-size: 55% 55%;
+                        }
+                    }
+                }
+            }
+            .remarks-text{
+                text-align: center;
+                color: rgba(34, 34, 34, 1);
+                font-size: .24rem;
+                padding: 0 0 .3rem 0;
+            }
+        }
+        // 流量选择
+        .flow-select{
+            .select-item{
+                display: flex;
+                padding: .3rem .2rem;
+                .img-box{
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    margin-right: .28rem;
+                    background-image:url('./images/buy_flow_img_bg.png');
+                    background-size: 100% 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        color:#fff;
+                        font-size: .56rem;
+                        em{
+                            font-size: .3rem;
+                        }
+                    }
+                }
+                .attr-box{
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    h6{
+                        font-size: .26rem;
+                        color: rgba(34, 34, 34, 1);
+                        margin: .2rem 0 0;
+                    }
+                    p{
+                        font-size: .24rem;
+                        color: rgba(153, 153, 153, 1);
+                        margin: 0;
+                    }
+                    .flow-info-box{
+                        flex-grow: 1;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                    }
+                    .price{
+                        color: rgba(34, 34, 34, 1);
+                        b{
+                            font-size: .4rem;
+                        }
+                        em{
+                            font-size: .24rem;
+                        }
+                    }
+                    .option{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            cursor: pointer;
+                            display: inline-block;
+                            width: .5rem;
+                            height: .5rem;
+                            border-radius: .3rem;
+                            background-color: #FF9E00;
+                            color:#fff;
+                            text-align: center;
+                            line-height: .5rem;
+                            font-size: .5rem;
+                            position: relative;
+                            vertical-align: top;
+                            &::after,
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                background-color:#fff;
+                            }
+                            &::after{
+                                width: .3rem;
+                                height: 2px;
+                                left: .1rem;
+                                top: .25rem;
+                                transform: translateY(-1px);
+                            }
+                            &::before{
+                                height: .3rem;
+                                width: 2px;
+                                transform: translateX(-1px);
+                                top: .1rem;
+                                left: .25rem;
+                            }
+                            &.sub{
+                                &::before{
+                                    display: none;
+                                }
+                            }
+                            &.disabled{
+                                background-color: #F8F8F8;
+                                color: #3D3D3D;
+                            }
+                        }
+                        input{
+                            width: .6rem;
+                            border: 0;
+                            background-color:#fff;
+                            text-align: center;
+                            margin: 0 .02rem;
+                            height: .5rem;
+                            font-size: .28rem;
+                            color: rgba(102, 102, 102, 1);
+                        }
+                        span{
+                            width: .7rem;
+                            border: 0;
+                            background-color:#fff;
+                            text-align: center;
+                            margin: 0 .02rem;
+                            height: .5rem;
+                            line-height: .5rem;
+                            font-size: .28rem;
+                            color: rgba(102, 102, 102, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pay-list{
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: .25rem;
+        margin: 0 0 .1rem;
+        .pay-item{
+            padding: .27rem .2rem;
+            display: flex;
+            justify-content: space-between;
+            .item-left{
+                display: flex;
+                align-items: center;
+                b{
+                    font-size: .28rem;
+                    color: rgba(34, 34, 34, 1);
+                }
+            }
+            .pay-icon{
+                width: .66rem;
+                height: .66rem;
+                display: inline-block;
+                background-size: 100% 100%;
+                margin-right: .27rem;
+            }
+            .wxpay-icon{
+                background-image: url('./images/wxpay_icon.png');
+            }
+            .alipay-icon{
+                background-image: url('./images/alipay_icon.png');
+            }
+        }
+    }
+    .btn-area{
+        padding: .2rem;
+    }
+    .buy-btn {
+        font-size: 0.32rem;
+    }
+    .loading {
+        margin: 0 auto;
+        width: 30px;
+        height: 1rem;
+        line-height: 1rem;
+    }
+}

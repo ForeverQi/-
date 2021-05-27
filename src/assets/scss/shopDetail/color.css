@@ -1,0 +1,4002 @@
+@charset "UTF-8";
+/**
+ *  色系1
+ */
+/**
+ *  色系2
+ */
+/**
+ *  色系3
+ */
+/**
+ *  色系4
+ */
+/**
+ *  色系5
+ */
+/**
+ *  色系6
+ */
+/**
+ *  色系7
+ */
+/**
+ *  色系8
+ */
+/**
+ *  色系9
+ */
+/**
+ *  色系10
+ */
+/**
+ *  色系11
+ */
+/**
+ *  色系12
+ */
+/**
+ *  色系13
+ */
+/**
+ *  色系14
+ */
+/**
+ *  色系15
+ */
+/**
+ *  色系16
+ */
+/**
+ *  色系17
+ */
+/**
+ *  色系18
+ */
+/**
+ *  色系19
+ */
+/**
+ *  色系20
+ */
+/**
+ *  色系21
+ */
+/**
+ *  色系22
+ */
+/**
+ *  色系23
+ */
+/**
+ *  色系24
+ */
+/**
+ *  色系25
+ */
+/**
+ *  色系26
+ */
+/**
+ *  色系27
+ */
+/**
+ *  色系28
+ */
+/**
+ *  色系29
+ */
+/**
+ *  色系30
+ */
+/**
+ *  色系31
+ */
+/**
+ *  色系32
+ */
+/**
+ *  色系33
+ */
+/**
+ *  色系34
+ */
+/**
+ *  色系35
+ */
+/**
+ *  色系36
+ */
+/**
+ *  色系37
+ */
+/**
+ *  色系38
+ */
+/**
+ *  色系39
+ */
+/**
+ *  色系40
+ */
+/**
+ *  色系41
+ */
+/**
+ *  色系42
+ */
+/**
+ *  色系43
+ */
+/**
+ *  色系44
+ */
+/**
+ *  色系45
+ */
+/**
+ *  色系46
+ */
+.color1 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(70, 157, 183, 0.6) !important;
+}
+
+.color1 .shoppingChangeBtn > div:nth-child(2) {
+  background: #469db7 !important;
+}
+
+.color1 .shoppingStatusPopup2 {
+  background: rgba(70, 157, 183, 0.6) !important;
+}
+
+.color1 .shoppingStatusPopup {
+  background: #469db7 !important;
+}
+
+.color1 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(70, 157, 183, 0.6) !important;
+}
+
+.color1 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #469db7 !important;
+}
+
+.color1 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(70, 157, 183, 0.6) !important;
+}
+
+.color1 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(70, 157, 183, 0.3) !important;
+  background: rgba(70, 157, 183, 0.04) !important;
+  border: 1px solid rgba(70, 157, 183, 0.3) !important;
+}
+
+.color1 .on::after {
+  background: #469db7 !important;
+}
+
+.color1 .topOn::after {
+  background: #469db7 !important;
+}
+
+.color1 .shoppingStatus_Nophone button {
+  color: rgba(70, 157, 183, 0.3) !important;
+  border: 1px solid rgba(70, 157, 183, 0.3) !important;
+}
+
+.color1 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(70, 157, 183, 0.3) !important;
+  background: rgba(70, 157, 183, 0.04) !important;
+  border: 1px solid rgba(70, 157, 183, 0.3) !important;
+}
+
+.color1 .articleOn {
+  color: rgba(70, 157, 183, 0.3) !important;
+  background: rgba(70, 157, 183, 0.04) !important;
+  border: 1px solid rgba(70, 157, 183, 0.3) !important;
+}
+
+.color1 .phoneBoxActive {
+  color: #469db7 !important;
+}
+
+.color1 .phoneBoxActive::after {
+  background: #469db7 !important;
+}
+
+.color1 .phoneBox .selectedActive::after {
+  border-left: 2px solid #469db7 !important;
+  border-top: 2px solid #469db7 !important;
+}
+
+.color1 .phoneBoxBtn button {
+  background: #469db7 !important;
+}
+
+.color1 .footer_settlement .footer_settlementBtn {
+  background: #469db7 !important;
+}
+
+.color1 .rotaryBox .PoperRotaryBtn {
+  background: #469db7 !important;
+}
+
+.color2 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(183, 76, 74, 0.6) !important;
+}
+
+.color2 .shoppingChangeBtn > div:nth-child(2) {
+  background: #b74c4a !important;
+}
+
+.color2 .shoppingStatusPopup2 {
+  background: rgba(183, 76, 74, 0.6) !important;
+}
+
+.color2 .shoppingStatusPopup {
+  background: #b74c4a !important;
+}
+
+.color2 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(183, 76, 74, 0.6) !important;
+}
+
+.color2 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #b74c4a !important;
+}
+
+.color2 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(183, 76, 74, 0.6) !important;
+}
+
+.color2 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(183, 76, 74, 0.3) !important;
+  background: rgba(183, 76, 74, 0.04) !important;
+  border: 1px solid rgba(183, 76, 74, 0.3) !important;
+}
+
+.color2 .on::after {
+  background: #b74c4a !important;
+}
+
+.color2 .topOn::after {
+  background: #b74c4a !important;
+}
+
+.color2 .shoppingStatus_Nophone button {
+  color: rgba(183, 76, 74, 0.3) !important;
+  border: 1px solid rgba(183, 76, 74, 0.3) !important;
+}
+
+.color2 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(183, 76, 74, 0.3) !important;
+  background: rgba(183, 76, 74, 0.04) !important;
+  border: 1px solid rgba(183, 76, 74, 0.3) !important;
+}
+
+.color2 .articleOn {
+  color: rgba(183, 76, 74, 0.3) !important;
+  background: rgba(183, 76, 74, 0.04) !important;
+  border: 1px solid rgba(183, 76, 74, 0.3) !important;
+}
+
+.color2 .phoneBoxActive {
+  color: #b74c4a !important;
+}
+
+.color2 .phoneBoxActive::after {
+  background: #b74c4a !important;
+}
+
+.color2 .phoneBox .selectedActive::after {
+  border-left: 2px solid #b74c4a !important;
+  border-top: 2px solid #b74c4a !important;
+}
+
+.color2 .phoneBoxBtn button {
+  background: #b74c4a !important;
+}
+
+.color2 .footer_settlement .footer_settlementBtn {
+  background: #b74c4a !important;
+}
+
+.color2 .rotaryBox .PoperRotaryBtn {
+  background: #b74c4a !important;
+}
+
+.color3 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(46, 94, 102, 0.6) !important;
+}
+
+.color3 .shoppingChangeBtn > div:nth-child(2) {
+  background: #2e5e66 !important;
+}
+
+.color3 .shoppingStatusPopup2 {
+  background: rgba(46, 94, 102, 0.6) !important;
+}
+
+.color3 .shoppingStatusPopup {
+  background: #2e5e66 !important;
+}
+
+.color3 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(46, 94, 102, 0.6) !important;
+}
+
+.color3 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #2e5e66 !important;
+}
+
+.color3 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(46, 94, 102, 0.6) !important;
+}
+
+.color3 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(46, 94, 102, 0.3) !important;
+  background: rgba(46, 94, 102, 0.04) !important;
+  border: 1px solid rgba(46, 94, 102, 0.3) !important;
+}
+
+.color3 .on::after {
+  background: #2e5e66 !important;
+}
+
+.color3 .topOn::after {
+  background: #2e5e66 !important;
+}
+
+.color3 .shoppingStatus_Nophone button {
+  color: rgba(46, 94, 102, 0.3) !important;
+  border: 1px solid rgba(46, 94, 102, 0.3) !important;
+}
+
+.color3 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(46, 94, 102, 0.3) !important;
+  background: rgba(46, 94, 102, 0.04) !important;
+  border: 1px solid rgba(46, 94, 102, 0.3) !important;
+}
+
+.color3 .articleOn {
+  color: rgba(46, 94, 102, 0.3) !important;
+  background: rgba(46, 94, 102, 0.04) !important;
+  border: 1px solid rgba(46, 94, 102, 0.3) !important;
+}
+
+.color3 .phoneBoxActive {
+  color: #2e5e66 !important;
+}
+
+.color3 .phoneBoxActive::after {
+  background: #2e5e66 !important;
+}
+
+.color3 .phoneBox .selectedActive::after {
+  border-left: 2px solid #2e5e66 !important;
+  border-top: 2px solid #2e5e66 !important;
+}
+
+.color3 .phoneBoxBtn button {
+  background: #2e5e66 !important;
+}
+
+.color3 .footer_settlement .footer_settlementBtn {
+  background: #2e5e66 !important;
+}
+
+.color3 .rotaryBox .PoperRotaryBtn {
+  background: #2e5e66 !important;
+}
+
+.color4 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(118, 161, 168, 0.6) !important;
+}
+
+.color4 .shoppingChangeBtn > div:nth-child(2) {
+  background: #76a1a8 !important;
+}
+
+.color4 .shoppingStatusPopup2 {
+  background: rgba(118, 161, 168, 0.6) !important;
+}
+
+.color4 .shoppingStatusPopup {
+  background: #76a1a8 !important;
+}
+
+.color4 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(118, 161, 168, 0.6) !important;
+}
+
+.color4 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #76a1a8 !important;
+}
+
+.color4 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(118, 161, 168, 0.6) !important;
+}
+
+.color4 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(118, 161, 168, 0.3) !important;
+  background: rgba(118, 161, 168, 0.04) !important;
+  border: 1px solid rgba(118, 161, 168, 0.3) !important;
+}
+
+.color4 .on::after {
+  background: #76a1a8 !important;
+}
+
+.color4 .topOn::after {
+  background: #76a1a8 !important;
+}
+
+.color4 .shoppingStatus_Nophone button {
+  color: rgba(118, 161, 168, 0.3) !important;
+  border: 1px solid rgba(118, 161, 168, 0.3) !important;
+}
+
+.color4 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(118, 161, 168, 0.3) !important;
+  background: rgba(118, 161, 168, 0.04) !important;
+  border: 1px solid rgba(118, 161, 168, 0.3) !important;
+}
+
+.color4 .articleOn {
+  color: rgba(118, 161, 168, 0.3) !important;
+  background: rgba(118, 161, 168, 0.04) !important;
+  border: 1px solid rgba(118, 161, 168, 0.3) !important;
+}
+
+.color4 .phoneBoxActive {
+  color: #76a1a8 !important;
+}
+
+.color4 .phoneBoxActive::after {
+  background: #76a1a8 !important;
+}
+
+.color4 .phoneBox .selectedActive::after {
+  border-left: 2px solid #76a1a8 !important;
+  border-top: 2px solid #76a1a8 !important;
+}
+
+.color4 .phoneBoxBtn button {
+  background: #76a1a8 !important;
+}
+
+.color4 .footer_settlement .footer_settlementBtn {
+  background: #76a1a8 !important;
+}
+
+.color4 .rotaryBox .PoperRotaryBtn {
+  background: #76a1a8 !important;
+}
+
+.color5 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(126, 88, 52, 0.6) !important;
+}
+
+.color5 .shoppingChangeBtn > div:nth-child(2) {
+  background: #7e5834 !important;
+}
+
+.color5 .shoppingStatusPopup2 {
+  background: rgba(126, 88, 52, 0.6) !important;
+}
+
+.color5 .shoppingStatusPopup {
+  background: #7e5834 !important;
+}
+
+.color5 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(126, 88, 52, 0.6) !important;
+}
+
+.color5 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #7e5834 !important;
+}
+
+.color5 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(126, 88, 52, 0.6) !important;
+}
+
+.color5 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(126, 88, 52, 0.3) !important;
+  background: rgba(126, 88, 52, 0.04) !important;
+  border: 1px solid rgba(126, 88, 52, 0.3) !important;
+}
+
+.color5 .on::after {
+  background: #7e5834 !important;
+}
+
+.color5 .topOn::after {
+  background: #7e5834 !important;
+}
+
+.color5 .shoppingStatus_Nophone button {
+  color: rgba(126, 88, 52, 0.3) !important;
+  border: 1px solid rgba(126, 88, 52, 0.3) !important;
+}
+
+.color5 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(126, 88, 52, 0.3) !important;
+  background: rgba(126, 88, 52, 0.04) !important;
+  border: 1px solid rgba(126, 88, 52, 0.3) !important;
+}
+
+.color5 .articleOn {
+  color: rgba(126, 88, 52, 0.3) !important;
+  background: rgba(126, 88, 52, 0.04) !important;
+  border: 1px solid rgba(126, 88, 52, 0.3) !important;
+}
+
+.color5 .phoneBoxActive {
+  color: #7e5834 !important;
+}
+
+.color5 .phoneBoxActive::after {
+  background: #7e5834 !important;
+}
+
+.color5 .phoneBox .selectedActive::after {
+  border-left: 2px solid #7e5834 !important;
+  border-top: 2px solid #7e5834 !important;
+}
+
+.color5 .phoneBoxBtn button {
+  background: #7e5834 !important;
+}
+
+.color5 .footer_settlement .footer_settlementBtn {
+  background: #7e5834 !important;
+}
+
+.color5 .rotaryBox .PoperRotaryBtn {
+  background: #7e5834 !important;
+}
+
+.color6 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(165, 102, 58, 0.6) !important;
+}
+
+.color6 .shoppingChangeBtn > div:nth-child(2) {
+  background: #a5663a !important;
+}
+
+.color6 .shoppingStatusPopup2 {
+  background: rgba(165, 102, 58, 0.6) !important;
+}
+
+.color6 .shoppingStatusPopup {
+  background: #a5663a !important;
+}
+
+.color6 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(165, 102, 58, 0.6) !important;
+}
+
+.color6 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #a5663a !important;
+}
+
+.color6 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(165, 102, 58, 0.6) !important;
+}
+
+.color6 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(165, 102, 58, 0.3) !important;
+  background: rgba(165, 102, 58, 0.04) !important;
+  border: 1px solid rgba(165, 102, 58, 0.3) !important;
+}
+
+.color6 .on::after {
+  background: #a5663a !important;
+}
+
+.color6 .topOn::after {
+  background: #a5663a !important;
+}
+
+.color6 .shoppingStatus_Nophone button {
+  color: rgba(165, 102, 58, 0.3) !important;
+  border: 1px solid rgba(165, 102, 58, 0.3) !important;
+}
+
+.color6 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(165, 102, 58, 0.3) !important;
+  background: rgba(165, 102, 58, 0.04) !important;
+  border: 1px solid rgba(165, 102, 58, 0.3) !important;
+}
+
+.color6 .articleOn {
+  color: rgba(165, 102, 58, 0.3) !important;
+  background: rgba(165, 102, 58, 0.04) !important;
+  border: 1px solid rgba(165, 102, 58, 0.3) !important;
+}
+
+.color6 .phoneBoxActive {
+  color: #a5663a !important;
+}
+
+.color6 .phoneBoxActive::after {
+  background: #a5663a !important;
+}
+
+.color6 .phoneBox .selectedActive::after {
+  border-left: 2px solid #a5663a !important;
+  border-top: 2px solid #a5663a !important;
+}
+
+.color6 .phoneBoxBtn button {
+  background: #a5663a !important;
+}
+
+.color6 .footer_settlement .footer_settlementBtn {
+  background: #a5663a !important;
+}
+
+.color6 .rotaryBox .PoperRotaryBtn {
+  background: #a5663a !important;
+}
+
+.color7 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(36, 106, 151, 0.6) !important;
+}
+
+.color7 .shoppingChangeBtn > div:nth-child(2) {
+  background: #246a97 !important;
+}
+
+.color7 .shoppingStatusPopup2 {
+  background: rgba(36, 106, 151, 0.6) !important;
+}
+
+.color7 .shoppingStatusPopup {
+  background: #246a97 !important;
+}
+
+.color7 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(36, 106, 151, 0.6) !important;
+}
+
+.color7 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #246a97 !important;
+}
+
+.color7 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(36, 106, 151, 0.6) !important;
+}
+
+.color7 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(36, 106, 151, 0.3) !important;
+  background: rgba(36, 106, 151, 0.04) !important;
+  border: 1px solid rgba(36, 106, 151, 0.3) !important;
+}
+
+.color7 .on::after {
+  background: #246a97 !important;
+}
+
+.color7 .topOn::after {
+  background: #246a97 !important;
+}
+
+.color7 .shoppingStatus_Nophone button {
+  color: rgba(36, 106, 151, 0.3) !important;
+  border: 1px solid rgba(36, 106, 151, 0.3) !important;
+}
+
+.color7 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(36, 106, 151, 0.3) !important;
+  background: rgba(36, 106, 151, 0.04) !important;
+  border: 1px solid rgba(36, 106, 151, 0.3) !important;
+}
+
+.color7 .articleOn {
+  color: rgba(36, 106, 151, 0.3) !important;
+  background: rgba(36, 106, 151, 0.04) !important;
+  border: 1px solid rgba(36, 106, 151, 0.3) !important;
+}
+
+.color7 .phoneBoxActive {
+  color: #246a97 !important;
+}
+
+.color7 .phoneBoxActive::after {
+  background: #246a97 !important;
+}
+
+.color7 .phoneBox .selectedActive::after {
+  border-left: 2px solid #246a97 !important;
+  border-top: 2px solid #246a97 !important;
+}
+
+.color7 .phoneBoxBtn button {
+  background: #246a97 !important;
+}
+
+.color7 .footer_settlement .footer_settlementBtn {
+  background: #246a97 !important;
+}
+
+.color7 .rotaryBox .PoperRotaryBtn {
+  background: #246a97 !important;
+}
+
+.color8 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(78, 129, 62, 0.6) !important;
+}
+
+.color8 .shoppingChangeBtn > div:nth-child(2) {
+  background: #4e813e !important;
+}
+
+.color8 .shoppingStatusPopup2 {
+  background: rgba(78, 129, 62, 0.6) !important;
+}
+
+.color8 .shoppingStatusPopup {
+  background: #4e813e !important;
+}
+
+.color8 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(78, 129, 62, 0.6) !important;
+}
+
+.color8 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #4e813e !important;
+}
+
+.color8 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(78, 129, 62, 0.6) !important;
+}
+
+.color8 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(78, 129, 62, 0.3) !important;
+  background: rgba(78, 129, 62, 0.04) !important;
+  border: 1px solid rgba(78, 129, 62, 0.3) !important;
+}
+
+.color8 .on::after {
+  background: #4e813e !important;
+}
+
+.color8 .topOn::after {
+  background: #4e813e !important;
+}
+
+.color8 .shoppingStatus_Nophone button {
+  color: rgba(78, 129, 62, 0.3) !important;
+  border: 1px solid rgba(78, 129, 62, 0.3) !important;
+}
+
+.color8 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(78, 129, 62, 0.3) !important;
+  background: rgba(78, 129, 62, 0.04) !important;
+  border: 1px solid rgba(78, 129, 62, 0.3) !important;
+}
+
+.color8 .articleOn {
+  color: rgba(78, 129, 62, 0.3) !important;
+  background: rgba(78, 129, 62, 0.04) !important;
+  border: 1px solid rgba(78, 129, 62, 0.3) !important;
+}
+
+.color8 .phoneBoxActive {
+  color: #4e813e !important;
+}
+
+.color8 .phoneBoxActive::after {
+  background: #4e813e !important;
+}
+
+.color8 .phoneBox .selectedActive::after {
+  border-left: 2px solid #4e813e !important;
+  border-top: 2px solid #4e813e !important;
+}
+
+.color8 .phoneBoxBtn button {
+  background: #4e813e !important;
+}
+
+.color8 .footer_settlement .footer_settlementBtn {
+  background: #4e813e !important;
+}
+
+.color8 .rotaryBox .PoperRotaryBtn {
+  background: #4e813e !important;
+}
+
+.color9 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(149, 22, 96, 0.6) !important;
+}
+
+.color9 .shoppingChangeBtn > div:nth-child(2) {
+  background: #951660 !important;
+}
+
+.color9 .shoppingStatusPopup2 {
+  background: rgba(149, 22, 96, 0.6) !important;
+}
+
+.color9 .shoppingStatusPopup {
+  background: #951660 !important;
+}
+
+.color9 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(149, 22, 96, 0.6) !important;
+}
+
+.color9 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #951660 !important;
+}
+
+.color9 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(149, 22, 96, 0.6) !important;
+}
+
+.color9 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(149, 22, 96, 0.3) !important;
+  background: rgba(149, 22, 96, 0.04) !important;
+  border: 1px solid rgba(149, 22, 96, 0.3) !important;
+}
+
+.color9 .on::after {
+  background: #951660 !important;
+}
+
+.color9 .topOn::after {
+  background: #951660 !important;
+}
+
+.color9 .shoppingStatus_Nophone button {
+  color: rgba(149, 22, 96, 0.3) !important;
+  border: 1px solid rgba(149, 22, 96, 0.3) !important;
+}
+
+.color9 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(149, 22, 96, 0.3) !important;
+  background: rgba(149, 22, 96, 0.04) !important;
+  border: 1px solid rgba(149, 22, 96, 0.3) !important;
+}
+
+.color9 .articleOn {
+  color: rgba(149, 22, 96, 0.3) !important;
+  background: rgba(149, 22, 96, 0.04) !important;
+  border: 1px solid rgba(149, 22, 96, 0.3) !important;
+}
+
+.color9 .phoneBoxActive {
+  color: #951660 !important;
+}
+
+.color9 .phoneBoxActive::after {
+  background: #951660 !important;
+}
+
+.color9 .phoneBox .selectedActive::after {
+  border-left: 2px solid #951660 !important;
+  border-top: 2px solid #951660 !important;
+}
+
+.color9 .phoneBoxBtn button {
+  background: #951660 !important;
+}
+
+.color9 .footer_settlement .footer_settlementBtn {
+  background: #951660 !important;
+}
+
+.color9 .rotaryBox .PoperRotaryBtn {
+  background: #951660 !important;
+}
+
+.color10 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(32, 22, 18, 0.6) !important;
+}
+
+.color10 .shoppingChangeBtn > div:nth-child(2) {
+  background: #201612 !important;
+}
+
+.color10 .shoppingStatusPopup2 {
+  background: rgba(32, 22, 18, 0.6) !important;
+}
+
+.color10 .shoppingStatusPopup {
+  background: #201612 !important;
+}
+
+.color10 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(32, 22, 18, 0.6) !important;
+}
+
+.color10 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #201612 !important;
+}
+
+.color10 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(32, 22, 18, 0.6) !important;
+}
+
+.color10 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(32, 22, 18, 0.3) !important;
+  background: rgba(32, 22, 18, 0.04) !important;
+  border: 1px solid rgba(32, 22, 18, 0.3) !important;
+}
+
+.color10 .on::after {
+  background: #201612 !important;
+}
+
+.color10 .topOn::after {
+  background: #201612 !important;
+}
+
+.color10 .shoppingStatus_Nophone button {
+  color: rgba(32, 22, 18, 0.3) !important;
+  border: 1px solid rgba(32, 22, 18, 0.3) !important;
+}
+
+.color10 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(32, 22, 18, 0.3) !important;
+  background: rgba(32, 22, 18, 0.04) !important;
+  border: 1px solid rgba(32, 22, 18, 0.3) !important;
+}
+
+.color10 .articleOn {
+  color: rgba(32, 22, 18, 0.3) !important;
+  background: rgba(32, 22, 18, 0.04) !important;
+  border: 1px solid rgba(32, 22, 18, 0.3) !important;
+}
+
+.color10 .phoneBoxActive {
+  color: #201612 !important;
+}
+
+.color10 .phoneBoxActive::after {
+  background: #201612 !important;
+}
+
+.color10 .phoneBox .selectedActive::after {
+  border-left: 2px solid #201612 !important;
+  border-top: 2px solid #201612 !important;
+}
+
+.color10 .phoneBoxBtn button {
+  background: #201612 !important;
+}
+
+.color10 .footer_settlement .footer_settlementBtn {
+  background: #201612 !important;
+}
+
+.color10 .rotaryBox .PoperRotaryBtn {
+  background: #201612 !important;
+}
+
+.color11 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(114, 167, 90, 0.6) !important;
+}
+
+.color11 .shoppingChangeBtn > div:nth-child(2) {
+  background: #72a75a !important;
+}
+
+.color11 .shoppingStatusPopup2 {
+  background: rgba(114, 167, 90, 0.6) !important;
+}
+
+.color11 .shoppingStatusPopup {
+  background: #72a75a !important;
+}
+
+.color11 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(114, 167, 90, 0.6) !important;
+}
+
+.color11 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #72a75a !important;
+}
+
+.color11 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(114, 167, 90, 0.6) !important;
+}
+
+.color11 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(114, 167, 90, 0.3) !important;
+  background: rgba(114, 167, 90, 0.04) !important;
+  border: 1px solid rgba(114, 167, 90, 0.3) !important;
+}
+
+.color11 .on::after {
+  background: #72a75a !important;
+}
+
+.color11 .topOn::after {
+  background: #72a75a !important;
+}
+
+.color11 .shoppingStatus_Nophone button {
+  color: rgba(114, 167, 90, 0.3) !important;
+  border: 1px solid rgba(114, 167, 90, 0.3) !important;
+}
+
+.color11 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(114, 167, 90, 0.3) !important;
+  background: rgba(114, 167, 90, 0.04) !important;
+  border: 1px solid rgba(114, 167, 90, 0.3) !important;
+}
+
+.color11 .articleOn {
+  color: rgba(114, 167, 90, 0.3) !important;
+  background: rgba(114, 167, 90, 0.04) !important;
+  border: 1px solid rgba(114, 167, 90, 0.3) !important;
+}
+
+.color11 .phoneBoxActive {
+  color: #72a75a !important;
+}
+
+.color11 .phoneBoxActive::after {
+  background: #72a75a !important;
+}
+
+.color11 .phoneBox .selectedActive::after {
+  border-left: 2px solid #72a75a !important;
+  border-top: 2px solid #72a75a !important;
+}
+
+.color11 .phoneBoxBtn button {
+  background: #72a75a !important;
+}
+
+.color11 .footer_settlement .footer_settlementBtn {
+  background: #72a75a !important;
+}
+
+.color11 .rotaryBox .PoperRotaryBtn {
+  background: #72a75a !important;
+}
+
+.color12 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(242, 77, 249, 0.6) !important;
+}
+
+.color12 .shoppingChangeBtn > div:nth-child(2) {
+  background: #f24df9 !important;
+}
+
+.color12 .shoppingStatusPopup2 {
+  background: rgba(242, 77, 249, 0.6) !important;
+}
+
+.color12 .shoppingStatusPopup {
+  background: #f24df9 !important;
+}
+
+.color12 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(242, 77, 249, 0.6) !important;
+}
+
+.color12 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #f24df9 !important;
+}
+
+.color12 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(242, 77, 249, 0.6) !important;
+}
+
+.color12 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(242, 77, 249, 0.3) !important;
+  background: rgba(242, 77, 249, 0.04) !important;
+  border: 1px solid rgba(242, 77, 249, 0.3) !important;
+}
+
+.color12 .on::after {
+  background: #f24df9 !important;
+}
+
+.color12 .topOn::after {
+  background: #f24df9 !important;
+}
+
+.color12 .shoppingStatus_Nophone button {
+  color: rgba(242, 77, 249, 0.3) !important;
+  border: 1px solid rgba(242, 77, 249, 0.3) !important;
+}
+
+.color12 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(242, 77, 249, 0.3) !important;
+  background: rgba(242, 77, 249, 0.04) !important;
+  border: 1px solid rgba(242, 77, 249, 0.3) !important;
+}
+
+.color12 .articleOn {
+  color: rgba(242, 77, 249, 0.3) !important;
+  background: rgba(242, 77, 249, 0.04) !important;
+  border: 1px solid rgba(242, 77, 249, 0.3) !important;
+}
+
+.color12 .phoneBoxActive {
+  color: #f24df9 !important;
+}
+
+.color12 .phoneBoxActive::after {
+  background: #f24df9 !important;
+}
+
+.color12 .phoneBox .selectedActive::after {
+  border-left: 2px solid #f24df9 !important;
+  border-top: 2px solid #f24df9 !important;
+}
+
+.color12 .phoneBoxBtn button {
+  background: #f24df9 !important;
+}
+
+.color12 .footer_settlement .footer_settlementBtn {
+  background: #f24df9 !important;
+}
+
+.color12 .rotaryBox .PoperRotaryBtn {
+  background: #f24df9 !important;
+}
+
+.color13 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(26, 145, 159, 0.6) !important;
+}
+
+.color13 .shoppingChangeBtn > div:nth-child(2) {
+  background: #1a919f !important;
+}
+
+.color13 .shoppingStatusPopup2 {
+  background: rgba(26, 145, 159, 0.6) !important;
+}
+
+.color13 .shoppingStatusPopup {
+  background: #1a919f !important;
+}
+
+.color13 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(26, 145, 159, 0.6) !important;
+}
+
+.color13 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #1a919f !important;
+}
+
+.color13 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(26, 145, 159, 0.6) !important;
+}
+
+.color13 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(26, 145, 159, 0.3) !important;
+  background: rgba(26, 145, 159, 0.04) !important;
+  border: 1px solid rgba(26, 145, 159, 0.3) !important;
+}
+
+.color13 .on::after {
+  background: #1a919f !important;
+}
+
+.color13 .topOn::after {
+  background: #1a919f !important;
+}
+
+.color13 .shoppingStatus_Nophone button {
+  color: rgba(26, 145, 159, 0.3) !important;
+  border: 1px solid rgba(26, 145, 159, 0.3) !important;
+}
+
+.color13 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(26, 145, 159, 0.3) !important;
+  background: rgba(26, 145, 159, 0.04) !important;
+  border: 1px solid rgba(26, 145, 159, 0.3) !important;
+}
+
+.color13 .articleOn {
+  color: rgba(26, 145, 159, 0.3) !important;
+  background: rgba(26, 145, 159, 0.04) !important;
+  border: 1px solid rgba(26, 145, 159, 0.3) !important;
+}
+
+.color13 .phoneBoxActive {
+  color: #1a919f !important;
+}
+
+.color13 .phoneBoxActive::after {
+  background: #1a919f !important;
+}
+
+.color13 .phoneBox .selectedActive::after {
+  border-left: 2px solid #1a919f !important;
+  border-top: 2px solid #1a919f !important;
+}
+
+.color13 .phoneBoxBtn button {
+  background: #1a919f !important;
+}
+
+.color13 .footer_settlement .footer_settlementBtn {
+  background: #1a919f !important;
+}
+
+.color13 .rotaryBox .PoperRotaryBtn {
+  background: #1a919f !important;
+}
+
+.color14 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(221, 99, 126, 0.6) !important;
+}
+
+.color14 .shoppingChangeBtn > div:nth-child(2) {
+  background: #dd637e !important;
+}
+
+.color14 .shoppingStatusPopup2 {
+  background: rgba(221, 99, 126, 0.6) !important;
+}
+
+.color14 .shoppingStatusPopup {
+  background: #dd637e !important;
+}
+
+.color14 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(221, 99, 126, 0.6) !important;
+}
+
+.color14 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #dd637e !important;
+}
+
+.color14 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(221, 99, 126, 0.6) !important;
+}
+
+.color14 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(221, 99, 126, 0.3) !important;
+  background: rgba(221, 99, 126, 0.04) !important;
+  border: 1px solid rgba(221, 99, 126, 0.3) !important;
+}
+
+.color14 .on::after {
+  background: #dd637e !important;
+}
+
+.color14 .topOn::after {
+  background: #dd637e !important;
+}
+
+.color14 .shoppingStatus_Nophone button {
+  color: rgba(221, 99, 126, 0.3) !important;
+  border: 1px solid rgba(221, 99, 126, 0.3) !important;
+}
+
+.color14 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(221, 99, 126, 0.3) !important;
+  background: rgba(221, 99, 126, 0.04) !important;
+  border: 1px solid rgba(221, 99, 126, 0.3) !important;
+}
+
+.color14 .articleOn {
+  color: rgba(221, 99, 126, 0.3) !important;
+  background: rgba(221, 99, 126, 0.04) !important;
+  border: 1px solid rgba(221, 99, 126, 0.3) !important;
+}
+
+.color14 .phoneBoxActive {
+  color: #dd637e !important;
+}
+
+.color14 .phoneBoxActive::after {
+  background: #dd637e !important;
+}
+
+.color14 .phoneBox .selectedActive::after {
+  border-left: 2px solid #dd637e !important;
+  border-top: 2px solid #dd637e !important;
+}
+
+.color14 .phoneBoxBtn button {
+  background: #dd637e !important;
+}
+
+.color14 .footer_settlement .footer_settlementBtn {
+  background: #dd637e !important;
+}
+
+.color14 .rotaryBox .PoperRotaryBtn {
+  background: #dd637e !important;
+}
+
+.color15 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(64, 80, 108, 0.6) !important;
+}
+
+.color15 .shoppingChangeBtn > div:nth-child(2) {
+  background: #40506c !important;
+}
+
+.color15 .shoppingStatusPopup2 {
+  background: rgba(64, 80, 108, 0.6) !important;
+}
+
+.color15 .shoppingStatusPopup {
+  background: #40506c !important;
+}
+
+.color15 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(64, 80, 108, 0.6) !important;
+}
+
+.color15 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #40506c !important;
+}
+
+.color15 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(64, 80, 108, 0.6) !important;
+}
+
+.color15 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(64, 80, 108, 0.3) !important;
+  background: rgba(64, 80, 108, 0.04) !important;
+  border: 1px solid rgba(64, 80, 108, 0.3) !important;
+}
+
+.color15 .on::after {
+  background: #40506c !important;
+}
+
+.color15 .topOn::after {
+  background: #40506c !important;
+}
+
+.color15 .shoppingStatus_Nophone button {
+  color: rgba(64, 80, 108, 0.3) !important;
+  border: 1px solid rgba(64, 80, 108, 0.3) !important;
+}
+
+.color15 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(64, 80, 108, 0.3) !important;
+  background: rgba(64, 80, 108, 0.04) !important;
+  border: 1px solid rgba(64, 80, 108, 0.3) !important;
+}
+
+.color15 .articleOn {
+  color: rgba(64, 80, 108, 0.3) !important;
+  background: rgba(64, 80, 108, 0.04) !important;
+  border: 1px solid rgba(64, 80, 108, 0.3) !important;
+}
+
+.color15 .phoneBoxActive {
+  color: #40506c !important;
+}
+
+.color15 .phoneBoxActive::after {
+  background: #40506c !important;
+}
+
+.color15 .phoneBox .selectedActive::after {
+  border-left: 2px solid #40506c !important;
+  border-top: 2px solid #40506c !important;
+}
+
+.color15 .phoneBoxBtn button {
+  background: #40506c !important;
+}
+
+.color15 .footer_settlement .footer_settlementBtn {
+  background: #40506c !important;
+}
+
+.color15 .rotaryBox .PoperRotaryBtn {
+  background: #40506c !important;
+}
+
+.color16 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(199, 141, 227, 0.6) !important;
+}
+
+.color16 .shoppingChangeBtn > div:nth-child(2) {
+  background: #c78de3 !important;
+}
+
+.color16 .shoppingStatusPopup2 {
+  background: rgba(199, 141, 227, 0.6) !important;
+}
+
+.color16 .shoppingStatusPopup {
+  background: #c78de3 !important;
+}
+
+.color16 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(199, 141, 227, 0.6) !important;
+}
+
+.color16 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #c78de3 !important;
+}
+
+.color16 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(199, 141, 227, 0.6) !important;
+}
+
+.color16 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(199, 141, 227, 0.3) !important;
+  background: rgba(199, 141, 227, 0.04) !important;
+  border: 1px solid rgba(199, 141, 227, 0.3) !important;
+}
+
+.color16 .on::after {
+  background: #c78de3 !important;
+}
+
+.color16 .topOn::after {
+  background: #c78de3 !important;
+}
+
+.color16 .shoppingStatus_Nophone button {
+  color: rgba(199, 141, 227, 0.3) !important;
+  border: 1px solid rgba(199, 141, 227, 0.3) !important;
+}
+
+.color16 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(199, 141, 227, 0.3) !important;
+  background: rgba(199, 141, 227, 0.04) !important;
+  border: 1px solid rgba(199, 141, 227, 0.3) !important;
+}
+
+.color16 .articleOn {
+  color: rgba(199, 141, 227, 0.3) !important;
+  background: rgba(199, 141, 227, 0.04) !important;
+  border: 1px solid rgba(199, 141, 227, 0.3) !important;
+}
+
+.color16 .phoneBoxActive {
+  color: #c78de3 !important;
+}
+
+.color16 .phoneBoxActive::after {
+  background: #c78de3 !important;
+}
+
+.color16 .phoneBox .selectedActive::after {
+  border-left: 2px solid #c78de3 !important;
+  border-top: 2px solid #c78de3 !important;
+}
+
+.color16 .phoneBoxBtn button {
+  background: #c78de3 !important;
+}
+
+.color16 .footer_settlement .footer_settlementBtn {
+  background: #c78de3 !important;
+}
+
+.color16 .rotaryBox .PoperRotaryBtn {
+  background: #c78de3 !important;
+}
+
+.color17 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(50, 62, 42, 0.6) !important;
+}
+
+.color17 .shoppingChangeBtn > div:nth-child(2) {
+  background: #323e2a !important;
+}
+
+.color17 .shoppingStatusPopup2 {
+  background: rgba(50, 62, 42, 0.6) !important;
+}
+
+.color17 .shoppingStatusPopup {
+  background: #323e2a !important;
+}
+
+.color17 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(50, 62, 42, 0.6) !important;
+}
+
+.color17 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #323e2a !important;
+}
+
+.color17 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(50, 62, 42, 0.6) !important;
+}
+
+.color17 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(50, 62, 42, 0.3) !important;
+  background: rgba(50, 62, 42, 0.04) !important;
+  border: 1px solid rgba(50, 62, 42, 0.3) !important;
+}
+
+.color17 .on::after {
+  background: #323e2a !important;
+}
+
+.color17 .topOn::after {
+  background: #323e2a !important;
+}
+
+.color17 .shoppingStatus_Nophone button {
+  color: rgba(50, 62, 42, 0.3) !important;
+  border: 1px solid rgba(50, 62, 42, 0.3) !important;
+}
+
+.color17 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(50, 62, 42, 0.3) !important;
+  background: rgba(50, 62, 42, 0.04) !important;
+  border: 1px solid rgba(50, 62, 42, 0.3) !important;
+}
+
+.color17 .articleOn {
+  color: rgba(50, 62, 42, 0.3) !important;
+  background: rgba(50, 62, 42, 0.04) !important;
+  border: 1px solid rgba(50, 62, 42, 0.3) !important;
+}
+
+.color17 .phoneBoxActive {
+  color: #323e2a !important;
+}
+
+.color17 .phoneBoxActive::after {
+  background: #323e2a !important;
+}
+
+.color17 .phoneBox .selectedActive::after {
+  border-left: 2px solid #323e2a !important;
+  border-top: 2px solid #323e2a !important;
+}
+
+.color17 .phoneBoxBtn button {
+  background: #323e2a !important;
+}
+
+.color17 .footer_settlement .footer_settlementBtn {
+  background: #323e2a !important;
+}
+
+.color17 .rotaryBox .PoperRotaryBtn {
+  background: #323e2a !important;
+}
+
+.color18 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(46, 6, 62, 0.6) !important;
+}
+
+.color18 .shoppingChangeBtn > div:nth-child(2) {
+  background: #2e063e !important;
+}
+
+.color18 .shoppingStatusPopup2 {
+  background: rgba(46, 6, 62, 0.6) !important;
+}
+
+.color18 .shoppingStatusPopup {
+  background: #2e063e !important;
+}
+
+.color18 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(46, 6, 62, 0.6) !important;
+}
+
+.color18 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #2e063e !important;
+}
+
+.color18 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(46, 6, 62, 0.6) !important;
+}
+
+.color18 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(46, 6, 62, 0.3) !important;
+  background: rgba(46, 6, 62, 0.04) !important;
+  border: 1px solid rgba(46, 6, 62, 0.3) !important;
+}
+
+.color18 .on::after {
+  background: #2e063e !important;
+}
+
+.color18 .topOn::after {
+  background: #2e063e !important;
+}
+
+.color18 .shoppingStatus_Nophone button {
+  color: rgba(46, 6, 62, 0.3) !important;
+  border: 1px solid rgba(46, 6, 62, 0.3) !important;
+}
+
+.color18 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(46, 6, 62, 0.3) !important;
+  background: rgba(46, 6, 62, 0.04) !important;
+  border: 1px solid rgba(46, 6, 62, 0.3) !important;
+}
+
+.color18 .articleOn {
+  color: rgba(46, 6, 62, 0.3) !important;
+  background: rgba(46, 6, 62, 0.04) !important;
+  border: 1px solid rgba(46, 6, 62, 0.3) !important;
+}
+
+.color18 .phoneBoxActive {
+  color: #2e063e !important;
+}
+
+.color18 .phoneBoxActive::after {
+  background: #2e063e !important;
+}
+
+.color18 .phoneBox .selectedActive::after {
+  border-left: 2px solid #2e063e !important;
+  border-top: 2px solid #2e063e !important;
+}
+
+.color18 .phoneBoxBtn button {
+  background: #2e063e !important;
+}
+
+.color18 .footer_settlement .footer_settlementBtn {
+  background: #2e063e !important;
+}
+
+.color18 .rotaryBox .PoperRotaryBtn {
+  background: #2e063e !important;
+}
+
+.color19 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(20, 76, 129, 0.6) !important;
+}
+
+.color19 .shoppingChangeBtn > div:nth-child(2) {
+  background: #144c81 !important;
+}
+
+.color19 .shoppingStatusPopup2 {
+  background: rgba(20, 76, 129, 0.6) !important;
+}
+
+.color19 .shoppingStatusPopup {
+  background: #144c81 !important;
+}
+
+.color19 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(20, 76, 129, 0.6) !important;
+}
+
+.color19 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #144c81 !important;
+}
+
+.color19 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(20, 76, 129, 0.6) !important;
+}
+
+.color19 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(20, 76, 129, 0.3) !important;
+  background: rgba(20, 76, 129, 0.04) !important;
+  border: 1px solid rgba(20, 76, 129, 0.3) !important;
+}
+
+.color19 .on::after {
+  background: #144c81 !important;
+}
+
+.color19 .topOn::after {
+  background: #144c81 !important;
+}
+
+.color19 .shoppingStatus_Nophone button {
+  color: rgba(20, 76, 129, 0.3) !important;
+  border: 1px solid rgba(20, 76, 129, 0.3) !important;
+}
+
+.color19 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(20, 76, 129, 0.3) !important;
+  background: rgba(20, 76, 129, 0.04) !important;
+  border: 1px solid rgba(20, 76, 129, 0.3) !important;
+}
+
+.color19 .articleOn {
+  color: rgba(20, 76, 129, 0.3) !important;
+  background: rgba(20, 76, 129, 0.04) !important;
+  border: 1px solid rgba(20, 76, 129, 0.3) !important;
+}
+
+.color19 .phoneBoxActive {
+  color: #144c81 !important;
+}
+
+.color19 .phoneBoxActive::after {
+  background: #144c81 !important;
+}
+
+.color19 .phoneBox .selectedActive::after {
+  border-left: 2px solid #144c81 !important;
+  border-top: 2px solid #144c81 !important;
+}
+
+.color19 .phoneBoxBtn button {
+  background: #144c81 !important;
+}
+
+.color19 .footer_settlement .footer_settlementBtn {
+  background: #144c81 !important;
+}
+
+.color19 .rotaryBox .PoperRotaryBtn {
+  background: #144c81 !important;
+}
+
+.color20 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(100, 32, 46, 0.6) !important;
+}
+
+.color20 .shoppingChangeBtn > div:nth-child(2) {
+  background: #64202e !important;
+}
+
+.color20 .shoppingStatusPopup2 {
+  background: rgba(100, 32, 46, 0.6) !important;
+}
+
+.color20 .shoppingStatusPopup {
+  background: #64202e !important;
+}
+
+.color20 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(100, 32, 46, 0.6) !important;
+}
+
+.color20 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #64202e !important;
+}
+
+.color20 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(100, 32, 46, 0.6) !important;
+}
+
+.color20 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(100, 32, 46, 0.3) !important;
+  background: rgba(100, 32, 46, 0.04) !important;
+  border: 1px solid rgba(100, 32, 46, 0.3) !important;
+}
+
+.color20 .on::after {
+  background: #64202e !important;
+}
+
+.color20 .topOn::after {
+  background: #64202e !important;
+}
+
+.color20 .shoppingStatus_Nophone button {
+  color: rgba(100, 32, 46, 0.3) !important;
+  border: 1px solid rgba(100, 32, 46, 0.3) !important;
+}
+
+.color20 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(100, 32, 46, 0.3) !important;
+  background: rgba(100, 32, 46, 0.04) !important;
+  border: 1px solid rgba(100, 32, 46, 0.3) !important;
+}
+
+.color20 .articleOn {
+  color: rgba(100, 32, 46, 0.3) !important;
+  background: rgba(100, 32, 46, 0.04) !important;
+  border: 1px solid rgba(100, 32, 46, 0.3) !important;
+}
+
+.color20 .phoneBoxActive {
+  color: #64202e !important;
+}
+
+.color20 .phoneBoxActive::after {
+  background: #64202e !important;
+}
+
+.color20 .phoneBox .selectedActive::after {
+  border-left: 2px solid #64202e !important;
+  border-top: 2px solid #64202e !important;
+}
+
+.color20 .phoneBoxBtn button {
+  background: #64202e !important;
+}
+
+.color20 .footer .footer_settlement .footer_settlementBtn {
+  background: #64202e !important;
+}
+
+.color20 .rotaryBox .PoperRotaryBtn {
+  background: #64202e !important;
+}
+
+.color21 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(149, 102, 82, 0.6) !important;
+}
+
+.color21 .shoppingChangeBtn > div:nth-child(2) {
+  background: #956652 !important;
+}
+
+.color21 .shoppingStatusPopup2 {
+  background: rgba(149, 102, 82, 0.6) !important;
+}
+
+.color21 .shoppingStatusPopup {
+  background: #956652 !important;
+}
+
+.color21 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(149, 102, 82, 0.6) !important;
+}
+
+.color21 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #956652 !important;
+}
+
+.color21 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(149, 102, 82, 0.6) !important;
+}
+
+.color21 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(149, 102, 82, 0.3) !important;
+  background: rgba(149, 102, 82, 0.04) !important;
+  border: 1px solid rgba(149, 102, 82, 0.3) !important;
+}
+
+.color21 .on::after {
+  background: #956652 !important;
+}
+
+.color21 .topOn::after {
+  background: #956652 !important;
+}
+
+.color21 .shoppingStatus_Nophone button {
+  color: rgba(149, 102, 82, 0.3) !important;
+  border: 1px solid rgba(149, 102, 82, 0.3) !important;
+}
+
+.color21 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(149, 102, 82, 0.3) !important;
+  background: rgba(149, 102, 82, 0.04) !important;
+  border: 1px solid rgba(149, 102, 82, 0.3) !important;
+}
+
+.color21 .articleOn {
+  color: rgba(149, 102, 82, 0.3) !important;
+  background: rgba(149, 102, 82, 0.04) !important;
+  border: 1px solid rgba(149, 102, 82, 0.3) !important;
+}
+
+.color21 .phoneBoxActive {
+  color: #956652 !important;
+}
+
+.color21 .phoneBoxActive::after {
+  background: #956652 !important;
+}
+
+.color21 .phoneBox .selectedActive::after {
+  border-left: 2px solid #956652 !important;
+  border-top: 2px solid #956652 !important;
+}
+
+.color21 .phoneBoxBtn button {
+  background: #956652 !important;
+}
+
+.color21 .footer_settlement .footer_settlementBtn {
+  background: #956652 !important;
+}
+
+.color21 .rotaryBox .PoperRotaryBtn {
+  background: #956652 !important;
+}
+
+.color22 .shoppingChangeBtn > div:nth-child(1) {
+  background: linear-gradient(90deg, #ffa10b, #ffc62c) !important;
+}
+
+.color22 .shoppingChangeBtn > div:nth-child(2) {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .shoppingStatusPopup2 {
+  background: linear-gradient(90deg, #ffa10b, #ffc62c) !important;
+}
+
+.color22 .shoppingStatusPopup {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: linear-gradient(90deg, #ffa10b, #ffc62c) !important;
+}
+
+.color22 .footer_right .footer_shoppingCat .colorBuynow {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .shoppingStatus_numbersChangeBox .add {
+  background: linear-gradient(90deg, #ffa10b, #ffc62c) !important;
+}
+
+.color22 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: #ffad77 !important;
+  background: #fff8ef !important;
+  border: 1px solid #ffad77 !important;
+}
+
+.color22 .on::after {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .topOn::after {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .shoppingStatus_Nophone button {
+  color: #ffad77 !important;
+  border: 1px solid #ffad77 !important;
+}
+
+.color22 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: #ffad77 !important;
+  background: #fff8ef !important;
+  border: 1px solid #ffad77 !important;
+}
+
+.color22 .articleOn {
+  color: #ffad77 !important;
+  background: #fff8ef !important;
+  border: 1px solid #ffad77 !important;
+}
+
+.color22 .phoneBoxActive {
+  color: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .phoneBoxActive::after {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .phoneBox .selectedActive::after {
+  border-left: 2px solid linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+  border-top: 2px solid linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .phoneBoxBtn button {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .footer_settlement .footer_settlementBtn {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color22 .rotaryBox .PoperRotaryBtn {
+  background: linear-gradient(90deg, #ff4e00, #ff7d18) !important;
+}
+
+.color23 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(255, 165, 0, 0.6) !important;
+}
+
+.color23 .shoppingChangeBtn > div:nth-child(2) {
+  background: orange !important;
+}
+
+.color23 .shoppingStatusPopup2 {
+  background: rgba(255, 165, 0, 0.6) !important;
+}
+
+.color23 .shoppingStatusPopup {
+  background: orange !important;
+}
+
+.color23 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(255, 165, 0, 0.6) !important;
+}
+
+.color23 .footer_right .footer_shoppingCat .colorBuynow {
+  background: orange !important;
+}
+
+.color23 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(255, 165, 0, 0.6) !important;
+}
+
+.color23 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(255, 165, 0, 0.3) !important;
+  background: rgba(255, 165, 0, 0.04) !important;
+  border: 1px solid rgba(255, 165, 0, 0.3) !important;
+}
+
+.color23 .on::after {
+  background: orange !important;
+}
+
+.color23 .topOn::after {
+  background: orange !important;
+}
+
+.color23 .shoppingStatus_Nophone button {
+  color: rgba(255, 165, 0, 0.3) !important;
+  border: 1px solid rgba(255, 165, 0, 0.3) !important;
+}
+
+.color23 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(255, 165, 0, 0.3) !important;
+  background: rgba(255, 165, 0, 0.04) !important;
+  border: 1px solid rgba(255, 165, 0, 0.3) !important;
+}
+
+.color23 .articleOn {
+  color: rgba(255, 165, 0, 0.3) !important;
+  background: rgba(255, 165, 0, 0.04) !important;
+  border: 1px solid rgba(255, 165, 0, 0.3) !important;
+}
+
+.color23 .phoneBoxActive {
+  color: orange !important;
+}
+
+.color23 .phoneBoxActive::after {
+  background: orange !important;
+}
+
+.color23 .phoneBox .selectedActive::after {
+  border-left: 2px solid orange !important;
+  border-top: 2px solid orange !important;
+}
+
+.color23 .phoneBoxBtn button {
+  background: orange !important;
+}
+
+.color23 .footer_settlement .footer_settlementBtn {
+  background: orange !important;
+}
+
+.color23 .rotaryBox .PoperRotaryBtn {
+  background: orange !important;
+}
+
+.color24 .shoppingChangeBtn > div:nth-child(1) {
+  background: #ff6b25 !important;
+}
+
+.color24 .shoppingChangeBtn > div:nth-child(2) {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .shoppingStatusPopup2 {
+  background: #ff6b25 !important;
+}
+
+.color24 .shoppingStatusPopup {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: #ff6b25 !important;
+}
+
+.color24 .footer_right .footer_shoppingCat .colorBuynow {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .shoppingStatus_numbersChangeBox .add {
+  background: #ff6b25 !important;
+}
+
+.color24 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(255, 0, 0, 0.3) !important;
+  background: rgba(255, 0, 0, 0.04) !important;
+  border: 1px solid rgba(255, 0, 0, 0.3) !important;
+}
+
+.color24 .on::after {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .topOn::after {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .shoppingStatus_Nophone button {
+  color: rgba(255, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 0, 0, 0.3) !important;
+}
+
+.color24 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(255, 0, 0, 0.3) !important;
+  background: rgba(255, 0, 0, 0.04) !important;
+  border: 1px solid rgba(255, 0, 0, 0.3) !important;
+}
+
+.color24 .articleOn {
+  color: rgba(255, 0, 0, 0.3) !important;
+  background: rgba(255, 0, 0, 0.04) !important;
+  border: 1px solid rgba(255, 0, 0, 0.3) !important;
+}
+
+.color24 .phoneBoxActive {
+  color: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .phoneBoxActive::after {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .phoneBox .selectedActive::after {
+  border-left: 2px solid linear-gradient(90deg, red, #ff4848) !important;
+  border-top: 2px solid linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .phoneBoxBtn button {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .footer_settlement .footer_settlementBtn {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color24 .rotaryBox .PoperRotaryBtn {
+  background: linear-gradient(90deg, red, #ff4848) !important;
+}
+
+.color25 .shoppingChangeBtn > div:nth-child(1) {
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.7), rgba(0, 130, 255, 0.7)) !important;
+}
+
+.color25 .shoppingChangeBtn > div:nth-child(2) {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .shoppingStatusPopup2 {
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.7), rgba(0, 130, 255, 0.7)) !important;
+}
+
+.color25 .shoppingStatusPopup {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.7), rgba(0, 130, 255, 0.7)) !important;
+}
+
+.color25 .footer_right .footer_shoppingCat .colorBuynow {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .shoppingStatus_numbersChangeBox .add {
+  background: linear-gradient(90deg, rgba(0, 102, 255, 0.7), rgba(0, 130, 255, 0.7)) !important;
+}
+
+.color25 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(30, 145, 255, 0.3) !important;
+  background: rgba(30, 145, 255, 0.04) !important;
+  border: 1px solid rgba(30, 145, 255, 0.3) !important;
+}
+
+.color25 .on::after {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .topOn::after {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .shoppingStatus_Nophone button {
+  color: rgba(30, 145, 255, 0.3) !important;
+  border: 1px solid rgba(30, 145, 255, 0.3) !important;
+}
+
+.color25 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(30, 145, 255, 0.3) !important;
+  background: rgba(30, 145, 255, 0.04) !important;
+  border: 1px solid rgba(30, 145, 255, 0.3) !important;
+}
+
+.color25 .articleOn {
+  color: rgba(30, 145, 255, 0.3) !important;
+  background: rgba(30, 145, 255, 0.04) !important;
+  border: 1px solid rgba(30, 145, 255, 0.3) !important;
+}
+
+.color25 .phoneBoxActive {
+  color: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .phoneBoxActive::after {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .phoneBox .selectedActive::after {
+  border-left: 2px solid linear-gradient(90deg, #0066ff, #0082ff) !important;
+  border-top: 2px solid linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .phoneBoxBtn button {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .footer_settlement .footer_settlementBtn {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color25 .rotaryBox .PoperRotaryBtn {
+  background: linear-gradient(90deg, #0066ff, #0082ff) !important;
+}
+
+.color26 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(126, 129, 0, 0.6) !important;
+}
+
+.color26 .shoppingChangeBtn > div:nth-child(2) {
+  background: #7e8100 !important;
+}
+
+.color26 .shoppingStatusPopup2 {
+  background: rgba(126, 129, 0, 0.6) !important;
+}
+
+.color26 .shoppingStatusPopup {
+  background: #7e8100 !important;
+}
+
+.color26 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(126, 129, 0, 0.6) !important;
+}
+
+.color26 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #7e8100 !important;
+}
+
+.color26 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(126, 129, 0, 0.6) !important;
+}
+
+.color26 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(126, 129, 0, 0.3) !important;
+  background: rgba(126, 129, 0, 0.04) !important;
+  border: 1px solid rgba(126, 129, 0, 0.3) !important;
+}
+
+.color26 .on::after {
+  background: #7e8100 !important;
+}
+
+.color26 .topOn::after {
+  background: #7e8100 !important;
+}
+
+.color26 .shoppingStatus_Nophone button {
+  color: rgba(126, 129, 0, 0.3) !important;
+  border: 1px solid rgba(126, 129, 0, 0.3) !important;
+}
+
+.color26 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(126, 129, 0, 0.3) !important;
+  background: rgba(126, 129, 0, 0.04) !important;
+  border: 1px solid rgba(126, 129, 0, 0.3) !important;
+}
+
+.color26 .articleOn {
+  color: rgba(126, 129, 0, 0.3) !important;
+  background: rgba(126, 129, 0, 0.04) !important;
+  border: 1px solid rgba(126, 129, 0, 0.3) !important;
+}
+
+.color26 .phoneBoxActive {
+  color: #7e8100 !important;
+}
+
+.color26 .phoneBoxActive::after {
+  background: #7e8100 !important;
+}
+
+.color26 .phoneBox .selectedActive::after {
+  border-left: 2px solid #7e8100 !important;
+  border-top: 2px solid #7e8100 !important;
+}
+
+.color26 .phoneBoxBtn button {
+  background: #7e8100 !important;
+}
+
+.color26 .footer_settlement .footer_settlementBtn {
+  background: #7e8100 !important;
+}
+
+.color26 .rotaryBox .PoperRotaryBtn {
+  background: #7e8100 !important;
+}
+
+.color27 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(70, 131, 181, 0.6) !important;
+}
+
+.color27 .shoppingChangeBtn > div:nth-child(2) {
+  background: #4683b5 !important;
+}
+
+.color27 .shoppingStatusPopup2 {
+  background: rgba(70, 131, 181, 0.6) !important;
+}
+
+.color27 .shoppingStatusPopup {
+  background: #4683b5 !important;
+}
+
+.color27 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(70, 131, 181, 0.6) !important;
+}
+
+.color27 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #4683b5 !important;
+}
+
+.color27 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(70, 131, 181, 0.6) !important;
+}
+
+.color27 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(70, 131, 181, 0.3) !important;
+  background: rgba(70, 131, 181, 0.04) !important;
+  border: 1px solid rgba(70, 131, 181, 0.3) !important;
+}
+
+.color27 .on::after {
+  background: #4683b5 !important;
+}
+
+.color27 .topOn::after {
+  background: #4683b5 !important;
+}
+
+.color27 .shoppingStatus_Nophone button {
+  color: rgba(70, 131, 181, 0.3) !important;
+  border: 1px solid rgba(70, 131, 181, 0.3) !important;
+}
+
+.color27 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(70, 131, 181, 0.3) !important;
+  background: rgba(70, 131, 181, 0.04) !important;
+  border: 1px solid rgba(70, 131, 181, 0.3) !important;
+}
+
+.color27 .articleOn {
+  color: rgba(70, 131, 181, 0.3) !important;
+  background: rgba(70, 131, 181, 0.04) !important;
+  border: 1px solid rgba(70, 131, 181, 0.3) !important;
+}
+
+.color27 .phoneBoxActive {
+  color: #4683b5 !important;
+}
+
+.color27 .phoneBoxActive::after {
+  background: #4683b5 !important;
+}
+
+.color27 .phoneBox .selectedActive::after {
+  border-left: 2px solid #4683b5 !important;
+  border-top: 2px solid #4683b5 !important;
+}
+
+.color27 .phoneBoxBtn button {
+  background: #4683b5 !important;
+}
+
+.color27 .footer_settlement .footer_settlementBtn {
+  background: #4683b5 !important;
+}
+
+.color27 .rotaryBox .PoperRotaryBtn {
+  background: #4683b5 !important;
+}
+
+.color28 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(46, 139, 86, 0.6) !important;
+}
+
+.color28 .shoppingChangeBtn > div:nth-child(2) {
+  background: #2e8b56 !important;
+}
+
+.color28 .shoppingStatusPopup2 {
+  background: rgba(46, 139, 86, 0.6) !important;
+}
+
+.color28 .shoppingStatusPopup {
+  background: #2e8b56 !important;
+}
+
+.color28 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(46, 139, 86, 0.6) !important;
+}
+
+.color28 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #2e8b56 !important;
+}
+
+.color28 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(46, 139, 86, 0.6) !important;
+}
+
+.color28 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(46, 139, 86, 0.3) !important;
+  background: rgba(46, 139, 86, 0.04) !important;
+  border: 1px solid rgba(46, 139, 86, 0.3) !important;
+}
+
+.color28 .on::after {
+  background: #2e8b56 !important;
+}
+
+.color28 .topOn::after {
+  background: #2e8b56 !important;
+}
+
+.color28 .shoppingStatus_Nophone button {
+  color: rgba(46, 139, 86, 0.3) !important;
+  border: 1px solid rgba(46, 139, 86, 0.3) !important;
+}
+
+.color28 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(46, 139, 86, 0.3) !important;
+  background: rgba(46, 139, 86, 0.04) !important;
+  border: 1px solid rgba(46, 139, 86, 0.3) !important;
+}
+
+.color28 .articleOn {
+  color: rgba(46, 139, 86, 0.3) !important;
+  background: rgba(46, 139, 86, 0.04) !important;
+  border: 1px solid rgba(46, 139, 86, 0.3) !important;
+}
+
+.color28 .phoneBoxActive {
+  color: #2e8b56 !important;
+}
+
+.color28 .phoneBoxActive::after {
+  background: #2e8b56 !important;
+}
+
+.color28 .phoneBox .selectedActive::after {
+  border-left: 2px solid #2e8b56 !important;
+  border-top: 2px solid #2e8b56 !important;
+}
+
+.color28 .phoneBoxBtn button {
+  background: #2e8b56 !important;
+}
+
+.color28 .footer_settlement .footer_settlementBtn {
+  background: #2e8b56 !important;
+}
+
+.color28 .rotaryBox .PoperRotaryBtn {
+  background: #2e8b56 !important;
+}
+
+.color29 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.color29 .shoppingChangeBtn > div:nth-child(2) {
+  background: black !important;
+}
+
+.color29 .shoppingStatusPopup2 {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.color29 .shoppingStatusPopup {
+  background: black !important;
+}
+
+.color29 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.color29 .footer_right .footer_shoppingCat .colorBuynow {
+  background: black !important;
+}
+
+.color29 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.color29 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.color29 .on::after {
+  background: black !important;
+}
+
+.color29 .topOn::after {
+  background: black !important;
+}
+
+.color29 .shoppingStatus_Nophone button {
+  color: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.color29 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.color29 .articleOn {
+  color: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.color29 .phoneBoxActive {
+  color: black !important;
+}
+
+.color29 .phoneBoxActive::after {
+  background: black !important;
+}
+
+.color29 .phoneBox .selectedActive::after {
+  border-left: 2px solid black !important;
+  border-top: 2px solid black !important;
+}
+
+.color29 .phoneBoxBtn button {
+  background: black !important;
+}
+
+.color29 .footer_settlement .footer_settlementBtn {
+  background: black !important;
+}
+
+.color29 .rotaryBox .PoperRotaryBtn {
+  background: black !important;
+}
+
+.color30 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(64, 104, 227, 0.6) !important;
+}
+
+.color30 .shoppingChangeBtn > div:nth-child(2) {
+  background: #4068e3 !important;
+}
+
+.color30 .shoppingStatusPopup2 {
+  background: rgba(64, 104, 227, 0.6) !important;
+}
+
+.color30 .shoppingStatusPopup {
+  background: #4068e3 !important;
+}
+
+.color30 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(64, 104, 227, 0.6) !important;
+}
+
+.color30 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #4068e3 !important;
+}
+
+.color30 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(64, 104, 227, 0.6) !important;
+}
+
+.color30 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(64, 104, 227, 0.3) !important;
+  background: rgba(64, 104, 227, 0.04) !important;
+  border: 1px solid rgba(64, 104, 227, 0.3) !important;
+}
+
+.color30 .on::after {
+  background: #4068e3 !important;
+}
+
+.color30 .topOn::after {
+  background: #4068e3 !important;
+}
+
+.color30 .shoppingStatus_Nophone button {
+  color: rgba(64, 104, 227, 0.3) !important;
+  border: 1px solid rgba(64, 104, 227, 0.3) !important;
+}
+
+.color30 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(64, 104, 227, 0.3) !important;
+  background: rgba(64, 104, 227, 0.04) !important;
+  border: 1px solid rgba(64, 104, 227, 0.3) !important;
+}
+
+.color30 .articleOn {
+  color: rgba(64, 104, 227, 0.3) !important;
+  background: rgba(64, 104, 227, 0.04) !important;
+  border: 1px solid rgba(64, 104, 227, 0.3) !important;
+}
+
+.color30 .phoneBoxActive {
+  color: #4068e3 !important;
+}
+
+.color30 .phoneBoxActive::after {
+  background: #4068e3 !important;
+}
+
+.color30 .phoneBox .selectedActive::after {
+  border-left: 2px solid #4068e3 !important;
+  border-top: 2px solid #4068e3 !important;
+}
+
+.color30 .phoneBoxBtn button {
+  background: #4068e3 !important;
+}
+
+.color30 .footer_settlement .footer_settlementBtn {
+  background: #4068e3 !important;
+}
+
+.color30 .rotaryBox .PoperRotaryBtn {
+  background: #4068e3 !important;
+}
+
+.color31 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(255, 215, 0, 0.6) !important;
+}
+
+.color31 .shoppingChangeBtn > div:nth-child(2) {
+  background: gold !important;
+}
+
+.color31 .shoppingStatusPopup2 {
+  background: rgba(255, 215, 0, 0.6) !important;
+}
+
+.color31 .shoppingStatusPopup {
+  background: gold !important;
+}
+
+.color31 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(255, 215, 0, 0.6) !important;
+}
+
+.color31 .footer_right .footer_shoppingCat .colorBuynow {
+  background: gold !important;
+}
+
+.color31 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(255, 215, 0, 0.6) !important;
+}
+
+.color31 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(255, 215, 0, 0.3) !important;
+  background: rgba(255, 215, 0, 0.04) !important;
+  border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+
+.color31 .on::after {
+  background: gold !important;
+}
+
+.color31 .topOn::after {
+  background: gold !important;
+}
+
+.color31 .shoppingStatus_Nophone button {
+  color: rgba(255, 215, 0, 0.3) !important;
+  border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+
+.color31 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(255, 215, 0, 0.3) !important;
+  background: rgba(255, 215, 0, 0.04) !important;
+  border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+
+.color31 .articleOn {
+  color: rgba(255, 215, 0, 0.3) !important;
+  background: rgba(255, 215, 0, 0.04) !important;
+  border: 1px solid rgba(255, 215, 0, 0.3) !important;
+}
+
+.color31 .phoneBoxActive {
+  color: gold !important;
+}
+
+.color31 .phoneBoxActive::after {
+  background: gold !important;
+}
+
+.color31 .phoneBox .selectedActive::after {
+  border-left: 2px solid gold !important;
+  border-top: 2px solid gold !important;
+}
+
+.color31 .phoneBoxBtn button {
+  background: gold !important;
+}
+
+.color31 .footer_settlement .footer_settlementBtn {
+  background: gold !important;
+}
+
+.color31 .rotaryBox .PoperRotaryBtn {
+  background: gold !important;
+}
+
+.color32 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(74, 0, 129, 0.6) !important;
+}
+
+.color32 .shoppingChangeBtn > div:nth-child(2) {
+  background: #4a0081 !important;
+}
+
+.color32 .shoppingStatusPopup2 {
+  background: rgba(74, 0, 129, 0.6) !important;
+}
+
+.color32 .shoppingStatusPopup {
+  background: #4a0081 !important;
+}
+
+.color32 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(74, 0, 129, 0.6) !important;
+}
+
+.color32 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #4a0081 !important;
+}
+
+.color32 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(74, 0, 129, 0.6) !important;
+}
+
+.color32 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(74, 0, 129, 0.3) !important;
+  background: rgba(74, 0, 129, 0.04) !important;
+  border: 1px solid rgba(74, 0, 129, 0.3) !important;
+}
+
+.color32 .on::after {
+  background: #4a0081 !important;
+}
+
+.color32 .topOn::after {
+  background: #4a0081 !important;
+}
+
+.color32 .shoppingStatus_Nophone button {
+  color: rgba(74, 0, 129, 0.3) !important;
+  border: 1px solid rgba(74, 0, 129, 0.3) !important;
+}
+
+.color32 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(74, 0, 129, 0.3) !important;
+  background: rgba(74, 0, 129, 0.04) !important;
+  border: 1px solid rgba(74, 0, 129, 0.3) !important;
+}
+
+.color32 .articleOn {
+  color: rgba(74, 0, 129, 0.3) !important;
+  background: rgba(74, 0, 129, 0.04) !important;
+  border: 1px solid rgba(74, 0, 129, 0.3) !important;
+}
+
+.color32 .phoneBoxActive {
+  color: #4a0081 !important;
+}
+
+.color32 .phoneBoxActive::after {
+  background: #4a0081 !important;
+}
+
+.color32 .phoneBox .selectedActive::after {
+  border-left: 2px solid #4a0081 !important;
+  border-top: 2px solid #4a0081 !important;
+}
+
+.color32 .phoneBoxBtn button {
+  background: #4a0081 !important;
+}
+
+.color32 .footer_settlement .footer_settlementBtn {
+  background: #4a0081 !important;
+}
+
+.color32 .rotaryBox .PoperRotaryBtn {
+  background: #4a0081 !important;
+}
+
+.color33 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(139, 68, 18, 0.6) !important;
+}
+
+.color33 .shoppingChangeBtn > div:nth-child(2) {
+  background: #8b4412 !important;
+}
+
+.color33 .shoppingStatusPopup2 {
+  background: rgba(139, 68, 18, 0.6) !important;
+}
+
+.color33 .shoppingStatusPopup {
+  background: #8b4412 !important;
+}
+
+.color33 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(139, 68, 18, 0.6) !important;
+}
+
+.color33 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #8b4412 !important;
+}
+
+.color33 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(139, 68, 18, 0.6) !important;
+}
+
+.color33 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(139, 68, 18, 0.3) !important;
+  background: rgba(139, 68, 18, 0.04) !important;
+  border: 1px solid rgba(139, 68, 18, 0.3) !important;
+}
+
+.color33 .on::after {
+  background: #8b4412 !important;
+}
+
+.color33 .topOn::after {
+  background: #8b4412 !important;
+}
+
+.color33 .shoppingStatus_Nophone button {
+  color: rgba(139, 68, 18, 0.3) !important;
+  border: 1px solid rgba(139, 68, 18, 0.3) !important;
+}
+
+.color33 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(139, 68, 18, 0.3) !important;
+  background: rgba(139, 68, 18, 0.04) !important;
+  border: 1px solid rgba(139, 68, 18, 0.3) !important;
+}
+
+.color33 .articleOn {
+  color: rgba(139, 68, 18, 0.3) !important;
+  background: rgba(139, 68, 18, 0.04) !important;
+  border: 1px solid rgba(139, 68, 18, 0.3) !important;
+}
+
+.color33 .phoneBoxActive {
+  color: #8b4412 !important;
+}
+
+.color33 .phoneBoxActive::after {
+  background: #8b4412 !important;
+}
+
+.color33 .phoneBox .selectedActive::after {
+  border-left: 2px solid #8b4412 !important;
+  border-top: 2px solid #8b4412 !important;
+}
+
+.color33 .phoneBoxBtn button {
+  background: #8b4412 !important;
+}
+
+.color33 .footer_settlement .footer_settlementBtn {
+  background: #8b4412 !important;
+}
+
+.color33 .rotaryBox .PoperRotaryBtn {
+  background: #8b4412 !important;
+}
+
+.color34 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(207, 133, 64, 0.6) !important;
+}
+
+.color34 .shoppingChangeBtn > div:nth-child(2) {
+  background: #cf8540 !important;
+}
+
+.color34 .shoppingStatusPopup2 {
+  background: rgba(207, 133, 64, 0.6) !important;
+}
+
+.color34 .shoppingStatusPopup {
+  background: #cf8540 !important;
+}
+
+.color34 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(207, 133, 64, 0.6) !important;
+}
+
+.color34 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #cf8540 !important;
+}
+
+.color34 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(207, 133, 64, 0.6) !important;
+}
+
+.color34 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(207, 133, 64, 0.3) !important;
+  background: rgba(207, 133, 64, 0.04) !important;
+  border: 1px solid rgba(207, 133, 64, 0.3) !important;
+}
+
+.color34 .on::after {
+  background: #cf8540 !important;
+}
+
+.color34 .topOn::after {
+  background: #cf8540 !important;
+}
+
+.color34 .shoppingStatus_Nophone button {
+  color: rgba(207, 133, 64, 0.3) !important;
+  border: 1px solid rgba(207, 133, 64, 0.3) !important;
+}
+
+.color34 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(207, 133, 64, 0.3) !important;
+  background: rgba(207, 133, 64, 0.04) !important;
+  border: 1px solid rgba(207, 133, 64, 0.3) !important;
+}
+
+.color34 .articleOn {
+  color: rgba(207, 133, 64, 0.3) !important;
+  background: rgba(207, 133, 64, 0.04) !important;
+  border: 1px solid rgba(207, 133, 64, 0.3) !important;
+}
+
+.color34 .phoneBoxActive {
+  color: #cf8540 !important;
+}
+
+.color34 .phoneBoxActive::after {
+  background: #cf8540 !important;
+}
+
+.color34 .phoneBox .selectedActive::after {
+  border-left: 2px solid #cf8540 !important;
+  border-top: 2px solid #cf8540 !important;
+}
+
+.color34 .phoneBoxBtn button {
+  background: #cf8540 !important;
+}
+
+.color34 .footer_settlement .footer_settlementBtn {
+  background: #cf8540 !important;
+}
+
+.color34 .rotaryBox .PoperRotaryBtn {
+  background: #cf8540 !important;
+}
+
+.color35 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(211, 104, 30, 0.6) !important;
+}
+
+.color35 .shoppingChangeBtn > div:nth-child(2) {
+  background: #d3681e !important;
+}
+
+.color35 .shoppingStatusPopup2 {
+  background: rgba(211, 104, 30, 0.6) !important;
+}
+
+.color35 .shoppingStatusPopup {
+  background: #d3681e !important;
+}
+
+.color35 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(211, 104, 30, 0.6) !important;
+}
+
+.color35 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #d3681e !important;
+}
+
+.color35 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(211, 104, 30, 0.6) !important;
+}
+
+.color35 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(211, 104, 30, 0.3) !important;
+  background: rgba(211, 104, 30, 0.04) !important;
+  border: 1px solid rgba(211, 104, 30, 0.3) !important;
+}
+
+.color35 .on::after {
+  background: #d3681e !important;
+}
+
+.color35 .topOn::after {
+  background: #d3681e !important;
+}
+
+.color35 .shoppingStatus_Nophone button {
+  color: rgba(211, 104, 30, 0.3) !important;
+  border: 1px solid rgba(211, 104, 30, 0.3) !important;
+}
+
+.color35 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(211, 104, 30, 0.3) !important;
+  background: rgba(211, 104, 30, 0.04) !important;
+  border: 1px solid rgba(211, 104, 30, 0.3) !important;
+}
+
+.color35 .articleOn {
+  color: rgba(211, 104, 30, 0.3) !important;
+  background: rgba(211, 104, 30, 0.04) !important;
+  border: 1px solid rgba(211, 104, 30, 0.3) !important;
+}
+
+.color35 .phoneBoxActive {
+  color: #d3681e !important;
+}
+
+.color35 .phoneBoxActive::after {
+  background: #d3681e !important;
+}
+
+.color35 .phoneBox .selectedActive::after {
+  border-left: 2px solid #d3681e !important;
+  border-top: 2px solid #d3681e !important;
+}
+
+.color35 .phoneBoxBtn button {
+  background: #d3681e !important;
+}
+
+.color35 .footer_settlement .footer_settlementBtn {
+  background: #d3681e !important;
+}
+
+.color35 .rotaryBox .PoperRotaryBtn {
+  background: #d3681e !important;
+}
+
+.color36 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(72, 60, 139, 0.6) !important;
+}
+
+.color36 .shoppingChangeBtn > div:nth-child(2) {
+  background: #483c8b !important;
+}
+
+.color36 .shoppingStatusPopup2 {
+  background: rgba(72, 60, 139, 0.6) !important;
+}
+
+.color36 .shoppingStatusPopup {
+  background: #483c8b !important;
+}
+
+.color36 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(72, 60, 139, 0.6) !important;
+}
+
+.color36 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #483c8b !important;
+}
+
+.color36 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(72, 60, 139, 0.6) !important;
+}
+
+.color36 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(72, 60, 139, 0.3) !important;
+  background: rgba(72, 60, 139, 0.04) !important;
+  border: 1px solid rgba(72, 60, 139, 0.3) !important;
+}
+
+.color36 .on::after {
+  background: #483c8b !important;
+}
+
+.color36 .topOn::after {
+  background: #483c8b !important;
+}
+
+.color36 .shoppingStatus_Nophone button {
+  color: rgba(72, 60, 139, 0.3) !important;
+  border: 1px solid rgba(72, 60, 139, 0.3) !important;
+}
+
+.color36 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(72, 60, 139, 0.3) !important;
+  background: rgba(72, 60, 139, 0.04) !important;
+  border: 1px solid rgba(72, 60, 139, 0.3) !important;
+}
+
+.color36 .articleOn {
+  color: rgba(72, 60, 139, 0.3) !important;
+  background: rgba(72, 60, 139, 0.04) !important;
+  border: 1px solid rgba(72, 60, 139, 0.3) !important;
+}
+
+.color36 .phoneBoxActive {
+  color: #483c8b !important;
+}
+
+.color36 .phoneBoxActive::after {
+  background: #483c8b !important;
+}
+
+.color36 .phoneBox .selectedActive::after {
+  border-left: 2px solid #483c8b !important;
+  border-top: 2px solid #483c8b !important;
+}
+
+.color36 .phoneBoxBtn button {
+  background: #483c8b !important;
+}
+
+.color36 .footer_settlement .footer_settlementBtn {
+  background: #483c8b !important;
+}
+
+.color36 .rotaryBox .PoperRotaryBtn {
+  background: #483c8b !important;
+}
+
+.color37 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(255, 20, 149, 0.6) !important;
+}
+
+.color37 .shoppingChangeBtn > div:nth-child(2) {
+  background: #ff1495 !important;
+}
+
+.color37 .shoppingStatusPopup2 {
+  background: rgba(255, 20, 149, 0.6) !important;
+}
+
+.color37 .shoppingStatusPopup {
+  background: #ff1495 !important;
+}
+
+.color37 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(255, 20, 149, 0.6) !important;
+}
+
+.color37 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #ff1495 !important;
+}
+
+.color37 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(255, 20, 149, 0.6) !important;
+}
+
+.color37 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(255, 20, 149, 0.3) !important;
+  background: rgba(255, 20, 149, 0.04) !important;
+  border: 1px solid rgba(255, 20, 149, 0.3) !important;
+}
+
+.color37 .on::after {
+  background: #ff1495 !important;
+}
+
+.color37 .topOn::after {
+  background: #ff1495 !important;
+}
+
+.color37 .shoppingStatus_Nophone button {
+  color: rgba(255, 20, 149, 0.3) !important;
+  border: 1px solid rgba(255, 20, 149, 0.3) !important;
+}
+
+.color37 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(255, 20, 149, 0.3) !important;
+  background: rgba(255, 20, 149, 0.04) !important;
+  border: 1px solid rgba(255, 20, 149, 0.3) !important;
+}
+
+.color37 .articleOn {
+  color: rgba(255, 20, 149, 0.3) !important;
+  background: rgba(255, 20, 149, 0.04) !important;
+  border: 1px solid rgba(255, 20, 149, 0.3) !important;
+}
+
+.color37 .phoneBoxActive {
+  color: #ff1495 !important;
+}
+
+.color37 .phoneBoxActive::after {
+  background: #ff1495 !important;
+}
+
+.color37 .phoneBox .selectedActive::after {
+  border-left: 2px solid #ff1495 !important;
+  border-top: 2px solid #ff1495 !important;
+}
+
+.color37 .phoneBoxBtn button {
+  background: #ff1495 !important;
+}
+
+.color37 .footer_settlement .footer_settlementBtn {
+  background: #ff1495 !important;
+}
+
+.color37 .rotaryBox .PoperRotaryBtn {
+  background: #ff1495 !important;
+}
+
+.color38 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(86, 106, 48, 0.6) !important;
+}
+
+.color38 .shoppingChangeBtn > div:nth-child(2) {
+  background: #566a30 !important;
+}
+
+.color38 .shoppingStatusPopup2 {
+  background: rgba(86, 106, 48, 0.6) !important;
+}
+
+.color38 .shoppingStatusPopup {
+  background: #566a30 !important;
+}
+
+.color38 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(86, 106, 48, 0.6) !important;
+}
+
+.color38 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #566a30 !important;
+}
+
+.color38 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(86, 106, 48, 0.6) !important;
+}
+
+.color38 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(86, 106, 48, 0.3) !important;
+  background: rgba(86, 106, 48, 0.04) !important;
+  border: 1px solid rgba(86, 106, 48, 0.3) !important;
+}
+
+.color38 .on::after {
+  background: #566a30 !important;
+}
+
+.color38 .topOn::after {
+  background: #566a30 !important;
+}
+
+.color38 .shoppingStatus_Nophone button {
+  color: rgba(86, 106, 48, 0.3) !important;
+  border: 1px solid rgba(86, 106, 48, 0.3) !important;
+}
+
+.color38 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(86, 106, 48, 0.3) !important;
+  background: rgba(86, 106, 48, 0.04) !important;
+  border: 1px solid rgba(86, 106, 48, 0.3) !important;
+}
+
+.color38 .articleOn {
+  color: rgba(86, 106, 48, 0.3) !important;
+  background: rgba(86, 106, 48, 0.04) !important;
+  border: 1px solid rgba(86, 106, 48, 0.3) !important;
+}
+
+.color38 .phoneBoxActive {
+  color: #566a30 !important;
+}
+
+.color38 .phoneBoxActive::after {
+  background: #566a30 !important;
+}
+
+.color38 .phoneBox .selectedActive::after {
+  border-left: 2px solid #566a30 !important;
+  border-top: 2px solid #566a30 !important;
+}
+
+.color38 .phoneBoxBtn button {
+  background: #566a30 !important;
+}
+
+.color38 .footer_settlement .footer_settlementBtn {
+  background: #566a30 !important;
+}
+
+.color38 .rotaryBox .PoperRotaryBtn {
+  background: #566a30 !important;
+}
+
+.color39 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(141, 0, 0, 0.6) !important;
+}
+
+.color39 .shoppingChangeBtn > div:nth-child(2) {
+  background: #8d0000 !important;
+}
+
+.color39 .shoppingStatusPopup2 {
+  background: rgba(141, 0, 0, 0.6) !important;
+}
+
+.color39 .shoppingStatusPopup {
+  background: #8d0000 !important;
+}
+
+.color39 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(141, 0, 0, 0.6) !important;
+}
+
+.color39 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #8d0000 !important;
+}
+
+.color39 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(141, 0, 0, 0.6) !important;
+}
+
+.color39 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(141, 0, 0, 0.3) !important;
+  background: rgba(141, 0, 0, 0.04) !important;
+  border: 1px solid rgba(141, 0, 0, 0.3) !important;
+}
+
+.color39 .on::after {
+  background: #8d0000 !important;
+}
+
+.color39 .topOn::after {
+  background: #8d0000 !important;
+}
+
+.color39 .shoppingStatus_Nophone button {
+  color: rgba(141, 0, 0, 0.3) !important;
+  border: 1px solid rgba(141, 0, 0, 0.3) !important;
+}
+
+.color39 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(141, 0, 0, 0.3) !important;
+  background: rgba(141, 0, 0, 0.04) !important;
+  border: 1px solid rgba(141, 0, 0, 0.3) !important;
+}
+
+.color39 .articleOn {
+  color: rgba(141, 0, 0, 0.3) !important;
+  background: rgba(141, 0, 0, 0.04) !important;
+  border: 1px solid rgba(141, 0, 0, 0.3) !important;
+}
+
+.color39 .phoneBoxActive {
+  color: #8d0000 !important;
+}
+
+.color39 .phoneBoxActive::after {
+  background: #8d0000 !important;
+}
+
+.color39 .phoneBox .selectedActive::after {
+  border-left: 2px solid #8d0000 !important;
+  border-top: 2px solid #8d0000 !important;
+}
+
+.color39 .phoneBoxBtn button {
+  background: #8d0000 !important;
+}
+
+.color39 .footer_settlement .footer_settlementBtn {
+  background: #8d0000 !important;
+}
+
+.color39 .rotaryBox .PoperRotaryBtn {
+  background: #8d0000 !important;
+}
+
+.color40 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(0, 100, 0, 0.6) !important;
+}
+
+.color40 .shoppingChangeBtn > div:nth-child(2) {
+  background: darkgreen !important;
+}
+
+.color40 .shoppingStatusPopup2 {
+  background: rgba(0, 100, 0, 0.6) !important;
+}
+
+.color40 .shoppingStatusPopup {
+  background: darkgreen !important;
+}
+
+.color40 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(0, 100, 0, 0.6) !important;
+}
+
+.color40 .footer_right .footer_shoppingCat .colorBuynow {
+  background: darkgreen !important;
+}
+
+.color40 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(0, 100, 0, 0.6) !important;
+}
+
+.color40 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(0, 100, 0, 0.3) !important;
+  background: rgba(0, 100, 0, 0.04) !important;
+  border: 1px solid rgba(0, 100, 0, 0.3) !important;
+}
+
+.color40 .on::after {
+  background: darkgreen !important;
+}
+
+.color40 .topOn::after {
+  background: darkgreen !important;
+}
+
+.color40 .shoppingStatus_Nophone button {
+  color: rgba(0, 100, 0, 0.3) !important;
+  border: 1px solid rgba(0, 100, 0, 0.3) !important;
+}
+
+.color40 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(0, 100, 0, 0.3) !important;
+  background: rgba(0, 100, 0, 0.04) !important;
+  border: 1px solid rgba(0, 100, 0, 0.3) !important;
+}
+
+.color40 .articleOn {
+  color: rgba(0, 100, 0, 0.3) !important;
+  background: rgba(0, 100, 0, 0.04) !important;
+  border: 1px solid rgba(0, 100, 0, 0.3) !important;
+}
+
+.color40 .phoneBoxActive {
+  color: darkgreen !important;
+}
+
+.color40 .phoneBoxActive::after {
+  background: darkgreen !important;
+}
+
+.color40 .phoneBox .selectedActive::after {
+  border-left: 2px solid darkgreen !important;
+  border-top: 2px solid darkgreen !important;
+}
+
+.color40 .phoneBoxBtn button {
+  background: darkgreen !important;
+}
+
+.color40 .footer_settlement .footer_settlementBtn {
+  background: darkgreen !important;
+}
+
+.color40 .rotaryBox .PoperRotaryBtn {
+  background: darkgreen !important;
+}
+
+.color41 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(185, 135, 10, 0.6) !important;
+}
+
+.color41 .shoppingChangeBtn > div:nth-child(2) {
+  background: #b9870a !important;
+}
+
+.color41 .shoppingStatusPopup2 {
+  background: rgba(185, 135, 10, 0.6) !important;
+}
+
+.color41 .shoppingStatusPopup {
+  background: #b9870a !important;
+}
+
+.color41 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(185, 135, 10, 0.6) !important;
+}
+
+.color41 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #b9870a !important;
+}
+
+.color41 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(185, 135, 10, 0.6) !important;
+}
+
+.color41 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(185, 135, 10, 0.3) !important;
+  background: rgba(185, 135, 10, 0.04) !important;
+  border: 1px solid rgba(185, 135, 10, 0.3) !important;
+}
+
+.color41 .on::after {
+  background: #b9870a !important;
+}
+
+.color41 .topOn::after {
+  background: #b9870a !important;
+}
+
+.color41 .shoppingStatus_Nophone button {
+  color: rgba(185, 135, 10, 0.3) !important;
+  border: 1px solid rgba(185, 135, 10, 0.3) !important;
+}
+
+.color41 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(185, 135, 10, 0.3) !important;
+  background: rgba(185, 135, 10, 0.04) !important;
+  border: 1px solid rgba(185, 135, 10, 0.3) !important;
+}
+
+.color41 .articleOn {
+  color: rgba(185, 135, 10, 0.3) !important;
+  background: rgba(185, 135, 10, 0.04) !important;
+  border: 1px solid rgba(185, 135, 10, 0.3) !important;
+}
+
+.color41 .phoneBoxActive {
+  color: #b9870a !important;
+}
+
+.color41 .phoneBoxActive::after {
+  background: #b9870a !important;
+}
+
+.color41 .phoneBox .selectedActive::after {
+  border-left: 2px solid #b9870a !important;
+  border-top: 2px solid #b9870a !important;
+}
+
+.color41 .phoneBoxBtn button {
+  background: #b9870a !important;
+}
+
+.color41 .footer_settlement .footer_settlementBtn {
+  background: #b9870a !important;
+}
+
+.color41 .rotaryBox .PoperRotaryBtn {
+  background: #b9870a !important;
+}
+
+.color42 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(46, 78, 78, 0.6) !important;
+}
+
+.color42 .shoppingChangeBtn > div:nth-child(2) {
+  background: #2e4e4e !important;
+}
+
+.color42 .shoppingStatusPopup2 {
+  background: rgba(46, 78, 78, 0.6) !important;
+}
+
+.color42 .shoppingStatusPopup {
+  background: #2e4e4e !important;
+}
+
+.color42 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(46, 78, 78, 0.6) !important;
+}
+
+.color42 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #2e4e4e !important;
+}
+
+.color42 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(46, 78, 78, 0.6) !important;
+}
+
+.color42 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(46, 78, 78, 0.3) !important;
+  background: rgba(46, 78, 78, 0.04) !important;
+  border: 1px solid rgba(46, 78, 78, 0.3) !important;
+}
+
+.color42 .on::after {
+  background: #2e4e4e !important;
+}
+
+.color42 .topOn::after {
+  background: #2e4e4e !important;
+}
+
+.color42 .shoppingStatus_Nophone button {
+  color: rgba(46, 78, 78, 0.3) !important;
+  border: 1px solid rgba(46, 78, 78, 0.3) !important;
+}
+
+.color42 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(46, 78, 78, 0.3) !important;
+  background: rgba(46, 78, 78, 0.04) !important;
+  border: 1px solid rgba(46, 78, 78, 0.3) !important;
+}
+
+.color42 .articleOn {
+  color: rgba(46, 78, 78, 0.3) !important;
+  background: rgba(46, 78, 78, 0.04) !important;
+  border: 1px solid rgba(46, 78, 78, 0.3) !important;
+}
+
+.color42 .phoneBoxActive {
+  color: #2e4e4e !important;
+}
+
+.color42 .phoneBoxActive::after {
+  background: #2e4e4e !important;
+}
+
+.color42 .phoneBox .selectedActive::after {
+  border-left: 2px solid #2e4e4e !important;
+  border-top: 2px solid #2e4e4e !important;
+}
+
+.color42 .phoneBoxBtn button {
+  background: #2e4e4e !important;
+}
+
+.color42 .footer_settlement .footer_settlementBtn {
+  background: #2e4e4e !important;
+}
+
+.color42 .rotaryBox .PoperRotaryBtn {
+  background: #2e4e4e !important;
+}
+
+.color43 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(0, 0, 205, 0.6) !important;
+}
+
+.color43 .shoppingChangeBtn > div:nth-child(2) {
+  background: mediumblue !important;
+}
+
+.color43 .shoppingStatusPopup2 {
+  background: rgba(0, 0, 205, 0.6) !important;
+}
+
+.color43 .shoppingStatusPopup {
+  background: mediumblue !important;
+}
+
+.color43 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(0, 0, 205, 0.6) !important;
+}
+
+.color43 .footer_right .footer_shoppingCat .colorBuynow {
+  background: mediumblue !important;
+}
+
+.color43 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(0, 0, 205, 0.6) !important;
+}
+
+.color43 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(0, 0, 205, 0.3) !important;
+  background: rgba(0, 0, 205, 0.04) !important;
+  border: 1px solid rgba(0, 0, 205, 0.3) !important;
+}
+
+.color43 .on::after {
+  background: mediumblue !important;
+}
+
+.color43 .topOn::after {
+  background: mediumblue !important;
+}
+
+.color43 .shoppingStatus_Nophone button {
+  color: rgba(0, 0, 205, 0.3) !important;
+  border: 1px solid rgba(0, 0, 205, 0.3) !important;
+}
+
+.color43 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(0, 0, 205, 0.3) !important;
+  background: rgba(0, 0, 205, 0.04) !important;
+  border: 1px solid rgba(0, 0, 205, 0.3) !important;
+}
+
+.color43 .articleOn {
+  color: rgba(0, 0, 205, 0.3) !important;
+  background: rgba(0, 0, 205, 0.04) !important;
+  border: 1px solid rgba(0, 0, 205, 0.3) !important;
+}
+
+.color43 .phoneBoxActive {
+  color: mediumblue !important;
+}
+
+.color43 .phoneBoxActive::after {
+  background: mediumblue !important;
+}
+
+.color43 .phoneBox .selectedActive::after {
+  border-left: 2px solid mediumblue !important;
+  border-top: 2px solid mediumblue !important;
+}
+
+.color43 .phoneBoxBtn button {
+  background: mediumblue !important;
+}
+
+.color43 .footer_settlement .footer_settlementBtn {
+  background: mediumblue !important;
+}
+
+.color43 .rotaryBox .PoperRotaryBtn {
+  background: mediumblue !important;
+}
+
+.color44 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(24, 24, 112, 0.6) !important;
+}
+
+.color44 .shoppingChangeBtn > div:nth-child(2) {
+  background: #181870 !important;
+}
+
+.color44 .shoppingStatusPopup2 {
+  background: rgba(24, 24, 112, 0.6) !important;
+}
+
+.color44 .shoppingStatusPopup {
+  background: #181870 !important;
+}
+
+.color44 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(24, 24, 112, 0.6) !important;
+}
+
+.color44 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #181870 !important;
+}
+
+.color44 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(24, 24, 112, 0.6) !important;
+}
+
+.color44 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(24, 24, 112, 0.3) !important;
+  background: rgba(24, 24, 112, 0.04) !important;
+  border: 1px solid rgba(24, 24, 112, 0.3) !important;
+}
+
+.color44 .on::after {
+  background: #181870 !important;
+}
+
+.color44 .topOn::after {
+  background: #181870 !important;
+}
+
+.color44 .shoppingStatus_Nophone button {
+  color: rgba(24, 24, 112, 0.3) !important;
+  border: 1px solid rgba(24, 24, 112, 0.3) !important;
+}
+
+.color44 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(24, 24, 112, 0.3) !important;
+  background: rgba(24, 24, 112, 0.04) !important;
+  border: 1px solid rgba(24, 24, 112, 0.3) !important;
+}
+
+.color44 .articleOn {
+  color: rgba(24, 24, 112, 0.3) !important;
+  background: rgba(24, 24, 112, 0.04) !important;
+  border: 1px solid rgba(24, 24, 112, 0.3) !important;
+}
+
+.color44 .phoneBoxActive {
+  color: #181870 !important;
+}
+
+.color44 .phoneBoxActive::after {
+  background: #181870 !important;
+}
+
+.color44 .phoneBox .selectedActive::after {
+  border-left: 2px solid #181870 !important;
+  border-top: 2px solid #181870 !important;
+}
+
+.color44 .phoneBoxBtn button {
+  background: #181870 !important;
+}
+
+.color44 .footer_settlement .footer_settlementBtn {
+  background: #181870 !important;
+}
+
+.color44 .rotaryBox .PoperRotaryBtn {
+  background: #181870 !important;
+}
+
+.color45 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(221, 18, 60, 0.6) !important;
+}
+
+.color45 .shoppingChangeBtn > div:nth-child(2) {
+  background: #dd123c !important;
+}
+
+.color45 .shoppingStatusPopup2 {
+  background: rgba(221, 18, 60, 0.6) !important;
+}
+
+.color45 .shoppingStatusPopup {
+  background: #dd123c !important;
+}
+
+.color45 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(221, 18, 60, 0.6) !important;
+}
+
+.color45 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #dd123c !important;
+}
+
+.color45 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(221, 18, 60, 0.6) !important;
+}
+
+.color45 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(221, 18, 60, 0.3) !important;
+  background: rgba(221, 18, 60, 0.04) !important;
+  border: 1px solid rgba(221, 18, 60, 0.3) !important;
+}
+
+.color45 .on::after {
+  background: #dd123c !important;
+}
+
+.color45 .topOn::after {
+  background: #dd123c !important;
+}
+
+.color45 .shoppingStatus_Nophone button {
+  color: rgba(221, 18, 60, 0.3) !important;
+  border: 1px solid rgba(221, 18, 60, 0.3) !important;
+}
+
+.color45 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(221, 18, 60, 0.3) !important;
+  background: rgba(221, 18, 60, 0.04) !important;
+  border: 1px solid rgba(221, 18, 60, 0.3) !important;
+}
+
+.color45 .articleOn {
+  color: rgba(221, 18, 60, 0.3) !important;
+  background: rgba(221, 18, 60, 0.04) !important;
+  border: 1px solid rgba(221, 18, 60, 0.3) !important;
+}
+
+.color45 .phoneBoxActive {
+  color: #dd123c !important;
+}
+
+.color45 .phoneBoxActive::after {
+  background: #dd123c !important;
+}
+
+.color45 .phoneBox .selectedActive::after {
+  border-left: 2px solid #dd123c !important;
+  border-top: 2px solid #dd123c !important;
+}
+
+.color45 .phoneBoxBtn button {
+  background: #dd123c !important;
+}
+
+.color45 .footer_settlement .footer_settlementBtn {
+  background: #dd123c !important;
+}
+
+.color45 .rotaryBox .PoperRotaryBtn {
+  background: #dd123c !important;
+}
+
+.color46 .shoppingChangeBtn > div:nth-child(1) {
+  background: rgba(129, 0, 126, 0.6) !important;
+}
+
+.color46 .shoppingChangeBtn > div:nth-child(2) {
+  background: #81007e !important;
+}
+
+.color46 .shoppingStatusPopup2 {
+  background: rgba(129, 0, 126, 0.6) !important;
+}
+
+.color46 .shoppingStatusPopup {
+  background: #81007e !important;
+}
+
+.color46 .footer_right .footer_shoppingCat .colorShoppCat {
+  background: rgba(129, 0, 126, 0.6) !important;
+}
+
+.color46 .footer_right .footer_shoppingCat .colorBuynow {
+  background: #81007e !important;
+}
+
+.color46 .shoppingStatus_numbersChangeBox .add {
+  background: rgba(129, 0, 126, 0.6) !important;
+}
+
+.color46 .shoppingStatus_infosBox .shoppingStatus_colorSize .shoppingStatus_infosColor .shoppingStatus_colorValue .activeColor {
+  color: rgba(129, 0, 126, 0.3) !important;
+  background: rgba(129, 0, 126, 0.04) !important;
+  border: 1px solid rgba(129, 0, 126, 0.3) !important;
+}
+
+.color46 .on::after {
+  background: #81007e !important;
+}
+
+.color46 .topOn::after {
+  background: #81007e !important;
+}
+
+.color46 .shoppingStatus_Nophone button {
+  color: rgba(129, 0, 126, 0.3) !important;
+  border: 1px solid rgba(129, 0, 126, 0.3) !important;
+}
+
+.color46 .shoppingStatus_Yesphone .shoppingStatus_changePhone .shoppingStatus_Phone {
+  color: rgba(129, 0, 126, 0.3) !important;
+  background: rgba(129, 0, 126, 0.04) !important;
+  border: 1px solid rgba(129, 0, 126, 0.3) !important;
+}
+
+.color46 .articleOn {
+  color: rgba(129, 0, 126, 0.3) !important;
+  background: rgba(129, 0, 126, 0.04) !important;
+  border: 1px solid rgba(129, 0, 126, 0.3) !important;
+}
+
+.color46 .phoneBoxActive {
+  color: #81007e !important;
+}
+
+.color46 .phoneBoxActive::after {
+  background: #81007e !important;
+}
+
+.color46 .phoneBox .selectedActive::after {
+  border-left: 2px solid #81007e !important;
+  border-top: 2px solid #81007e !important;
+}
+
+.color46 .phoneBoxBtn button {
+  background: #81007e !important;
+}
+
+.color46 .footer_settlement .footer_settlementBtn {
+  background: #81007e !important;
+}
+
+.color46 .rotaryBox .PoperRotaryBtn {
+  background: #81007e !important;
+}

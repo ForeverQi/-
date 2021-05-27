@@ -1,0 +1,719 @@
+.pc-homePage {
+  min-width: 3.2rem;
+  margin-bottom: 0;
+  min-height: 100%;
+  height: 100%;
+}
+
+.pc-homePage .wrapper_c {
+  max-width: 7.5rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.pc-homePage .public_div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pc-homePage .bg_div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0px;
+}
+
+.pc-homePage .bg_div p {
+  display: block;
+  max-width: 7.5rem;
+  height: 100%;
+  background-color: #F5F5F5;
+  margin: 0 auto;
+}
+
+.pc-homePage .Max_Center {
+  z-index: 2;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.pc-homePage .Cen_Head {
+  height: 1rem;
+  background: #fafafa;
+}
+
+.pc-homePage .Cen_Head a {
+  display: block;
+}
+
+.pc-homePage .Link_Return {
+  width: 0.28rem;
+  height: 0.45rem;
+  float: left;
+  padding: 0.27rem 0rem 0.28rem 0.26rem;
+}
+
+.pc-homePage .Link_Return img {
+  width: 0.28rem;
+  height: 0.45rem;
+}
+
+.pc-homePage .set_up {
+  width: 0.45rem;
+  height: 0.45rem;
+  margin: 0.27rem 0.21rem 0.28rem 0.29rem;
+  float: right;
+}
+
+.pc-homePage .set_up img {
+  width: 100%;
+}
+
+.pc-homePage .Link_info {
+  width: 0.45rem;
+  height: 0.45rem;
+  margin: 0.27rem 0rem 0.28rem 0.3rem;
+  float: right;
+  position: relative;
+}
+
+.pc-homePage .Link_info p {
+  width: 0.45rem;
+  height: 0.45rem;
+  display: block;
+}
+
+.pc-homePage .Link_info p img {
+  width: 100%;
+}
+
+.pc-homePage .Link_info i {
+  width: 0.1rem;
+  height: 0.1rem;
+  background: #ff4f37;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.pc-homePage .vip_ma {
+  height: 0.45rem;
+  margin: 0.27rem 0rem 0.28rem 0rem;
+  overflow: hidden;
+  float: right;
+}
+
+.pc-homePage .vip_ma p {
+  width: 0.45rem;
+  height: 0.45rem;
+  display: block;
+  float: left;
+}
+
+.pc-homePage .vip_ma p img {
+  width: 100%;
+}
+
+.pc-homePage .vip_ma i {
+  line-height: 0.43rem;
+  font-size: 0.24rem;
+  color: #222;
+  padding-left: 0.04rem;
+}
+
+.pc-homePage .user_Head {
+  background-color: #FFF;
+  border-radius: 0rem 0rem 0.26rem 0.26rem;
+  padding: 0.25rem 0.25rem 0.3rem 0.25rem;
+  margin-bottom: 0.1rem;
+}
+
+.pc-homePage .Tips {
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+
+.pc-homePage .Tips span,
+.pc-homePage .Tips p {
+  display: block;
+}
+
+.pc-homePage .Tips span {
+  width: 0.23rem;
+  height: 0.25rem;
+  float: left;
+  margin-right: 0.1rem;
+}
+
+.pc-homePage .Tips span img {
+  width: 100%;
+}
+
+.pc-homePage .Tips p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.24rem;
+  color: #777;
+}
+
+.pc-homePage .user_info {
+  height: 1.2rem;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+
+.pc-homePage .user_info_R {
+  float: right;
+}
+
+.pc-homePage .user_info_R a {
+  display: block;
+  width: 1.71rem;
+  height: 0.46rem;
+  text-align: center;
+  line-height: 0.46rem;
+  color: #FFF;
+  font-size: 0.24rem;
+  border-radius: 0.23rem;
+}
+
+.pc-homePage .user_info_R a:nth-child(1) {
+  background: linear-gradient(90deg, #ffc13b, #ffd77b);
+  box-shadow: 0.02rem 0.03rem 0.08rem 0 rgba(255, 190, 51, 0.42);
+  margin-bottom: 0.15rem;
+}
+
+.pc-homePage .user_info_R a:nth-child(2) {
+  background: linear-gradient(90deg, #3ba5ff, #9ed5ff);
+  box-shadow: 0.02rem 0.03rem 0.08rem 0 rgba(51, 157, 255, 0.42);
+}
+
+.pc-homePage .user_info_L {
+  overflow: hidden;
+}
+
+.pc-homePage .user_info_L span {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  float: left;
+  margin-right: 0.25rem;
+}
+
+.pc-homePage .user_info_L span img {
+  width: 100%;
+}
+
+.pc-homePage .user_info_L p {
+  display: block;
+  overflow: hidden;
+  padding-top: 0.1rem;
+}
+
+.pc-homePage .user_info_L p i {
+  color: #000;
+  font-size: 0.34rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+  display: block;
+}
+
+.pc-homePage .user_info_L p em {
+  color: #464646;
+  font-size: 0.24rem;
+  display: block;
+}
+
+.pc-homePage .Vip_link {
+  background: url(../images/vip_bg.png) no-repeat left top;
+  height: 0.8rem;
+  background-size: 100%;
+  display: block;
+}
+
+.pc-homePage .Vip_link span,
+.pc-homePage .Vip_link i,
+.pc-homePage .Vip_link p,
+.pc-homePage .Vip_link em {
+  display: block;
+}
+
+.pc-homePage .Vip_link span,
+.pc-homePage .Vip_link i {
+  float: left;
+}
+
+.pc-homePage .Vip_link p,
+.pc-homePage .Vip_link em {
+  float: right;
+}
+
+.pc-homePage .Vip_link i,
+.pc-homePage .Vip_link em {
+  line-height: 0.8rem;
+}
+
+.pc-homePage .Vip_link span {
+  width: 0.24rem;
+  height: 0.21rem;
+  margin: 0.3rem 0.06rem 0rem 0.33rem;
+}
+
+.pc-homePage .Vip_link span img {
+  width: 100%;
+  display: block;
+}
+
+.pc-homePage .Vip_link i {
+  font-size: 0.28rem;
+  color: #4A2A0C;
+  display: block;
+}
+
+.pc-homePage .Vip_link p {
+  margin: 0.29rem 0.20rem 0rem 0.1rem;
+  width: 0.12rem;
+  height: 0.22rem;
+}
+
+.pc-homePage .Vip_link p img {
+  width: 100%;
+  display: block;
+}
+
+.pc-homePage .Vip_link em {
+  font-size: 0.24rem;
+  color: #B88E5C;
+}
+
+.pc-homePage .binding {
+  padding-top: 0.32rem;
+  font-size: 0.24rem;
+  color: #222;
+  text-align: center;
+}
+
+.pc-homePage .binding a {
+  color: #FFAE00;
+}
+
+.pc-homePage .My_Order {
+  background-color: #FFF;
+  border-radius: 0.26rem;
+  padding: 0.45rem 0.25rem;
+  margin-bottom: 0.1rem;
+}
+
+.pc-homePage .My_Order_li {
+  border-bottom: 0.01rem solid #EDEDED;
+  padding-bottom: 0.4rem;
+}
+
+.pc-homePage .My_Order_li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pc-homePage .My_Order_tit {
+  overflow: hidden;
+  display: block;
+}
+
+.pc-homePage .My_Order_tit span,
+.pc-homePage .My_Order_more p,
+.pc-homePage .My_Order_more em {
+  display: block;
+  float: left;
+}
+
+.pc-homePage .My_Order_tit span {
+  font-size: 0.3rem;
+  color: #222;
+  font-weight: 600;
+  line-height: 0.4rem;
+}
+
+.pc-homePage .My_Order_more {
+  float: right;
+}
+
+.pc-homePage .My_Order_more p {
+  width: 0.12rem;
+  height: 0.22rem;
+  margin-left: 0.1rem;
+  margin-top: 0.09rem;
+}
+
+.pc-homePage .My_Order_more p img {
+  width: 100%;
+  display: block;
+}
+
+.pc-homePage .My_Order_more em {
+  font-size: 0.24rem;
+  color: #666;
+  line-height: 0.4rem;
+}
+
+.pc-homePage .My_Order_c {
+  overflow: hidden;
+  padding-top: 0.3rem;
+}
+
+.pc-homePage .Order_state {
+  width: 25%;
+  float: left;
+  display: block;
+}
+
+.pc-homePage .Order_state span {
+  display: block;
+  position: relative;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.pc-homePage .Order_state span p {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.pc-homePage .Order_state span p img {
+  width: 100%;
+}
+
+.pc-homePage .Order_state span em {
+  display: block;
+  position: absolute;
+  right: -0.25rem;
+  top: -0.1rem;
+  border-radius: 0.25rem;
+  background: #FF4F4F;
+  color: #FFF;
+  text-align: center;
+  font-size: 0.22rem;
+  padding: 0.01rem 0.1rem 0.04rem 0.1rem;
+}
+
+.pc-homePage .Order_state i {
+  display: block;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #555;
+}
+
+.pc-homePage .My_Order_tit1 {
+  padding-top: 0.4rem;
+}
+
+.pc-homePage .My_Order_c1 {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pc-homePage .Order_state1 {
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.pc-homePage .Order_state1 span,
+.pc-homePage .Order_state1 i {
+  display: block;
+  text-align: center;
+}
+
+.pc-homePage .Order_state1 span {
+  font-weight: bold;
+  font-size: 0.3rem;
+  color: #222;
+}
+
+.pc-homePage .Order_state1 i {
+  font-size: 0.24rem;
+  color: #555;
+}
+
+.pc-homePage .My_from {
+  background: #FFF;
+  border-radius: 0.26rem;
+  overflow: hidden;
+  padding: 0.24rem 0rem;
+  margin-bottom: 0.1rem;
+}
+
+.pc-homePage .My_from_L {
+  padding-top: 0.2rem;
+  overflow: hidden;
+}
+
+.pc-homePage .My_from_L a {
+  display: block;
+  float: left;
+  width: 33.33%;
+}
+
+.pc-homePage .My_from_L a span,
+.pc-homePage .My_from_L a p {
+  display: block;
+}
+
+.pc-homePage .My_from_L a span {
+  width: 0.52rem;
+  height: 0.52rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.pc-homePage .My_from_L a span img {
+  width: 100%;
+  display: block;
+}
+
+.pc-homePage .My_from_L a span i {
+  display: block;
+  position: absolute;
+  border-radius: 0.25rem;
+  background: #FF4F4F;
+  color: #FFF;
+  text-align: center;
+  font-size: 0.22rem;
+  padding: 0.01rem 0.1rem 0.04rem 0.1rem;
+  right: -0.1rem;
+  top: -0.15rem;
+}
+
+.pc-homePage .My_from_L a p {
+  display: block;
+  font-size: 0.24rem;
+  color: #222;
+  text-align: center;
+  padding-top: 0.12rem;
+}
+
+.pc-homePage .My_from_C {
+  float: right;
+  width: 0.1rem;
+  height: 1.32rem;
+}
+
+.pc-homePage .My_from_C img {
+  width: 100%;
+}
+
+.pc-homePage .My_from_R {
+  margin: 0rem 0.4rem;
+  float: right;
+  margin-top: 0.2rem;
+}
+
+.pc-homePage .My_from_R span {
+  width: 0.52rem;
+  height: 0.52rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.pc-homePage .My_from_R span img {
+  width: 100%;
+}
+
+.pc-homePage .My_from_R p {
+  display: block;
+  font-size: 0.24rem;
+  color: #222;
+  text-align: center;
+  padding-top: 0.12rem;
+}
+
+.pc-homePage .assembly {
+  background: #FFF;
+  border-radius: 0.26rem;
+  margin-bottom: 0.1rem;
+}
+
+.pc-homePage .assembly_tit {
+  padding: 0.4rem 0.25rem;
+  font-size: 0.3rem;
+  color: #222;
+}
+
+.pc-homePage .assembly_con {
+  overflow: hidden;
+  padding: 0rem 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.pc-homePage .assembly_con a {
+  display: block;
+  width: 25%;
+  float: left;
+  margin-bottom: 0.3rem;
+}
+
+.pc-homePage .assembly_con a span,
+.pc-homePage .assembly_con a p,
+.pc-homePage .assembly_con a i {
+  display: block;
+}
+
+.pc-homePage .assembly_con a span {
+  width: 1.09rem;
+  height: 1.09rem;
+  margin: 0 auto;
+}
+
+.pc-homePage .assembly_con a span img {
+  width: 100%;
+}
+
+.pc-homePage .assembly_con a p {
+  font-size: 0.24rem;
+  color: #222;
+  text-align: center;
+}
+
+.pc-homePage .assembly_con a i {
+  font-size: 0.2rem;
+  color: #999;
+  text-align: center;
+  padding-top: 0.1rem;
+}
+
+.pc-homePage .Sign_out {
+  height: 1rem;
+  background: white;
+  border-radius: 0.26rem;
+  line-height: 1rem;
+  color: #FF5050;
+  font-size: 0.28rem;
+  text-align: center;
+  display: block;
+}
+
+.pc-homePage .alert_bg {
+  background: #000;
+  opacity: 0.5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+.pc-homePage .alert_c {
+  background: #FFF;
+  width: 5.8rem;
+  height: 5.15rem;
+  border-radius: 0.22rem;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+}
+
+.pc-homePage .Close_tit {
+  padding-top: 0.45rem;
+  position: relative;
+}
+
+.pc-homePage .Close_tit span {
+  font-size: 0.32rem;
+  color: #222;
+  text-align: center;
+  display: block;
+}
+
+.pc-homePage .Close_tit a {
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+}
+
+.pc-homePage .Close_tit a img {
+  width: 100%;
+}
+
+.pc-homePage .Close_c {
+  padding: 0rem 0.45rem;
+  padding-top: 0.25rem;
+}
+
+.pc-homePage .input_li {
+  width: 100%;
+  border-bottom: 0.01rem solid #EDEDED;
+  margin-bottom: 0.15rem;
+  overflow: hidden;
+}
+
+.pc-homePage .input_li input {
+  height: 0.86rem;
+  line-height: 0.85rem;
+  border: 0;
+  font-size: 0.24rem;
+  color: #222;
+}
+
+.pc-homePage .input_li input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.pc-homePage .input_li input::-moz-input-placeholder {
+  color: #999;
+}
+
+.pc-homePage .input_li input::-ms-input-placeholder {
+  color: #999;
+}
+
+.pc-homePage .input_txt {
+  width: 3.1rem;
+  float: left;
+}
+
+.pc-homePage .input_li a {
+  font-size: 0.24rem;
+  color: #222;
+  overflow: hidden;
+  text-align: center;
+  line-height: 0.85rem;
+  display: block;
+}
+
+.pc-homePage .input_li .input_a {
+  color: #ccc;
+}
+
+.pc-homePage .button_a {
+  width: 3.6rem;
+  height: 0.8rem;
+  background: #ff9900;
+  border-radius: 0.05rem;
+  display: block;
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.28rem;
+  margin-top: 0.55rem;
+}

@@ -1,0 +1,550 @@
+.liveRecords_box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F7F4F8;
+    overflow-y: scroll;
+
+    .liveRecords {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .liveRecords_top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.28rem;
+        color: #7C8290;
+        background-color: #fff;
+        height: 1rem;
+        position: relative;
+        margin-bottom: 0.1rem;
+        flex: none;
+        border-bottom-left-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
+
+    .liveRecords_top .records {
+        position: relative;
+        margin-right: 0.96rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+    }
+
+    .records_active {
+        font-size: 0.32rem;
+        color: #031332;
+
+        span {
+            position: absolute;
+            bottom: -0.1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            content: '';
+            display: block;
+            width: 0.4rem;
+            height: 0.06rem;
+            background: rgba(255, 85, 51, 1);
+            box-shadow: 0rem 0.06rem 0.03rem 0rem rgba(255, 85, 51, 0.12);
+            border-radius: 0.03rem;
+        }
+    }
+
+    .liveRecords_content {
+        flex: auto;
+
+        .liveChase {
+            .liveChase_child {
+                width: 100%;
+                height: 2.2rem;
+                background-color: #fff;
+                border-radius: 0.25rem;
+                margin-bottom: 0.1rem;
+                box-sizing: border-box;
+                padding: 0.2rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .liveChase_child_left {
+                    width: 2.8rem;
+                    height: 1.8rem;
+                    border-radius: 0.05rem;
+                    overflow: hidden;
+                    position: relative;
+                    flex: none;
+                    margin-right: 0.35rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    .ongoing {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 0.24rem;
+                        color: #FFFFFF;
+                        padding: 0 0.09rem;
+                        background: rgba(255, 85, 51, 1);
+                        border-radius: 0.05rem;
+                        height: 0.34rem;
+                        line-height: 0.34rem;
+                        padding-top: 0.01rem;
+                        box-sizing: border-box;
+                    }
+                }
+
+                .liveChase_child_right {
+                    flex: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-size: 0.24rem;
+                    color: #031332;
+                    height: 100%;
+                    box-sizing: border-box;
+                    padding-top: 0.08rem;
+                    overflow: hidden;
+
+                    .liveChase_chilBottom {
+                        font-size: 0.28rem;
+                        color: #222222;
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .bottomBtn {
+                            padding: 0 0.37rem;
+                            height: 0.6rem;
+                            line-height: 0.6rem;
+                            background: rgba(255, 255, 255, 1);
+                            border: 1px solid rgba(237, 237, 237, 1);
+                            border-radius: 0.3rem;
+                            font-size: 0.22rem;
+                            color: #222;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .liveChase_chilTop {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+
+                        .chilTop_title {
+                            margin-bottom: 0.04rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+
+                        .chilTop_time {
+                            font-size: 0.22rem;
+                            color: #7C8290;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content_nodate {
+            height: 100%;
+            background-color: #fff;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.28rem;
+            color: #B9BFC6;
+
+            img {
+                width: 1.72rem;
+                height: 1.6rem;
+                margin-bottom: 0.55rem;
+            }
+
+            span {
+                margin-bottom: 0.79rem;
+            }
+
+            div {
+                padding: 0 0.47rem;
+                height: 0.64rem;
+                line-height: 0.67rem;
+                background: rgba(255, 255, 255, 0.5);
+                border: 1px solid rgba(255, 85, 51, 1);
+                border-radius: 0.32rem;
+                font-size: 0.26rem;
+                color: #FF5533;
+            }
+        }
+
+        .focusOn_record {
+            padding: 0.34rem 0.09rem;
+
+            .recording_title {
+                font-size: 0.28rem;
+                color: #031332;
+                font-weight: bold;
+                margin-bottom: 0.18rem;
+            }
+
+            .focusOn_recording_box {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 0.25rem;
+
+                .focusOn_recording_child {
+                    width: 3.6rem;
+                    height: 2.68rem;
+                    overflow: hidden;
+                    border-radius: 0.08rem;
+                    background-color: #fff;
+                    margin-bottom: 0.11rem;
+                    position: relative;
+
+                    .recording_child_top {
+                        width: 100%;
+                        height: 2.02rem;
+                        border-radius: 0.08rem;
+                        overflow: hidden;
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                        .nper {
+                            position: absolute;
+                            z-index: 5;
+                            font-size: 0.24rem;
+                            color: #FFFFFF;
+                            bottom: 0.19rem;
+                            left: 0.2rem;
+                            right: 0.2rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+
+                        .money_tip {
+                            padding-left: 0.14rem;
+                            padding-right: 0.1rem;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            height: 0.35rem;
+                            line-height: 0.35rem;
+                            background-color: #FC5738;
+                            border-top-left-radius: 0.35rem;
+                            border-bottom-left-radius: 0.35rem;
+                            font-size: 0.24rem;
+                            color: #FFFFFF;
+                            top: 0.1rem;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .recording_child_bottom {
+                        height: 0.66rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 0.24rem;
+                        color: #7C8290;
+                        padding: 0 0.2rem;
+
+                        .child_bottom_left {
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                max-width: 2.34rem;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                display: inline-block;
+                            }
+
+                            img {
+                                width: 0.35rem;
+                                height: 0.35rem;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                margin-right: 0.14rem;
+                            }
+                        }
+
+                        .child_bottom_right {
+                            width: 0.04rem;
+                            height: 0.22rem;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                margin-bottom: 0.05rem;
+                            }
+                        }
+                    }
+
+                    .record_mengban {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        ;
+                        z-index: 10;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        span {
+                            height: 0.7rem;
+                            line-height: 0.76rem;
+                            font-size: 0.26rem;
+                            color: #333333;
+                            padding: 0 0.58rem;
+                            border-radius: 0.35rem;
+                            overflow: hidden;
+                            display: flex;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .focusOn_recordNoing_box {
+                .recordNoing_box_child {
+                    width: 100%;
+                    height: 1.3rem;
+                    padding: 0.35rem 0.21rem;
+                    box-sizing: border-box;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    overflow: hidden;
+                    position: relative;
+
+                    .recordNoing_box_child_left {
+                        width: 0.6rem;
+                        height: 0.6rem;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        margin-right: 0.31rem;
+                        flex: none;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .recordNoing_box_child_center {
+                        font-size: 0.22rem;
+                        color: #7C8290;
+                        flex: auto;
+                        overflow: hidden;
+                        margin-right: 0.2rem;
+
+                        div {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                    }
+
+                    .recordNoing_box_child_right {
+                        flex: none;
+
+                        img {
+                            width: 0.04rem;
+                            height: 0.22rem;
+                        }
+                    }
+
+
+                    .focusOn_no {
+                        width: 1.7rem;
+                        height: 100%;
+                        display: flex;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        justify-content: center;
+                        align-items: center;
+                        background: rgba(255, 85, 51, 1);
+                        border-radius: 0.08rem;
+                        font-size: 0.26rem;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .liveRecords_nodata {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.PoperContentView_box {
+    height: 10.1rem;
+    background: rgba(255, 255, 255, 1);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+    .PoperContentView {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0.95rem 0.1rem 0 0.1rem;
+        box-sizing: border-box;
+        position: relative;
+
+        .hostHeader {
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .recordTitle {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.32rem;
+            color: #031332;
+            margin-bottom: 0.31rem;
+            flex: none;
+
+            div {
+                padding: 0 0.31rem;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                border: 1px solid rgba(255, 85, 51, 1);
+                border-radius: 0.25rem;
+                font-size: 0.26rem;
+                color: rgba(255, 85, 51, 1);
+
+                img {
+                    width: 0.29rem;
+                    height: 0.21rem;
+                }
+            }
+        }
+
+        .playback {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.28rem;
+            color: #7C8290;
+            margin-bottom: 0.48rem;
+            flex: none;
+
+            .playback_child {
+                position: relative;
+                margin-right: 1.13rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .records_room {
+            flex: auto;
+            overflow-y: scroll;
+
+            .records_room_No {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                // justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 0.28rem;
+                color: #B9BFC6;
+
+                img {
+                    width: 1.72rem;
+                    height: 1.6rem;
+                    margin-bottom: 0.55rem;
+                    margin-top: 1.2rem;
+                }
+            }
+        }
+
+        .playback_content_box {
+            
+        }
+    }
+}
+
+// 返回按钮
+.voerTop_menuLeft {
+    width: 0.45rem;
+    height: 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0.29rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+    span::after {
+        content: '';
+        display: block;
+        width: 0.2rem;
+        height: 0.2rem;
+        border-left: 2px solid #000;
+        border-top: 2px solid #000;
+        transform: rotate(-45deg);
+        // margin-left: 0.1rem;
+    }
+}

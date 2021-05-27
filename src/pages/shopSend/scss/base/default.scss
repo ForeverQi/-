@@ -1,0 +1,14 @@
+@import './variables.scss';
+.send_warper,
+.send_content {
+    .van-switch--on,
+    .van-checkbox__icon--checked .van-icon {
+        background-color: $themColor;
+    }
+    .van-checkbox__icon--checked .van-icon {
+        border-color: $themColor;
+    }
+    .van-nav-bar .van-icon{
+        color: $themColor;
+    }
+}

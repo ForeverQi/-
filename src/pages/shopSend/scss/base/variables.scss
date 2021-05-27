@@ -1,0 +1,18 @@
+/**/
+@import '../base/color.scss';
+$size19:0.38rem;
+$size16:0.32rem;
+$size15:0.30rem;
+$size14:0.28rem;
+$size13:0.26rem;
+$size10:0.2rem;
+$padLr:0.25rem;
+:export {
+	size16:$size16;
+	size15:$size15;
+	size14:$size14;
+	size13:$size13;
+	size10:$size10;
+	padLr:$padLr;
+}
+ 

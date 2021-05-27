@@ -1,0 +1,265 @@
+.orderRecord-box {
+    .orderRecord {
+        padding-top: 1rem;
+    }
+    // vant的样式
+    .van-loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000001;
+    }
+    .van-overlay {
+        position: fixed;
+        z-index: 1000000;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .van-dialog {
+        border-radius: 8px;
+        top: 50% !important;
+        z-index: 1000005;
+    }
+
+    .wrapper_bg {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .wrapper_bg_c {
+        background: #f8f8f8;
+        width: 100%;
+        height: 100%;
+    }
+
+    .Max_Center {
+        z-index: 2;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .head_tab {
+        border-top: 0.01rem solid #ededed;
+        background: #fff;
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+        height: 1rem;
+    }
+
+    .head_tab_li {
+        padding: 0.3rem 0.25rem;
+        float: left;
+        font-size: 0.24rem;
+        color: #222;
+    }
+
+    .bor_color {
+        width: 0.43rem;
+        height: 0.05rem;
+        background: #fc273c;
+        margin: 0 auto;
+        margin-top: 0.12rem;
+        display: none;
+    }
+
+    .cur {
+        font-weight: 600;
+        font-size: 0.28rem;
+    }
+
+    .cur .bor_color {
+        display: block;
+    }
+
+    .company_ul {
+        background: #fff;
+        padding: 0rem 0.25rem 0.3rem 0.25rem;
+        border-radius: 0rem 0rem 0.2rem 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .company_li {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0.14rem;
+    }
+
+    .company_li_txt {
+        float: left;
+        font-size: 0.24rem;
+        color: #222;
+        padding-top: 0.05rem;
+    }
+
+    .company_li_txt1 {
+        background: whitesmoke;
+        border-radius: 0.03rem;
+        font-size: 0.22rem;
+        color: #666;
+        float: left;
+        margin-left: 0.1rem;
+        padding: 0.05rem 0.1rem;
+    }
+
+    .logistics {
+        background: #fff;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+        padding: 0.3rem 0.25rem 0.3rem 0rem;
+    }
+
+    .logistics_c {
+        margin-left: 0.43rem;
+        border-left: 0.02rem solid #dbdbdb;
+    }
+
+    .logistics_li {
+        padding-left: 0.5rem;
+        position: relative;
+        padding-bottom: 0.55rem;
+    }
+
+    .logistics_li:last-child {
+        padding-bottom: 0;
+    }
+
+    .logistics_OK {
+        width: 0.38rem;
+        height: 0.38rem;
+        background: #fc273c;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.19rem;
+        top: 0;
+    }
+
+    .logistics_text {
+        width: 100%;
+    }
+
+    .logistics_text1 {
+        font-weight: 600;
+        font-size: 0.28rem;
+        color: #333;
+        margin-bottom: 0.15rem;
+    }
+
+    .logistics_text2 {
+        font-size: 0.24rem;
+        color: #777;
+        margin-bottom: 0.07rem;
+    }
+
+    .logistics_text3 {
+        font-size: 0.22rem;
+        color: #777;
+        font-weight: 600;
+    }
+
+    .logistics_OK1 {
+        width: 0.38rem;
+        height: 0.38rem;
+        background: #e0e0e0;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.19rem;
+        top: 0;
+    }
+
+    .logistics_OK2 {
+        width: 0.14rem;
+        height: 0.14rem;
+        background: #e0e0e0;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.08rem;
+        top: 0.13rem;
+    }
+
+    .icon1 {
+        width: 0.2rem;
+        height: 0.15rem;
+        margin: 0.12rem 0.09rem 0rem 0.1rem;
+        display: block;
+    }
+
+    .icon2 {
+        width: 0.21rem;
+        height: 0.23rem;
+        margin: 0 auto;
+        margin-top: 0.07rem;
+        display: block;
+    }
+
+    .icon3 {
+        width: 0.22rem;
+        height: 0.2rem;
+        margin: 0 auto;
+        margin-top: 0.1rem;
+        display: block;
+    }
+
+    .icon4 {
+        width: 0.19rem;
+        height: 0.19rem;
+        margin: 0 auto;
+        margin-top: 0.09rem;
+        display: block;
+    }
+
+    .icon5 {
+        width: 0.18rem;
+        height: 0.2rem;
+        margin: 0 auto;
+        margin-top: 0.1rem;
+        display: block;
+    }
+
+    .noLoginsDate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #888888;
+        font-size: 0.26rem;
+    }
+
+    .noLoginsDate img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .noDateInfoFather {
+        height: 100vh;
+    }
+
+    .noDateInfo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .openImgAlert {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

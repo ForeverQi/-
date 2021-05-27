@@ -1,0 +1,255 @@
+
+button{
+    outline: none;
+    border: 0;
+  }
+  .nextButtonSuccess{
+    background: #FF730C !important;
+  }
+  input {
+    outline: none;
+    border: 0;
+    color: #222222;
+  }
+  // 返回按钮
+  .searchNoteTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.1rem;
+    background: #f6f6f6;
+    font-size: 0.36rem;
+    color: #303030;
+    font-weight: bold;
+    position: relative;
+    .searchNoteTop_left {
+      position: absolute;
+      left: 0.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      .voerTop_menuLeft {
+        width: 0.45rem;
+        height: 0.45rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        span::after {
+          content: "";
+          display: block;
+          width: 0.2rem;
+          height: 0.2rem;
+          border-left: 2px solid #000;
+          border-top: 2px solid #000;
+          transform: rotate(-45deg);
+          // margin-left: 0.1rem;
+        }
+      }
+    }
+  }
+  .title_style {
+    font-size: 0.34rem;
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 0.15rem;
+    display: block;
+  }
+  .certification {
+    background: #f5f4f7;
+    .certification_box {
+      background: #fff;
+      padding: 0.43rem 0.46rem 0.3rem;
+      margin-bottom: 0.2rem;
+      .certification_title {
+        span {
+          display: block;
+          &:last-child {
+            font-size: 0.28rem;
+            color: #999999;
+          }
+        }
+        .certification_titleNumber{
+            margin-bottom: 0.3rem;
+        }
+        .certification_titleNumber{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .certification_title_father{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 0.9rem;
+            textarea{
+                border: 0;
+            }
+            .certification_title_child{
+                position: absolute;
+                z-index: 5;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+    
+            }
+        }
+      }
+      .certification_box_top {
+        // padding-bottom: 0.28rem;
+        .certification_name {
+          margin-bottom: 0.6rem;
+          span {
+            // display: block;
+            margin-bottom: 0.35rem;
+          }
+          input {
+            width: 100%;
+            border-bottom: 1px solid #e6e6e6;
+            padding-bottom: 0.43rem;
+          }
+          .certification_nameNumer{
+              display: flex;
+              justify-content: space-between;
+              .title_style_num{
+                font-size: 0.24rem;
+                color: #C5C5C5;
+              }
+          }
+        }
+      }
+    }
+    .certification_content {
+      background: #fff;
+      padding: 0.44rem 0.55rem 0.74rem 0.52rem;
+      .certification_content_title {
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.37rem;
+        .info {
+          font-size: 0.34rem;
+          color: #303030;
+          margin-bottom: 0.4rem;
+          display: inline-block;
+          font-weight: bold;
+        }
+        .certification_content_div {
+          display: flex;
+          align-items: center;
+          span {
+            width: 1.84rem;
+            display: inline-block;
+            font-size: 0.32rem;
+            color: #333333;
+          }
+        }
+      }
+      .certification_imgFile {
+        .imgFile_title {
+          margin-bottom: 0.5rem;
+          font-size: 0.34rem;
+          color: #303030;
+          font-weight: bold;
+        }
+        .imgFile_box {
+          display: flex;
+          flex-wrap: wrap;
+          // margin-bottom: 0.3rem;
+          .imgFile_box_child {
+            &:nth-child(3n) {
+              margin-right: 0;
+            }
+            img {
+              width: 1.88rem;
+              height: 1.88rem;
+            }
+            margin-right: 0.39rem;
+            .imgFile_box_child_file {
+              position: relative;
+              overflow: hidden;
+              img {
+                width: 1.88rem;
+                height: 1.88rem;
+              }
+              .upFile {
+                position: absolute;
+                z-index: 10;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0;
+              }
+            }
+          }
+        }
+        .shopName{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 0.42rem;
+          padding-top: 0.51rem;
+          border-bottom: 1px solid #E6E6E6;
+          input{
+            text-align: right;
+            padding-right: 0.1rem;
+          }
+          .shopName_left{
+            span{
+              font-weight: bold;
+              font-size: 0.32rem;
+              color: #303030;
+            }
+          }
+          .shopName_right{
+            img{
+              width: 0.13rem;
+              height: 0.22rem;
+            }
+          }
+        }
+        .shopName_inventory{
+            border: 0;
+            padding-bottom: 0;
+            padding-top: 0.45rem;
+            .shopName_right{
+                display: flex;
+                div{
+                    &:first-child{
+                        margin-right: 0.34rem;
+                    }
+                }
+                img{
+                    width: 0.25rem;
+                    height: 0.25rem;
+                }
+            }
+        }
+        .shopName_inventory_top{
+            padding-top: 0.7rem !important;
+        }
+        .nextButton{
+          display: flex;
+          justify-content: center;
+          padding-top: 0.59rem;
+          button{
+            width: 5.19rem;
+            height: 0.77rem;
+            background:rgba(219,219,219,1);
+            border-radius: 0.15rem;
+            font-size: 0.3rem;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+.release_box_title {
+    font-size: 0.34rem;
+    color: #222222;
+    margin-bottom: 0.7rem;
+    .release_box_num{
+      color: #666666;
+      font-weight: bold;
+    }
+  }

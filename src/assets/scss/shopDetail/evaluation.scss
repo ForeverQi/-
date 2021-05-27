@@ -1,0 +1,251 @@
+.evaluation-box {
+    .evaluation {
+        padding-top: 1rem;
+    }
+    
+    // 顶部标题
+    .evaluation_title {
+        text-align: center;
+        font-size: 0.32rem;
+        color: #262626;
+        height: 0.88rem;
+        line-height: 0.88rem;
+        padding-bottom: 0.11rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 300;
+
+        .evaluation_titleBox {
+            position: relative;
+
+            // 左边返回按钮
+            .evaluation_titleBack {
+                position: absolute;
+                left: 0.26rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .evaluation_titleBack::after {
+                content: "";
+                display: block;
+                width: 0.2rem;
+                height: 0.2rem;
+                border-left: 2px solid #000;
+                border-top: 2px solid #000;
+                transform: rotate(-45deg);
+                margin-left: 0.1rem;
+            }
+        }
+    }
+    .container {
+        font-size: 0;
+        padding-top: 1rem;
+        height: calc(100vh - 1rem);
+
+        // 顶部全部评价导航
+        .container_top {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.01rem solid #ededed;
+            padding-bottom: 0.17rem;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+            // margin-bottom: 0.3rem;
+            margin-top: 0.1rem;
+
+            > div {
+                // margin-right: 0.15rem;
+                width: 1.63rem;
+                height: 0.6rem;
+                background-color: #f5f5f5;
+                border-radius: 0.05rem;
+                line-height: 0.6rem;
+                text-align: center;
+                font-size: 0.24rem;
+                color: #000000;
+                border: 0.01rem solid #f5f5f5;
+
+                .container_topNumber {
+                    color: #999999;
+                }
+            }
+        }
+
+        // 客户评价内容·
+        .customer_commentsBox {
+            border-bottom: 0.01rem solid #ededed;
+            margin-bottom: 0.31rem;
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            .customer_comments {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+                overflow: hidden;
+
+                // 头像
+                .customer_headrImg {
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 0.23rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                // 名字和评价时间
+                .customer_nameTime {
+                    flex: auto;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 0.22rem;
+                        color: #21232a;
+                    }
+
+                    .customer_time {
+                        margin-top: 0.06rem;
+
+                        span {
+                            color: #cccccc;
+                            font-size: 0.22rem;
+                        }
+                    }
+                }
+
+                // 星星指数
+                .customer_star {
+                    display: flex;
+
+                    .starStyle {
+                        // margin-right: 0.09rem;
+                        display: flex;
+                        img {
+                            width: 0.23rem;
+                            height: 0.22rem;
+                            margin-right: 0.09rem;
+                        }
+                    }
+                }
+            }
+
+            //   评价内容
+            .customer_content {
+                padding: 0.24rem 0.26rem 0.24rem 0;
+                font-size: 0.28rem;
+                color: #222222;
+                // border-bottom: 0.01rem solid #EDEDED;
+                margin-left: 0.26rem;
+                // margin-bottom: 0.31rem;
+
+                .customer_contentText {
+                    margin-bottom: 0.22rem;
+                }
+
+                .customer_contentImgBox {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .customer_contentImg {
+                        img {
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            border-radius: 0.05rem;
+                            margin-bottom: 0.15rem;
+                            margin-right: 0.07rem;
+                        }
+                    }
+                }
+
+                // 商家回复
+                .customer_contentReply {
+                    padding: 0.28rem 0.31rem 0.31rem 0.33rem;
+                    background-color: #fafafa;
+                    color: #868686;
+                    font-size: 0.26rem;
+                    border-radius: 0.16rem;
+                    position: relative;
+                    margin-top: 0.2rem;
+
+                    // 三角形
+                    .customer_replySanjiao {
+                        width: 0;
+                        height: 0;
+                        border-width: 0 0.15rem 0.15rem;
+                        border-style: solid;
+                        border-color: transparent transparent #fafafa;
+                        position: absolute;
+                        top: -0.15rem;
+                        left: 0.5rem;
+                    }
+
+                    .contentReply_name {
+                        color: #272727;
+                    }
+
+                    span {
+                        line-height: 0.36rem;
+                    }
+                }
+
+                // 追评内容
+                .afterReview {
+                    margin-top: 0.21rem;
+                    .user_review {
+                        font-size: 0.24rem;
+                        color: #ff9900;
+                        margin-bottom: 0.1rem;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    // 导航点击选中的样式
+    .on {
+        background-color: #fff8ef !important;
+        border: 0.01rem solid #ffad77 !important;
+
+        span {
+            color: #ff9900;
+
+            .container_topNumber {
+                color: #ff9900 !important;
+            }
+        }
+    }
+
+    //没有数据的样式
+    .noDataEva {
+        height: calc(100vh - 1.9rem);
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.28rem;
+        color: #888888;
+        img {
+            width: 1.97rem;
+            height: 1.97rem;
+            margin-bottom: 0.36rem;
+        }
+    }
+
+    .scrollBox {
+        padding-top: 0.3rem;
+    }
+    
+}

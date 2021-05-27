@@ -1,0 +1,635 @@
+.van-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+.van-overlay {
+    position: fixed;
+    z-index: 1000 !important;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.van-dialog {
+    border-radius: 8px;
+    top: 50% !important;
+}
+
+button {
+    outline: none;
+    border: 0;
+}
+
+.contents {
+    height: 100vh;
+}
+
+#video_liveList {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // overflow: hidden;
+    height: 100vh;
+    // background: #f5f2f5;
+}
+
+// 返回按钮
+.searchNoteTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.88rem;
+    background: linear-gradient(90deg,
+            rgba(0, 122, 255, 1),
+            rgba(0, 168, 255, 1));
+    font-size: 0.34rem;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    .searchNoteTop_left {
+        position: absolute;
+        left: 0.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .voerTop_menuLeft {
+            width: 0.45rem;
+            height: 0.45rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+            span::after {
+                content: "";
+                display: block;
+                width: 0.2rem;
+                height: 0.2rem;
+                border-left: 2px solid #fff;
+                border-top: 2px solid #fff;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+.videoList_box {
+    height: calc(100% - 1.05rem);
+    box-sizing: border-box;
+    padding-top: 0.88rem;
+
+    .videoList_content {
+        // position: absolute;
+        // position: fixed;
+        // top: 0.88rem;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // overflow-y: scroll;
+        height: 100%;
+
+        .videoList {
+            height: 100%;
+            // min-height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .videoList_info {
+                padding: 0.3rem 0.3rem 0;
+                background: #fff;
+                border-bottom-left-radius: 0.3rem;
+                border-bottom-right-radius: 0.3rem;
+                overflow: hidden;
+                margin-bottom: 0.2rem;
+                flex: none;
+                flex-grow: 0;
+
+                .videoList_info_top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 0.3rem;
+
+                    .videoList_info_top_img {
+                        width: 1rem;
+                        height: 1rem;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        flex: none;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .videoList_info_top_content {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 0.29rem;
+                        flex: auto;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        word-wrap: break-word;
+
+                        span {
+                            font-size: 0.24rem;
+                            color: #666666;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            word-wrap: break-word;
+                            display: block;
+                        }
+
+                        div {
+                            display: flex;
+                            align-items: center;
+
+                            span {
+                                font-size: 0.34rem;
+                                color: #222222;
+                                line-height: 1;
+                            }
+
+                            img {
+                                width: 0.13rem;
+                                height: 0.21rem;
+                                margin-left: 0.1rem;
+                            }
+                        }
+                    }
+
+                    .videoList_info_top_editor {
+                        font-size: 0.24rem;
+                        color: #888888;
+                        flex: none;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            margin-left: 0.13rem;
+                            width: 0.12rem;
+                            height: 0.2rem;
+                        }
+                    }
+                }
+
+                .videoList_info_bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 0.42rem;
+
+                    .videoList_info_bottom_left {
+                        flex: auto;
+                        padding-right: 0.59rem;
+                        box-sizing: border-box;
+
+                        .videoList_info_liuliang {
+                            padding-top: 0.1rem;
+                            font-size: 0.24rem;
+                            color: #222222;
+
+                            .videoList_info_liuliang_first {
+                                position: relative;
+                                margin-right: 0.47rem;
+
+                                &::before {
+                                    content: '';
+                                    display: block;
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 0.18rem;
+                                    background: #DBDBDB;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: -0.23rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .videoList_info_bottom_right {
+                        flex: none;
+                        padding: 0 0.35rem;
+                        background: rgba(0, 122, 255, 1);
+                        border-radius: 30px;
+                        font-size: 0.26rem;
+                        height: 0.6rem;
+                        line-height: 0.65rem;
+
+                        span {
+                            line-height: 1;
+                        }
+
+                        color: #fff;
+                    }
+                }
+            }
+
+            .videoList_main {
+                border-top-left-radius: 0.26rem;
+                border-top-right-radius: 0.26rem;
+                flex: auto;
+                // flex-grow: 1;
+                position: relative;
+                background-color: #fff;
+                // min-height: 100%;
+                // overflow: hidden;
+
+                .videoList_main_box {
+                    // padding-top: 0.41rem;
+                    border-top-left-radius: 0.26rem;
+                    border-top-right-radius: 0.26rem;
+                    position: relative;
+                    height: 100%;
+                    // display: flex;
+                    // flex-direction: column;
+                    // height: 100%;
+                    box-sizing: border-box;
+
+                    
+
+                    .videoList_child_box {
+                        &:last-child {
+                            .fengeBox {
+                                display: none;
+                            }
+                        }
+
+                        .videoList_child {
+                            display: flex;
+                            padding-left: 0.31rem;
+                            box-sizing: border-box;
+                            padding-top: 0.29rem;
+                            padding-bottom: 0.29rem;
+
+                            .videoList_child_left {
+                                width: 3rem;
+                                height: 1.92rem;
+                                border-radius: 0.06rem;
+                                overflow: hidden;
+                                position: relative;
+                                flex: none;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                                .watchBox {
+                                    position: absolute;
+                                    top: 0.17rem;
+                                    left: 0.21rem;
+                                    font-size: 0.22rem;
+                                    color: #fff;
+
+                                    img {
+                                        width: 0.27rem;
+                                        height: 0.17rem;
+                                        margin-right: 0.09rem;
+                                    }
+                                }
+
+                                .statePlay {
+                                    position: absolute;
+                                    height: 0.6rem;
+                                    line-height: 0.65rem;
+                                    border-radius: 0.3rem;
+                                    color: #fff;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    font-size: 0.26rem;
+                                    overflow: hidden;
+
+                                    span {
+                                        width: 100%;
+                                        height: 100%;
+                                        display: inline-block;
+                                        background: #007AFF;
+                                        padding: 0 0.42rem;
+                                        white-space: nowrap;
+                                    }
+                                }
+
+                                .hostName {
+                                    font-size: 0.22rem;
+                                    color: #FFFFFF;
+                                    display: flex;
+                                    position: absolute;
+                                    bottom: 0.09rem;
+                                    padding: 0 0.14rem;
+                                    box-sizing: border-box;
+
+                                    .hostName_img {
+                                        flex: none;
+                                        width: 0.39rem;
+                                        height: 0.39rem;
+                                        border-radius: 50%;
+                                        background-color: #fff;
+                                        margin-right: 0.1rem;
+                                        overflow: hidden;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+
+                                    .hostName_text {
+                                        flex: auto;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        white-space: nowrap;
+                                        word-wrap: break-word;
+                                        max-width: 2rem;
+                                        margin-top: 0.05rem;
+                                    }
+                                }
+                            }
+
+                            .videoList_child_right {
+                                padding-left: 0.33rem;
+                                padding-right: 0.29rem;
+                                flex: auto;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
+                                .videoList_child_right_top {
+                                    font-size: 0.26rem;
+                                    color: #031332;
+
+                                    span {
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                    }
+                                }
+
+                                .videoList_child_right_center {
+                                    font-size: 0.22rem;
+                                    flex: auto;
+
+                                    span {
+                                        color: #FF5656;
+
+                                    }
+                                }
+
+                                .videoList_child_right_bottom {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    .videoList_child_status {
+                                        img {
+                                            width: 0.58rem;
+                                            height: 0.58rem;
+                                            vertical-align: middle;
+                                        }
+
+                                        font-size: 0.22rem;
+                                        color: #222222;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .fengeBox {
+                            width: 100%;
+                            height: 0.04rem;
+                            text-align: right;
+                            position: relative;
+
+                            span {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                width: 3.86rem;
+                                height: 0.02rem;
+                                background: #EDEDED;
+
+                            }
+                        }
+                    }
+
+                    .overLiveBox {
+                        .playbackText {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            font-size: 0.22rem;
+                            color: #FFFFFF;
+                            height: 0.34rem;
+                            line-height: 0.38rem;
+                            padding: 0 0.16rem;
+                            background: #22CC80;
+                            border-bottom-right-radius: 0.1rem;
+                            overflow: hidden;
+                        }
+
+                        .playbackText2 {
+                            position: absolute;
+                            top: 0.13rem;
+                            right: 0.13rem;
+                            font-size: 0.22rem;
+                            color: #FFFFFF;
+                            height: 0.34rem;
+                            line-height: 0.38rem;
+                            padding: 0 0.08rem;
+                            background: #22CC80;
+                            border-radius: 0.06rem;
+                            overflow: hidden;
+                        }
+
+                        .continue_live {
+                            height: 0.6rem;
+                            line-height: 0.68rem;
+                            font-size: 0.26rem;
+                            color: #F5F5F5;
+                            background: rgba(0, 122, 255, 1);
+                            border-radius: 0.3rem;
+                            width: 1.87rem;
+                            text-align: center;
+
+                            span {
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+
+                .liveList_noLive {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.26rem;
+                    color: #888888;
+
+                    img {
+                        width: 0.98rem;
+                        height: 1.09rem;
+                        margin-bottom: 0.4rem;
+                    }
+
+                    .liveList_noLive_btn {
+                        width: 3.8rem;
+                        height: 0.9rem;
+                        background: rgba(0, 122, 255, 1);
+                        box-shadow: 0.09rem 0.16rem 0.3rem 0 rgba(0, 136, 255, 0.2);
+                        border-radius: 0.45rem;
+                        color: #fff;
+                        font-size: 0.28rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.checkTitle {
+    font-size: 0.34rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 5;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0.05rem;
+        left: 0;
+        width: 100%;
+        height: 0.1rem;
+        background: linear-gradient(90deg, rgba(0, 122, 255, 1), rgba(38, 195, 250, 1));
+        box-shadow: 0px 0.03rem 0.1rem 0px rgba(0, 122, 255, 0.3);
+        opacity: 0.8;
+        border-radius: 0.05rem;
+        z-index: -1;
+    }
+}
+
+// 回到顶部
+.goScrollTop {
+    position: fixed;
+    right: 0.23rem;
+    bottom: 1rem;
+    z-index: 20;
+
+    img {
+        width: 0.82rem;
+        height: 0.82rem;
+    }
+}
+
+.createLiveBox {
+    position: fixed;
+    width: 2.19rem;
+    height: 1.9rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .createLiveBox_content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-52%, -50%);
+        font-size: 0.22rem;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 0.58rem;
+            height: 0.38rem;
+            margin-bottom: 0.07rem;
+        }
+    }
+}
+
+.vanSwiper {
+    position: relative;
+}
+
+.van-swipe-item {
+    position: relative;
+}
+.videoList_title {
+    margin-top: 0.41rem;
+    display: flex;
+    font-size: 0.26rem;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.11rem;
+    flex: none;
+
+    span {
+        margin-right: 0.88rem;
+
+        &:last-child {
+            margin-right: 0rem;
+        }
+    }
+}
+.videoList_title2{
+    position: fixed;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: #fff;
+    margin-top: 0;
+    height: 1rem;
+    opacity: 0;
+    transition: all 0.2s ease-in 0s;
+}
+.noDataList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.28rem;
+    color: #B9BFC6;
+}
+.noDataList img{
+    width: 1.72rem;
+    height: 1.6rem;
+    margin-bottom: 0.45rem;
+}

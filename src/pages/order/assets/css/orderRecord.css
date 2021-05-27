@@ -1,0 +1,267 @@
+.orderRecord-box .orderRecord {
+  padding-top: 1rem;
+}
+
+.orderRecord-box .van-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000001;
+}
+
+.orderRecord-box .van-overlay {
+  position: fixed;
+  z-index: 1000000;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.orderRecord-box .van-dialog {
+  border-radius: 8px;
+  top: 50% !important;
+  z-index: 1000005;
+}
+
+.orderRecord-box .wrapper_bg {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.orderRecord-box .wrapper_bg_c {
+  background: #f8f8f8;
+  width: 100%;
+  height: 100%;
+}
+
+.orderRecord-box .Max_Center {
+  z-index: 2;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.orderRecord-box .head_tab {
+  border-top: 0.01rem solid #ededed;
+  background: #fff;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  height: 1rem;
+}
+
+.orderRecord-box .head_tab_li {
+  padding: 0.3rem 0.25rem;
+  float: left;
+  font-size: 0.24rem;
+  color: #222;
+}
+
+.orderRecord-box .bor_color {
+  width: 0.43rem;
+  height: 0.05rem;
+  background: #fc273c;
+  margin: 0 auto;
+  margin-top: 0.12rem;
+  display: none;
+}
+
+.orderRecord-box .cur {
+  font-weight: 600;
+  font-size: 0.28rem;
+}
+
+.orderRecord-box .cur .bor_color {
+  display: block;
+}
+
+.orderRecord-box .company_ul {
+  background: #fff;
+  padding: 0rem 0.25rem 0.3rem 0.25rem;
+  border-radius: 0rem 0rem 0.2rem 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.orderRecord-box .company_li {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.14rem;
+}
+
+.orderRecord-box .company_li_txt {
+  float: left;
+  font-size: 0.24rem;
+  color: #222;
+  padding-top: 0.05rem;
+}
+
+.orderRecord-box .company_li_txt1 {
+  background: whitesmoke;
+  border-radius: 0.03rem;
+  font-size: 0.22rem;
+  color: #666;
+  float: left;
+  margin-left: 0.1rem;
+  padding: 0.05rem 0.1rem;
+}
+
+.orderRecord-box .logistics {
+  background: #fff;
+  border-radius: 0.2rem;
+  margin-bottom: 0.2rem;
+  padding: 0.3rem 0.25rem 0.3rem 0rem;
+}
+
+.orderRecord-box .logistics_c {
+  margin-left: 0.43rem;
+  border-left: 0.02rem solid #dbdbdb;
+}
+
+.orderRecord-box .logistics_li {
+  padding-left: 0.5rem;
+  position: relative;
+  padding-bottom: 0.55rem;
+}
+
+.orderRecord-box .logistics_li:last-child {
+  padding-bottom: 0;
+}
+
+.orderRecord-box .logistics_OK {
+  width: 0.38rem;
+  height: 0.38rem;
+  background: #fc273c;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.19rem;
+  top: 0;
+}
+
+.orderRecord-box .logistics_text {
+  width: 100%;
+}
+
+.orderRecord-box .logistics_text1 {
+  font-weight: 600;
+  font-size: 0.28rem;
+  color: #333;
+  margin-bottom: 0.15rem;
+}
+
+.orderRecord-box .logistics_text2 {
+  font-size: 0.24rem;
+  color: #777;
+  margin-bottom: 0.07rem;
+}
+
+.orderRecord-box .logistics_text3 {
+  font-size: 0.22rem;
+  color: #777;
+  font-weight: 600;
+}
+
+.orderRecord-box .logistics_OK1 {
+  width: 0.38rem;
+  height: 0.38rem;
+  background: #e0e0e0;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.19rem;
+  top: 0;
+}
+
+.orderRecord-box .logistics_OK2 {
+  width: 0.14rem;
+  height: 0.14rem;
+  background: #e0e0e0;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.08rem;
+  top: 0.13rem;
+}
+
+.orderRecord-box .icon1 {
+  width: 0.2rem;
+  height: 0.15rem;
+  margin: 0.12rem 0.09rem 0rem 0.1rem;
+  display: block;
+}
+
+.orderRecord-box .icon2 {
+  width: 0.21rem;
+  height: 0.23rem;
+  margin: 0 auto;
+  margin-top: 0.07rem;
+  display: block;
+}
+
+.orderRecord-box .icon3 {
+  width: 0.22rem;
+  height: 0.2rem;
+  margin: 0 auto;
+  margin-top: 0.1rem;
+  display: block;
+}
+
+.orderRecord-box .icon4 {
+  width: 0.19rem;
+  height: 0.19rem;
+  margin: 0 auto;
+  margin-top: 0.09rem;
+  display: block;
+}
+
+.orderRecord-box .icon5 {
+  width: 0.18rem;
+  height: 0.2rem;
+  margin: 0 auto;
+  margin-top: 0.1rem;
+  display: block;
+}
+
+.orderRecord-box .noLoginsDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #888888;
+  font-size: 0.26rem;
+}
+
+.orderRecord-box .noLoginsDate img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.orderRecord-box .noDateInfoFather {
+  height: 100vh;
+}
+
+.orderRecord-box .noDateInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orderRecord-box .openImgAlert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderRecord-box .openImgAlert img {
+  width: 100%;
+  object-fit: contain;
+}
