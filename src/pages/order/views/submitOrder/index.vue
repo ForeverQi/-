@@ -3,7 +3,7 @@
  * @description  : 提交订单页面
  * @Date         : 2020-09-08 15:43:40
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-27 16:21:16
+ * @LastEditTime : 2021-05-28 13:56:04
  * @FilePath     : /orderOut/src/pages/order/views/submitOrder/index.vue
 -->
 <template>
@@ -44,7 +44,7 @@
                 </div>
 
                 <!-- 新版头部快递配送，同城配送，到店自提 -->
-                <div class="changeWays newChangeWays" v-if="delNav.length">
+                <div class="changeWays newChangeWays" v-if="delNav.length && order_type != 2">
                     <template v-for="(item,index) in delNav">
                         <div v-if="item.type == 'express'" :class="changeNewWay == 0 ? 'cleft_news changeWays_active': 'cleft_news'" @click="changeNewWayFun(0,'express')"
                               :style="{borderTopRightRadius: changeNewWay == 0 ? '0.16rem' : '0rem',color:changeNewWay == 0 ? newColor1 : '',background: changeNewWay == 0 ? '#fff' : '',transform: changeNewWay == 0 ? 'translateY(-0.1rem)' : ''}">
@@ -96,17 +96,17 @@
                         </div>
                     </div>
                     <!-- 快递发货, 同城配送 -->
-                    <div class="shippingAddress" :style="{ borderTopLeftRadius: delNav.length ? '' : '0.16rem',borderTopRightRadius: delNav.length ? '' : '0.16rem',paddingTop: submitDate.address_info.id == 0 ? '0.40rem' : '',paddingBottom: submitDate.address_info.id == 0 ? '0.40rem' : '',}" v-if="changeNewWay == 0 || changeNewWay == 2">
+                    <div class="shippingAddress" :style="{ borderTopLeftRadius: delNav.length && order_type != 2 ? '' : '0.16rem',borderTopRightRadius: delNav.length && order_type != 2 ? '' : '0.16rem',paddingTop: submitDate.address_info.id == 0 ? '0.40rem' : '',paddingBottom: submitDate.address_info.id == 0 ? '0.40rem' : '',}" v-if="changeNewWay == 0 || changeNewWay == 2">
                         <div class="shippingAddress_center ellipsisStatus" @click="addressClick" :data-type="submitDate.address_info.id">
-                            <div class="shippingAddress_center_status ellipsisStatus" :style="{paddingBottom: changeNewWay == 2 && !tcps.send_time_info  ? '0px' : ''}" v-if="submitDate.address_info.id == 0">
-                                <div class="sc_statusTop" style="padding-bottom:0" :style="{paddingBottom: changeNewWay == 0 ? '0px' : ''}">
+                            <div class="shippingAddress_center_status ellipsisStatus" :style="{paddingBottom: (changeNewWay == 2 && !tcps.send_time_info) || order_type == 2  ? '0px' : ''}" v-if="submitDate.address_info.id == 0">
+                                <div class="sc_statusTop" style="padding-bottom:0" :style="{paddingBottom: changeNewWay == 0 || order_type == 2 ? '0px' : ''}">
                                     <div>
                                         <i class="sjzs-icon s-icon-plus-1"></i>
                                     </div>
                                     <span class="shippingAddress_center_loaction" style="margin-bottom:0;">{{submitDate.address_info.type == 0 ?submitDate.tips.qingtianjiashouhuodizhi : submitDate.tips.qingxuanzeshouhuodizhi}}</span>
                                 </div>
                             </div>
-                            <div class="ellipsisStatus" style="padding-bottom:0.3rem" v-else>
+                            <div class="ellipsisStatus" :style="{paddingBottom: order_type == 2 ? '0' : '0.3rem'}" v-else>
                                 <div style="display:flex;align-items: center;justify-content: space-between;">
                                     <div style="overflow:hidden;">
                                         <div class="shippingAddress_center_loaction"> <span>{{submitDate.address_info.address}}</span> <span class="moren">默认</span></div>
@@ -120,7 +120,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="sc_statusBottom" v-if="changeNewWay == 2" @click.stop="payWayClick(3,'time='+1)">
+                            <div class="sc_statusBottom" v-if="changeNewWay == 2 && order_type != 2" @click.stop="payWayClick(3,'time='+1)">
                                 <span>{{cluesData.peisongshijian}}</span>
                                 <div class="sc_right">
                                     <span :style="{color:newColor1}">{{tcps.send_time_info && tcps.send_id_time ? tcps.send_id_time : "立即送出"}}</span>
@@ -282,7 +282,7 @@
                         <!-- 多规格店铺 -->
                         <div
                             class="storeShopBox moreShopBox"
-                            v-if="item.pro_list.length > 1"
+                            v-if="item.pro_list.length > 1 && order_type != 2"
                             style="background:transparent;"
                         >
                             <div class="storeShop" style="padding-bottom:0.1rem;">
@@ -374,7 +374,7 @@
                             </div>
                         </div>
                         <!-- 单规格店铺 -->
-                        <div class="storeShopBox" v-if="item.pro_list.length == 1">
+                        <div class="storeShopBox" v-if="item.pro_list.length == 1 || order_type == 2">
                             <div class="storeShop">
                                 <!-- 店铺名称 -->
                                 <div
@@ -3221,6 +3221,7 @@ export default {
             shop_jianshu: "",
             dateIndex: 0, //日期弹窗的索引
             dateValue: -1,
+            TCPSdateValArr:[],
             faType_val: 0, //发票类型  0=>普通  1=>增值税
             hotelValue: 0, //酒店入住显示
             is_time: 0,
@@ -3267,7 +3268,7 @@ export default {
             logisticsDistributionInfo:{},
             tc_not_buy_pro:{},
             newWayStatus:0,
-
+            takeout_order_param:{}
         };
     },
     created() {
@@ -3352,6 +3353,9 @@ export default {
         that.timeCheckIndex2 = util.functions.ifHaveFun(req.timeCheckIndex2) ? req.timeCheckIndex2 : 0;
         that.timeCheckIndex = util.functions.ifHaveFun(req.timeCheckIndex) ? req.timeCheckIndex : 0;
         util.functions.ifHaveFun(req.send_id) ? (that.send_id = req.send_id) : 0;
+        util.functions.ifHaveFun(req.TCPSdateValArr) ? (that.TCPSdateValArr = req.TCPSdateValArr) : [];
+        util.functions.ifHaveFun(req.takeout_order_param) ? (that.takeout_order_param = req.takeout_order_param) : {};
+
         if (
             util.functions.ifHaveFun(that.$route.query.sessionKey) &&
             util.functions.ifHaveFun(that.$route.query.room_id)
@@ -3447,18 +3451,34 @@ export default {
                     delete reqVal.by_head_id;
                 }
             }
+            // 外卖订餐
+            if(util.functions.ifHaveFun(that.$route.query.takeout_order_param)){
+                let takeOut = JSON.parse(that.$route.query.takeout_order_param);
+                that.takeout_order_param = takeOut;
+                reqVal.order_type = 2;
+                that.order_type = 2;
+                reqVal.send_store_id = takeOut.send_store_id;
+                delete takeOut.send_store_id;
+                reqVal.orderParams = takeOut;
+            }
             if (util.functions.ifHaveFun(that.community_show)) {
                 reqVal.community_show = that.community_show;
             }
-            
+
             //同城配送下切换时间也需要把时间值传给接口
-            if(tcpsType == 2){
-                if(reqVal.tcps && reqVal.tcps.send_time && reqVal.tcps.send_date){
-                    reqJson.send_date = reqVal.tcps.send_date;
-                    reqJson.send_time = reqVal.tcps.send_time;
-                }else if(this.tcps.yearDate && this.tcps.blockDate){
-                    reqJson.send_date = this.tcps.yearDate;
-                    reqJson.send_time = this.tcps.blockDate;
+            if(tcpsType == 2 || that.changeNewWay == 2){
+                let sendTimeInfo = util.functions.ifHaveFun(that.reqVal.tcps && that.reqVal.tcps.send_time_info) ? that.reqVal.tcps.send_time_info : that.tcps.send_time_info;
+                if(util.functions.ifHaveFun(sendTimeInfo)){
+                    for(let i in sendTimeInfo){
+                        if(sendTimeInfo[i].is_check == 1){
+                            reqJson.send_date = that.TCPSdateValArr[i];
+                            for(let j in sendTimeInfo[i].time){
+                                if(sendTimeInfo[i].time[j].is_check == 1){
+                                    reqJson.send_time = sendTimeInfo[i].time[j].time_stare+'-'+sendTimeInfo[i].time[j].time_end
+                                }
+                            }
+                        }
+                    }
                 }
             }else{//非同城配送下不需要传
                 delete reqJson.send_date;
@@ -3696,6 +3716,9 @@ export default {
                         send_time_info2 = [],
                         checkIndex = 0;
                     if (util.functions.ifHaveFun(submitDate.send_time_info)) {
+                        if(that.changeNewWay == 2){
+                            that.TCPSdateValArr = submitDate.send_time_info.dateVal;
+                        }
                         send_time_info = submitDate.send_time_info.date;
                         for (let i in send_time_info) {
                             send_time_info2[i] = {};
@@ -4379,6 +4402,10 @@ export default {
                     subMitJson.sel_num = this.reqVal.sel_num;
                 }
             }
+            // 外卖订餐参数
+            if(util.functions.ifHaveFun(that.takeout_order_param)){
+                subMitJson.takeout_order_param = that.takeout_order_param;
+            }
             // 表单内容
             if (util.functions.ifHaveFun(add_form_info)) {
                 subMitJson.form_info = {};
@@ -4598,6 +4625,10 @@ export default {
                 subMitJson.tcps.send_id_time = this.tcps.send_id_time;
                 subMitJson.tcps.send_time_info = this.tcps.send_time_info;
                 subMitJson.timeCheckIndex = that.timeCheckIndex;
+            }
+            // 同城配送dateVal
+            if(util.functions.ifHaveFun(that.TCPSdateValArr)){
+                subMitJson.TCPSdateValArr = that.TCPSdateValArr;
             }
             // 发票(只有页面跳转的时候才带参数)
             if (util.functions.ifHaveFun(this.invoice_info)) {
@@ -6125,44 +6156,16 @@ export default {
                 }
             }
             // 同城配送的配送时间
-            if (util.functions.ifHaveFun(that.tcps.send_time_info) && that.changeNewWay == 2 && util.functions.ifHaveFun(that.logisticsDistributionInfo) && util.functions.ifHaveFun(that.logisticsDistributionInfo.delNav)) {
-                if (!util.functions.ifHaveFun(req.tcps && req.tcps.send_time)) {
-                    let indexVal = 0;
-                    for(let i in req.tcps.send_time_info){
-                        if(req.tcps.send_time_info[0].is_check == 1){
-                            for(let j in req.tcps.send_time_info[0].time){
-                                if(req.tcps.send_time_info[0].time[j].is_check == 1){
-                                    indexVal = 1;
-                                }
+            if (util.functions.ifHaveFun(that.tcps.send_time_info) && that.changeNewWay == 2 && util.functions.ifHaveFun(that.logisticsDistributionInfo) && util.functions.ifHaveFun(that.logisticsDistributionInfo.delNav) && that.order_type == 1) {
+                for(let i in that.tcps.send_time_info){
+                    if(that.tcps.send_time_info[i].is_check == 1){
+                        reqval.send_date = that.TCPSdateValArr[i];
+                        for(let j in that.tcps.send_time_info[i].time){
+                            if(that.tcps.send_time_info[i].time[j].is_check == 1){
+                                reqval.send_time = that.tcps.send_time_info[i].time[j].time_stare+'-'+that.tcps.send_time_info[i].time[j].time_end;
                             }
                         }
                     }
-                    if(that.timeCheckIndex == 0 && indexVal == 1){
-                        reqval.send_date = submitDate.send_time_info.dateVal[0];
-                        reqval.send_time = req.tcps.send_time_info[0].time[0].time_stare +"-"+ req.tcps.send_time_info[0].time[0].time_end;
-                        delete req.tcps;
-                        delete req.send_time_info;
-                    }else{
-                        Hint.Msg({message:submitDate.tips.qingxuanze + submitDate.tips.peisongshijian} );
-                        return false;
-                    }
-                } else {
-                    if(util.functions.ifHaveFun(req.tcps)){
-                        if (util.functions.ifHaveFun(req.tcps.send_date)) {
-                            for(let i in req.tcps.send_time_info){
-                                if(req.tcps.send_time_info[i].is_check == 1){
-                                    reqval.send_date = submitDate.send_time_info.dateVal[i];
-                                }
-                            }
-                            // reqval.send_date = req.tcps.send_date;
-                        }
-                        if (util.functions.ifHaveFun(req.tcps.send_time)) {
-                            reqval.send_time = req.tcps.send_time;
-                        }
-                        delete req.tcps;
-                        delete req.send_time_info;
-                    }
-
                 }
             }
             // 购买门店
