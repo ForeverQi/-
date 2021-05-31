@@ -1,2 +1,0 @@
-webpackJsonp([80],{"0NU0":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",{staticClass:"publish-video"},[t("router-view")],1)},staticRenderFns:[]};var i=n("C7Lr")({name:"publish",data:function(){return{}},created:function(){this.$util.app.Shop.Refresh(!1,0)},beforeDestroy:function(){this.$util.app.Shop.Refresh(!0,0)}},r,!1,function(e){n("2AoO")},null,null);t.default=i.exports},"2AoO":function(e,t){}});
-//# sourceMappingURL=80.6e1d9961d82babbecdb3.js.map
