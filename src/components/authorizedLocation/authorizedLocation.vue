@@ -3,8 +3,8 @@
  * @description  : description
  * @Date         : 2021-04-18 14:58:03
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-24 15:29:17
- * @FilePath     : /VFrontend开发版/src/components/authorizedLocation/authorizedLocation.vue
+ * @LastEditTime : 2021-05-31 13:57:51
+ * @FilePath     : /orderOut/src/components/authorizedLocation/authorizedLocation.vue
 -->
 <template>
     <div></div>
@@ -64,12 +64,12 @@ export default {
                             lng: res.longitude
                         };
                         that.$cookies.set("newOrderJson", json);
-                        that.$emit("getLocation");
                     } else {
                         //失败的回调
                         that.$cookies.set("newOrderJson", "");
                         that.$cookies.set("newOrderStatus", 1);
                     }
+                    that.$emit("getLocation");
                 });
             }
         }

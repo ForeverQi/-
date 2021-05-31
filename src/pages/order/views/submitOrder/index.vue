@@ -3,7 +3,7 @@
  * @description  : 提交订单页面
  * @Date         : 2020-09-08 15:43:40
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-28 13:56:04
+ * @LastEditTime : 2021-05-31 13:57:35
  * @FilePath     : /orderOut/src/pages/order/views/submitOrder/index.vue
 -->
 <template>
@@ -4381,7 +4381,6 @@ export default {
                 this.buyStoreInfo.info = this.buy_store_json;
             }
             this.$forceUpdate();
-            
         },
         closeStoreFun(){
             let wirteInfo = this.getWiteInfo();
