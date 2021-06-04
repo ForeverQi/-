@@ -70,7 +70,6 @@ export default {
                 if (!that.point) {
                     let geolocation = new BMap.Geolocation();
                     geolocation.getCurrentPosition(function (r) {
-                         // 同意位置授权
                         that.point = {
                             lng: r.point.lng,
                             lat: r.point.lat

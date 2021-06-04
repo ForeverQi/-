@@ -3,8 +3,8 @@
  * @description  : description
  * @Date         : 2020-11-19 17:28:41
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-25 19:05:50
- * @FilePath     : /VFrontend开发版/src/pages/order/components/buystore.vue
+ * @LastEditTime : 2021-06-03 09:43:00
+ * @FilePath     : /vue-VFrontend/src/pages/order/components/buystore.vue
 -->
 <template>
     <div class="buystore-box">
@@ -278,6 +278,10 @@ export default {
                 dataJson.id = 0;
                 dataJson.id = "";
             }
+            if(util.functions.ifHaveFun(that.newOrderJson)){
+                dataJson.lng = that.newOrderJson.lng;
+                dataJson.lat = that.newOrderJson.lat;
+            }
             that.$forceUpdate();
             that.$emit("storeFun", dataJson);
         },
@@ -311,6 +315,10 @@ export default {
                         that.showLoading = false;
                         // 如果已经拒绝了授权，再次点击重新授权，并且点击过了查看全部门店，这个时候需要请求下接口
                         if(that.$cookies.get("ZT_status") == 1){
+                            that.$cookies.set("newOrderJson", "");
+                            that.store_list = [];
+                            that.pages = 1;
+                            that.pageCnt = 0;
                             that.submitStores();
                         }else{
                             that.showLoadingStatus = 0;

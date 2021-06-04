@@ -3,8 +3,8 @@
  * @description  : 订单详情页面相关的接口
  * @Date         : 2020-11-06 17:18:59
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-04-20 15:09:30
- * @FilePath     : /VFrontend开发版/src/api/order/orderDetail.js
+ * @LastEditTime : 2021-06-02 15:19:28
+ * @FilePath     : /vue-VFrontend/src/api/order/orderDetail.js
  */
 import request from '@/plugins/axios'
 import util from '@/libs/util'

@@ -3,8 +3,8 @@
  * @description  : 达达配送地图组件
  * @Date         : 2021-04-20 14:51:20
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-12 18:11:02
- * @FilePath     : /VFrontend开发版/src/components/mapPopup/mapPopup.vue
+ * @LastEditTime : 2021-06-03 16:47:08
+ * @FilePath     : /vue-VFrontend/src/components/mapPopup/mapPopup.vue
 -->
 
 <template>
@@ -31,7 +31,7 @@
             />
           </div>
           <div class="map_content">
-            <span>骑手距<span v-if="optionsVal.statusCode == 3">您</span><span v-else>商家</span></span>
+            <span>骑手距您</span>
             <div style="color: #f00">
               {{
                 distanceData >= 1

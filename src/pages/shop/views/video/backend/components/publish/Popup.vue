@@ -470,7 +470,7 @@
             </div>
         </transition>
         <select-city v-if="Edit.selectCityShow" ref="SelectCityLayer" @backFunction="changeCity" :selectedCity="Edit.selectedCity" />
-        <BaiduGPS v-if="Edit.selectGPSShow" ref="BaiduGPSLayer" @backFunction="bdGetCity" :point="Edit.point"/>
+        <BaiduGPS v-if="Edit.selectGPSShow" ref="BaiduGPSLayer" @backFunction="bdGetCity"/>
         <find-link v-if="Edit.FindLinkShow" ref="FindLinkLayer" @backFunction="changeLink" :setLinkType="Edit.linkType" />
         <product-class v-if="Edit.ProductClassShow" ref="ProductClassLayer" @backFunction="changeProductClass" :channelId="Edit.item.channelId" />
     </div>

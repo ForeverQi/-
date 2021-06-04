@@ -125,16 +125,20 @@
   margin-bottom: 0.2rem;
 }
 
+.paySuccess-box .paySuccess .alreadyPayFath {
+  border-bottom: 1px solid #ededed;
+  padding: 0.73rem 0;
+  margin-bottom: 0.33rem;
+}
+
 .paySuccess-box .paySuccess .alreadyPay_top {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.73rem 0;
   color: #222222;
   font-weight: bold;
   font-size: 0.34rem;
-  border-bottom: 1px solid #ededed;
-  margin-bottom: 0.33rem;
+  margin-bottom: 0.1rem;
   transform: translateX(-0.15rem);
 }
 
@@ -158,6 +162,11 @@
   font-size: 0.28rem;
   color: #999999;
   font-weight: 400;
+}
+
+.paySuccess-box .paySuccess .alreadyPay_bottom {
+  font-size: 0.24rem;
+  text-align: center;
 }
 
 .paySuccess-box .paySuccess .alreadyPay_btn {

@@ -3,7 +3,7 @@
  * @description  : 支付成功页
  * @Date         : 2020-12-07 15:36:59
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-03-11 14:25:53
+ * @LastEditTime : 2021-06-02 14:26:32
  * @FilePath     : /vue-VFrontend/src/pages/order/views/submitOrder/paySuccess.vue
 -->
 <template>
@@ -62,24 +62,30 @@
                         orderData.orderStatus == 5
                 "
             >
-                <div class="alreadyPay_top">
-                    <div class="at_left">
-                        <img src="https://aimg8.dlssyht.cn/xcx_pack/vip_shopmall/check.png" alt="check" />
+                <div class="alreadyPayFath">
+                    <div class="alreadyPay_top">
+                        <div class="at_left">
+                            <img src="https://aimg8.dlssyht.cn/xcx_pack/vip_shopmall/check.png" alt="check" />
+                        </div>
+                        <div class="at_right">
+                            <p v-if="orderData.orderStatus == 4 || orderData.orderStatus == 5">
+                                {{ orderData.tips.jiaoyiyiwancheng }}！
+                            </p>
+                            <p class="at_right_c" v-if="orderData.orderStatus == 4">
+                                {{ orderData.tips.nindedingdanyizhifuchenggong }}
+                            </p>
+                            <p v-if="orderData.orderStatus == 2">{{ orderData.tips.dingdantijiaochenggong }}！</p>
+                            <p class="at_right_c" v-if="orderData.orderStatus == 2">
+                                {{ orderData.tips.jiaoyifangshi }}:{{ orderData.paymentMethod }}
+                            </p>
+                            <p v-if="orderData.orderStatus == 3">{{ orderData.tips.nindedingdanyizhifuchenggong }}</p>
+                        </div>
                     </div>
-                    <div class="at_right">
-                        <p v-if="orderData.orderStatus == 4 || orderData.orderStatus == 5">
-                            {{ orderData.tips.jiaoyiyiwancheng }}！
-                        </p>
-                        <p class="at_right_c" v-if="orderData.orderStatus == 4">
-                            {{ orderData.tips.nindedingdanyizhifuchenggong }}
-                        </p>
-                        <p v-if="orderData.orderStatus == 2">{{ orderData.tips.dingdantijiaochenggong }}！</p>
-                        <p class="at_right_c" v-if="orderData.orderStatus == 2">
-                            {{ orderData.tips.jiaoyifangshi }}:{{ orderData.paymentMethod }}
-                        </p>
-                        <p v-if="orderData.orderStatus == 3">{{ orderData.tips.nindedingdanyizhifuchenggong }}</p>
+                    <div class="alreadyPay_bottom">
+                        <p v-if="orderData.deliveryCode != ''">{{orderData.tips.qingdaodingdanxiangqingchakantihuoma}}</p>
                     </div>
                 </div>
+                    
                 <div class="alreadyPay_content">
                     <div class="notPay_bottom" style="margin-bottom: 0.48rem;">
                         <p>

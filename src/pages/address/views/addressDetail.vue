@@ -49,7 +49,7 @@
                                         </div>
                                         <div class="Tips_name1_R">
                                             <input
-                                                maxlength="10"
+                                                maxlength="20"
                                                 :placeholder="clues.qingshuru"
                                                 @input="inputFun(1, $event.target.value)"
                                                 :value="nameValue ? nameValue : ''"
@@ -417,7 +417,6 @@ export default {
         if (util.functions.ifHaveFun(that.$cookies.get("queryJsonAdress"))) {
             queryJsonAdress = that.$cookies.get("queryJsonAdress");
         }
-        log(queryJsonAdress)
         that.is_set = queryJsonAdress.is_set ? queryJsonAdress.is_set : 0;
         that.detail_id = queryJsonAdress.detail_id;
         that.order_id = queryJsonAdress.order_id;

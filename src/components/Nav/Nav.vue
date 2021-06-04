@@ -1,10 +1,10 @@
 <!--
  * @Author       : zhouqi
- * @description  : description
+ * @description  : 公用头部
  * @Date         : 2020-11-15 20:43:25
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-23 17:09:18
- * @FilePath     : /VFrontend开发版/src/components/Nav/Nav.vue
+ * @LastEditTime : 2021-06-02 14:54:27
+ * @FilePath     : /vue-VFrontend/src/components/Nav/Nav.vue
 -->
 <template>
     <section class="nav_only_box">

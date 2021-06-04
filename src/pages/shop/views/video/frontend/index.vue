@@ -757,7 +757,7 @@
                 auto_login:false,
                 shortVideoVersion:0,
                 search_title_val: '',
-                class_id_val: -1
+                class_id_val: -1,
             }
         },
         computed: {},
@@ -823,8 +823,8 @@
                     code: code
                 }
             ).then(res1 => {
-                if(that.ifHaveFun(that.$route.query.class_id) || that.$route.query.class_id == 0){
-                    that.class_id_val = that.$route.query.class_id
+                if((that.ifHaveFun(that.$route.query.class_id) || that.$route.query.class_id == 0)){
+                    that.class_id_val = that.$route.query.class_id;
                 }
                 // 不需要登录
                 if(res1.auto_login == 0){
@@ -1036,7 +1036,7 @@
                     videoJson.search_title = that.$route.query.search_title
                     that.search_title_val =  that.$route.query.search_title
                 }else{
-                    if(that.ifHaveFun(that.class_id_val) || that.class_id_val == 0){
+                    if((that.ifHaveFun(that.class_id_val) || that.class_id_val == 0) && that.class_id_val != -1){
                         videoJson.class_id = that.class_id_val;
                     }
                 }

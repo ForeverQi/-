@@ -391,7 +391,8 @@
             </div>
             <div class="exchange_bottom">
               <div class="botton_li" @click="nochange(2)">暂不兑换</div>
-              <div class="botton_li" @click="okchangeFun(2)">确定兑换</div>
+              <div class="botton_li" v-if="isclick == true" @click="okchangeFun(2)">确定兑换</div>
+              <div class="botton_li" v-else>确定兑换</div>
             </div>
           </div>
         </div>
@@ -489,6 +490,7 @@ export default {
       tishitxt1: false,
       exname: "",
       noshow: true,
+      isclick:true,
     };
   },
   mounted() {
@@ -661,9 +663,6 @@ export default {
             username: that.$route.query.username,
             zz_userid: that.$cookies.get("zz_userid"),
             zz_shellCode: that.$cookies.get("zz_shellCode"),
-            //username: "jzabcdemo",
-            //zz_userid: "20257078",
-            //zz_shellCode: "49cf86137072c88e2d5cd04b27c5957a",
           };
           checkCode(paramJson)
             .then((res) => {
@@ -677,6 +676,7 @@ export default {
         }
       } else {
         //会员卡兑换
+        this.isclick= false
         let paramJson = {
           payment_info_val: "on",
           payment_id: -1,
@@ -709,14 +709,24 @@ export default {
             setTimeout(function () {
               that.tishitxt = false;
             }, 1500);
+            F.isclick= true
             that.VipcardindexFun();
+          }else{
+            that.showLoading = false;
+            Hint.Alert({
+              message: res.msg,
+            }).then(() => {});
+            that.isclick = true;
           }
         },
         error: (err) => {
           that.showLoading = false;
           Hint.Alert({
             message: "请求失败",
-          }).then(() => {});
+          }).then(() => {
+            that.isclick = true;
+          });
+          
         },
       });
     },

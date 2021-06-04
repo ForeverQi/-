@@ -3312,9 +3312,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
         height: 100%;
-        overflow: hidden;
         padding: 0 0.10rem;
         box-sizing: border-box;
         position: relative;
@@ -3331,6 +3329,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        // margin-top: 0.06rem;
         // line-height: 1;
     }
     .changeWays_view {
@@ -3355,7 +3354,7 @@
         font-weight: 400;
         font-size: .20rem;
         color: #fc273c;
-        padding: 0.03rem .10rem 0;
+        padding: 0 0.10rem;
         border: 1px solid #fc273c;
         border-radius: .04rem;
         margin-left: .10rem;
@@ -3384,7 +3383,7 @@
         overflow: hidden;
         margin-right: .20rem;
         width:0.8rem;
-        height:0.8rem;
+        height:0.79rem;
         position:relative;
         flex:none;
         display: flex;
@@ -3399,7 +3398,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: .30rem;
+        padding-top: .35rem;
         font-size:0.26rem;
     }
     .sc_right{

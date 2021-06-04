@@ -3,8 +3,8 @@
  * @description  : description
  * @Date         : 2021-04-18 14:58:03
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-31 13:57:51
- * @FilePath     : /orderOut/src/components/authorizedLocation/authorizedLocation.vue
+ * @LastEditTime : 2021-05-31 13:45:28
+ * @FilePath     : /VFrontend开发版/src/components/authorizedLocation/authorizedLocation.vue
 -->
 <template>
     <div></div>

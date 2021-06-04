@@ -1,10 +1,10 @@
 /*
  * @Author: your name
  * @Date: 2020-08-31 15:41:10
- * @LastEditTime : 2021-04-20 15:15:08
+ * @LastEditTime : 2021-06-02 14:34:56
  * @LastEditors  : zhouqi
  * @Description: In User Settings Edit
- * @FilePath     : /VFrontend开发版/src/main.js
+ * @FilePath     : /vue-VFrontend/src/main.js
  */
 import Vue from 'vue'
 import router from './router'
@@ -48,16 +48,16 @@ Vue.use(Meta)
 import VueClipboard from 'vue-clipboard2';
 Vue.use(VueClipboard);
 
-import BaiduMap from 'vue-baidu-map'
-Vue.use(BaiduMap, {
-  // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
-  ak: 'tYLSdsr5kI9c9tjf1Q0CxEPPB8wNgMdG'
-})
-
 import vueSwiper from 'vue-awesome-swiper'
 /* 样式的话，我这里有用到分页器，就在全局中引入了样式 */
 import 'swiper/dist/css/swiper.css'
 Vue.use(vueSwiper);
+
+import BaiduMap from 'vue-baidu-map';
+Vue.use(BaiduMap, {
+  // ak 是在百度地图开发者平台申请的密钥 详见 http://lbsyun.baidu.com/apiconsole/key */
+  ak: 'tYLSdsr5kI9c9tjf1Q0CxEPPB8wNgMdG'
+})
 
 new Vue({
     el: '#app',

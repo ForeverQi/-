@@ -3,8 +3,8 @@
  * @description  : 达达配送地图展示
  * @Date         : 2021-04-20 14:50:52
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-14 11:14:46
- * @FilePath     : /VFrontend开发版/src/components/distributionMap/distributionMap.vue
+ * @LastEditTime : 2021-06-03 16:29:43
+ * @FilePath     : /vue-VFrontend/src/components/distributionMap/distributionMap.vue
 -->
 <template>
     <div>
@@ -48,9 +48,9 @@
                     <div></div>
                 </div>
                 <div class="qsDelivery_right">
-                    <div @click="telClick">
-                        <i style="font-size: 0.38rem;color: #fff" class="sjzs-icon s-icon-tel-1"></i>
-                    </div>
+                    <!-- <div @click="telClick"> -->
+                        <i style="font-size: 0.38rem;color: #fff" @click="telClick" class="sjzs-icon s-icon-tel-1"></i>
+                    <!-- </div> -->
                 </div>
             </div>
             <!-- 配送信息 -->
@@ -94,7 +94,8 @@ export default {
             center: { lng: 0, lat: 0 },
             markers: [],
             testNum:0.001,
-            dadaInterVal:0
+            dadaInterVal:0,
+            transporterPhone:''
         };
     },
     mounted() {
@@ -113,6 +114,7 @@ export default {
             };
             getDaDaOrderDetails(paramVal)
                 .then(res => {
+                        that.transporterPhone = res.transporterPhone;
                         //用户的坐标
                         that.lat = res.userLat;
                         that.lng = res.userLng;
@@ -149,8 +151,14 @@ export default {
                         let view = map.getViewport(eval(that.markers));
                         this.scale = view.zoom - 1;
                         this.center = view.center;
+                        //送达之后不再请求
+                        if(!res.transporterLng){
+                            clearInterval(that.dadaInterVal);
+                            this.$parent.ddRefureFun();
+                            return false;
+                        }
 
-                        //每隔30s执行一次，小于30米清除定时器
+                        //每隔30s执行一次，送达之后清除定时器
                         that.dadaInterVal = setInterval(() => {
                             clearInterval(that.dadaInterVal);
                             //送达之后不再请求
@@ -178,7 +186,7 @@ export default {
         },
         //拨打电话
         telClick() {
-            window.location.href = 'tel://' + this.distanceData.transporterPhone
+            window.location.href = 'tel://' + this.transporterPhone;
         },
         getDaDaOrderProgressFun() {
             this.$parent.getDaDaOrderProgressFun();

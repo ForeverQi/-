@@ -107,10 +107,9 @@ export default {
             this.$emit("closeHuabeiFun");
             // 购买门店
             this.$emit("closeStoreFun");
+
             // 规格弹窗
             this.$emit("guigeFun");
-            // 自提弹窗
-            this.$emit("closeZiTiFun");
         },
 
         // 让遮罩层和弹窗隐藏

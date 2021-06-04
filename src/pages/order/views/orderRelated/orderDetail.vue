@@ -3,8 +3,8 @@
  * @description  : 订单详情页
  * @Date         : 2020-11-05 19:14:09
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-14 10:03:18
- * @FilePath     : /VFrontend开发版/src/pages/order/views/orderRelated/orderDetail.vue
+ * @LastEditTime : 2021-06-02 15:35:32
+ * @FilePath     : /vue-VFrontend/src/pages/order/views/orderRelated/orderDetail.vue
 -->
 <template>
     <div class="orderDetail-box">

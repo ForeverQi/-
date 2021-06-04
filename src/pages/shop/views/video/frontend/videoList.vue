@@ -536,6 +536,7 @@ export default {
         // 分类滚动加载数据
         scrollJiaZai(){
             let that = this;
+            
             $("#scrollViewId"+that.current).scroll(function() {
                 var nScrollHight = 0; //滚动距离总长(注意不是滚动条的长度)
                 var nScrollTop = 0; //滚动到的当前位置
