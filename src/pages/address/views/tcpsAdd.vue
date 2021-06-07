@@ -3,8 +3,8 @@
  * @description  : 同城配送添加地址
  * @Date         : 2021-04-19 14:51:19
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-05-21 18:29:28
- * @FilePath     : /VFrontend开发版/src/pages/address/views/tcpsAdd.vue
+ * @LastEditTime : 2021-06-05 14:05:32
+ * @FilePath     : /vue-VFrontend/src/pages/address/views/tcpsAdd.vue
 -->
 <template>
     <div class="TCPS_ADD">
@@ -310,6 +310,7 @@ export default {
                 that.dtStatus = false;
             }, 400);
             if (res && res.address != res.title) {
+                log(res)
                 let mapVal = util.functions.getMapValue(res);
                 that.cityValue = mapVal.cityValue;
                 that.addressValue = mapVal.addressValue;

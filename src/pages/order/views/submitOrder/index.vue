@@ -3,7 +3,7 @@
  * @description  : 提交订单页面
  * @Date         : 2020-09-08 15:43:40
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-06-04 09:49:46
+ * @LastEditTime : 2021-06-07 13:57:20
  * @FilePath     : /vue-VFrontend/src/pages/order/views/submitOrder/index.vue
 -->
 <template>
@@ -3278,7 +3278,7 @@ export default {
         // this.$cookies.set("zz_userid", "24423010")
         // this.$cookies.set("zz_userid", "17373175")
         // this.$cookies.set("zz_userid", "21784586")
-        // this.$cookies.set("zz_userid", "20380701")
+        // this.$cookies.set("zz_userid", "24433735")
     },
     mounted() {
         let that = this;
@@ -3432,8 +3432,12 @@ export default {
             reqJson = {
                 username: that.$route.query.username,
                 zz_userid: that.$cookies.get("zz_userid"),
-                client_type: 1
+                client_type: 1,
             };
+            // 在微信下多传一个参数，为了在微信下用腾讯坐标
+            if(navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1){
+                reqJson.isWxBrowSer = 1;
+            }
             let reqVal = JSON.parse(JSON.stringify(that.reqVal));
             reqVal.by_head_id = that.by_head_id;
             // 会员卡营销
@@ -3596,8 +3600,8 @@ export default {
                             }else{
                                 if(util.functions.ifHaveFun(tcpsType) || tcpsType === 0){
                                     that.changeNewWay = tcpsType;
-                                    // 这个判断是同城配送下并且支付方式为在线支付是显示余额
-                                    if(tcpsType == 2 && that.payment_info.list && Object.keys(that.payment_info.list).length && that.payment_info.list.mobile && that.payment_info.list.mobile.on){
+                                    // 这个判断是同城配送下并且支付方式为在线支付时显示余额
+                                    if(tcpsType == 2 && that.payment_info.list && Object.keys(that.payment_info.list).length && that.payment_info.list.mobile && that.payment_info.list.mobile.on && that.payment_info.list.mobile.on.id== -1){
                                         that.payment_info_id = "-1";
                                         that.zf_pay_id = "-1";
                                         that.popupParam.payment_info_id = "-1";
@@ -3779,7 +3783,7 @@ export default {
                                         }
                                     }
                                     // 定义初始值，物流配送的没有选择时，赋值第一个时间段
-                                    if(!(util.functions.ifHaveFun(that.reqVal)) && !(util.functions.ifHaveFun(that.reqVal.send_time)) && that.changeNewWay == 0){
+                                    if(!(util.functions.ifHaveFun(that.reqVal.send_time)) && that.changeNewWay == 0){
                                         that.blockDate = send_time_info[checkIndex].time[j].time_stare + "-" + send_time_info[checkIndex].time[j].time_end;
                                     }
                                 }else{
@@ -3962,20 +3966,23 @@ export default {
                     // 支付卡
                     let card_info = submitDate.card_info;
                     if (util.functions.ifHaveFun(card_info)) {
-                        if (card_info.deduction_amount > 0) {
+                        if (card_info.deduction_amount > 0 && card_info.can_deduction_amount >0) {
                             card_info.usre_cardInfovalue =
                                 card_info.use_info + " -" + that.CurrencySymbol + card_info.deduction_amount;
                         }
                         if (
                             util.functions.ifHaveFun(submitDate.coupon_info) &&
-                            submitDate.coupon_info.deduction_amount == submitDate.need_amount
+                            (submitDate.coupon_info.deduction_amount == submitDate.need_amount || card_info.can_deduction_amount == 0)
                         ) {
                             card_info.use_info = "";
                             // that.noHongbao = 1;
                         } else {
                             // that.noHongbao = 0;
                         }
+                        that.popupParam.can_deduction_amount = card_info.can_deduction_amount;
                     }
+                    // 色系传给支付卡和支付方式
+                    that.popupParam.bgcColor1 = that.newColor1;
                     // 余额
                     let balance_info = submitDate.balance_info,
                         valueFlg = "";
@@ -4597,7 +4604,6 @@ export default {
             // 支付方式
             if (util.functions.ifHaveFun(that.payment_info_val)) {
                 subMitJson.payment_info_val = that.payment_info_val;
-
                 if (util.functions.ifHaveFun(that.payment_info_id)) {
                     subMitJson.payment_id = this.payment_info_id;
                     subMitJson.huabeiKey = this.huabeiKey;
@@ -4693,8 +4699,6 @@ export default {
                 //     subMitJson.buy_store_id = subMitJson.buy_store_json.id;
                 // }
                 subMitJson.buy_store_id = this.buy_store_id;
-
-
                 subMitJson.changeNewWay = this.changeNewWay;
                 subMitJson.deliveryType = this.deliveryType;
             }
@@ -4703,6 +4707,10 @@ export default {
                 subMitJson.lngLat = this.lngLat;
             }else{
                 delete subMitJson.lngLat;
+            }
+            // 支付卡可用为0是判断
+            if(this.card_info.can_deduction_amount <= 0 && util.functions.ifHaveFun(this.reqVal.deduction_info) && util.functions.ifHaveFun(this.reqVal.deduction_info.card)){
+               delete subMitJson.deduction_info.card;
             }
             subMitJson.reservedName = this.reservedName;
             subMitJson.reservedTel = this.reservedTel;
@@ -5339,7 +5347,6 @@ export default {
                             let yearDate = this.send_time_info.filter(item=>item.is_check==1)[0].dateVal,
                             blockDate = this.blockDate,
                             send_id_time = "";
-                            
                             send_id_time = yearDate + " " + (util.functions.ifHaveFun(blockDate) ? blockDate : "");
                             this.send_id_time = send_id_time;
                             this.yearDate = yearDate;

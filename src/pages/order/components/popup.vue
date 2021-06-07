@@ -3,7 +3,7 @@
  * @description  : description
  * @Date         : 2020-11-13 11:15:33
  * @LastEditors  : zhouqi
- * @LastEditTime : 2020-12-28 10:42:28
+ * @LastEditTime : 2021-06-05 14:13:44
  * @FilePath     : /vue-VFrontend/src/pages/order/components/popup.vue
 -->
 <template>
@@ -63,12 +63,6 @@
                                         </div>
                                         <div class="zhifuka_child_right">
                                             <div class="customFrom_content_ridao">
-                                                <!-- background: false
-                                                            ? '#ccc'
-                                                            : item.is_check == 1
-                                                            ? bgcColor1
-                                                            : '' + '!important',
-                                                        borderColor: item.is_check == 1 ? bgcColor1 : '' + '!important' -->
                                                 <div
                                                     :class="
                                                         item.is_check == 1
@@ -79,7 +73,9 @@
                                                         background:
                                                             item.ifChange == 0 && item.is_check != 1
                                                                 ? '#ccc !important'
-                                                                : (item.is_check == 1 ? bgcColor1 : '') + '!important',
+                                                                : item.is_check == 1
+                                                                ? bgcColor1 + '!important'
+                                                                : '',
                                                         borderColor:
                                                             item.is_check == 1
                                                                 ? bgcColor1
@@ -157,7 +153,7 @@
                     <div class="changeCityBox">
                         <div class="changeCityBox_top" style="border-bottom:0;padding-bottom:0.2rem;">
                             <div class="changeCityBox_top_left changeCityBox_top_left_heng">
-                                <span>{{cluesData.querenzhifu}}</span>
+                                <span>{{ cluesData.querenzhifu }}</span>
                             </div>
                             <div class="changeCityBox_top_right" @click="closePayWay(2)">
                                 <div class="weixinAdress_closeIcon">
@@ -227,7 +223,7 @@
                     </div>
                     <div class="payWayBtn" :style="{ color: bgcColor1 }" @click="payFun()">
                         <div class="payWayBtn_text">
-                             {{cluesData.lijizhifu}}
+                            {{ cluesData.lijizhifu }}
                         </div>
                     </div>
                 </div>
@@ -278,15 +274,16 @@
                                         </div>
                                         <div class="distribution_ListTop_left" v-if="index > 0">
                                             <span v-if="item.who_pay_fee > 0"
-                                                ><span v-if="item.single > 0">{{ item.single }}*</span
-                                                >{{ index }} {{cluesData.qi}}</span
+                                                ><span v-if="item.single > 0">{{ item.single }}*</span>{{ index }}
+                                                {{ cluesData.qi }}</span
                                             >
                                             <span v-else
-                                                ><span v-if="item.no > 0">{{ item.no }}*</span>{{ index }} {{cluesData.qi}}</span
+                                                ><span v-if="item.no > 0">{{ item.no }}*</span>{{ index }}
+                                                {{ cluesData.qi }}</span
                                             >
                                         </div>
                                         <div class="distribution_ListTop_left" v-else>
-                                            <span>{{cluesData.bufenqi}}</span>
+                                            <span>{{ cluesData.bufenqi }}</span>
                                         </div>
                                     </div>
                                     <div
@@ -295,9 +292,11 @@
                                         v-if="index > 0"
                                     >
                                         <span v-if="item.who_pay_fee > 0"
-                                            >{{cluesData.fenqifei}}{{ item.interest }}/{{cluesData.qi}}，{{cluesData.qi}}：{{ item.zongji }}</span
+                                            >{{ cluesData.fenqifei }}{{ item.interest }}/{{ cluesData.qi }}，{{
+                                                cluesData.qi
+                                            }}：{{ item.zongji }}</span
                                         >
-                                        <span v-else>{{cluesData.mianxiwufuwufei}}</span>
+                                        <span v-else>{{ cluesData.mianxiwufuwufei }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +312,7 @@
                     </div>
                     <div class="payWayBtn" :style="{ color: bgcColor1 }" @click="payFun()" v-else>
                         <div class="payWayBtn_text">
-                            {{cluesData.lijizhifu}}
+                            {{ cluesData.lijizhifu }}
                         </div>
                     </div>
                 </div>
@@ -381,7 +380,9 @@ export default {
             onlineList: []
         };
     },
-    mounted() {},
+    mounted() {
+        this.bgcColor1 = this.popupParam.bgcColor1;
+    },
     methods: {
         /**
          * @Date: 2020-11-13 11:23:34
@@ -541,27 +542,28 @@ export default {
                     that.showLoading = false;
                     that.$refs.zhifuka.showCustom();
                     that.payWayData = res;
-                    let paymentCardInfo2 = res.paymentCardInfo,money = 0,paymentCardInfo = that.paymentCardInfo;
+                    let paymentCardInfo2 = res.paymentCardInfo,
+                        money = 0,
+                        paymentCardInfo = that.paymentCardInfo;
                     for (let i in paymentCardInfo) {
-                            if (paymentCardInfo[i].is_check == 1) {
-                                money = money + Number(paymentCardInfo[i].money);
-                            }
+                        if (paymentCardInfo[i].is_check == 1) {
+                            money = money + Number(paymentCardInfo[i].money);
+                        }
                     }
-                    if(type == 1){
-                        let addPay = paymentCardInfo2[paymentCardInfo2.length-1];
+                    if (type == 1) {
+                        let addPay = paymentCardInfo2[paymentCardInfo2.length - 1];
                         addPay.is_check = 0;
-                        if(money < that.popupParam.payment_amount && money!= 0){
+                        if (money < that.popupParam.payment_amount && money != 0) {
                             addPay.ifChange = 1;
-                        }else{
+                        } else {
                             addPay.ifChange = 0;
                         }
-                        paymentCardInfo.push(addPay)
+                        paymentCardInfo.push(addPay);
                     }
                     paymentCardInfo = that.$util.functions.ifHaveFun(paymentCardInfo)
                         ? paymentCardInfo
                         : paymentCardInfo2;
                     if (that.$util.functions.ifHaveFun(paymentCardInfo)) {
-                        
                         for (let i in paymentCardInfo) {
                             if (!util.functions.ifHaveFun(that.changeArr)) {
                                 paymentCardInfo[i].ifChange = 1;
@@ -572,23 +574,20 @@ export default {
                             for (let j in that.changeArr) {
                                 if (paymentCardInfo[i].id == that.changeArr[j].id) {
                                     paymentCardInfo[i].is_check = 1;
-                                }else if(money < that.popupParam.payment_amount && money!= 0){
+                                } else if (money < that.popupParam.payment_amount && money < Number(this.popupParam.can_deduction_amount) && money != 0) {
                                     paymentCardInfo[i].ifChange = 1;
                                 }
                             }
                         }
                     }
+                    if(Number(that.popupParam.can_deduction_amount) <= 0){
+                        for(let i in paymentCardInfo){
+                            paymentCardInfo[i].ifChange = 0;
+                            paymentCardInfo[i].is_check = 0;
+                        }
+                    }
                     that.paymentCardInfo = paymentCardInfo;
-                    // setTimeout(() => {
-                    //     $("#payCardId").scroll(function() {
-                    //         let height = $(this).height();
-                    //         let scrollTop = $(this)[0].scrollTop;
-                    //         let scrollHeight = $(this)[0].scrollHeight;
-                    //         if (height + scrollTop >= scrollHeight) {
-                    //             log(9999);
-                    //         }
-                    //     });
-                    // }, 50);
+                    that.$forceUpdate();
                 })
                 .catch(err => {
                     that.showLoading = false;
@@ -608,6 +607,9 @@ export default {
 
         changePayCard(index) {
             let money = 0;
+            if(Number(this.popupParam.can_deduction_amount) <= 0){
+                return false;
+            }
             for (let i in this.paymentCardInfo) {
                 if (i == index && this.paymentCardInfo[i].ifChange == 1) {
                     this.paymentCardInfo[i].is_check = this.paymentCardInfo[i].is_check == 0 ? 1 : 0;
@@ -619,7 +621,7 @@ export default {
                 }
             }
             for (let i in this.paymentCardInfo) {
-                if (money >= Number(this.popupParam.payment_amount) && money != 0) {
+                if ((money >= Number(this.popupParam.payment_amount) || money >= Number(this.popupParam.can_deduction_amount)) && money != 0) {
                     if (this.paymentCardInfo[i].is_check != 1) {
                         this.paymentCardInfo[i].ifChange = 0;
                     }
