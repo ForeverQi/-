@@ -3,7 +3,7 @@
  * @description  : 订单详情页
  * @Date         : 2020-11-05 19:14:09
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-06-02 15:35:32
+ * @LastEditTime : 2021-06-09 10:38:30
  * @FilePath     : /vue-VFrontend/src/pages/order/views/orderRelated/orderDetail.vue
 -->
 <template>
@@ -770,15 +770,15 @@
                                                     <!-- @click="
                                                         navagatePg(3, btnItem.add_info.path, btnItem.add_info.name)
                                                     " -->
-                                                    <a
+                                                    <!-- <a
                                                         :href="doamin + '/' + btnItem.add_info.path"
                                                         :download="btnItem.add_info.name"
                                                         v-if="btnItem.type == 'download' && btnItem.add_info.img != 1"
                                                         >{{ btnItem.name }}</a
-                                                    >
+                                                    > -->
                                                     <span
-                                                        @click="openImg(btnItem.add_info.path)"
-                                                        v-if="btnItem.type == 'download' && btnItem.add_info.img == 1"
+                                                        @click="openImg(btnItem.add_info.path,btnItem.add_info.name)"
+                                                        v-if="btnItem.type == 'download'"
                                                     >
                                                         {{ btnItem.name }}
                                                     </span>
@@ -1312,6 +1312,7 @@
 </template>
 
 <script>
+const { log } = console;
 import Vue from 'vue';
 import { Step, Steps,Dialog } from 'vant';
 Vue.use(Step).use(Steps).use(Dialog);
@@ -2093,8 +2094,8 @@ export default {
             return false;
         },
         // 图片查看
-        openImg(url) {
-            this.openImgUrl = location.origin + "/" + url;
+        openImg(url,name) {
+            window.location = `/dom/downFile.php?file_url=${url}>&file_name=${name}`
         },
         // 查看图片
         dowLoadImg(url) {

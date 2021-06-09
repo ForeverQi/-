@@ -195,7 +195,7 @@ export default {
       if(ua.match(/MicroMessenger/i)=="micromessenger") {
         this.wxLoginFun()
       }else{
-          window.location.href = window.location.origin+'/dom/denglu.php?username='+that.$route.query.username+'&wap=1'
+          window.location.href = window.location.origin+'/dom/denglu.php?username='+this.$route.query.username+'&wap=1'
       }
     }
    
@@ -351,7 +351,8 @@ export default {
                     }
                 }else if(item.allownull == 0 && item.input_type == 'mobile'){
                     //手机号
-                    if(item.val == '' || /^1[3584]\d{9}$/.test(item.val)){
+                    
+                    if(item.val == '' || /^1\d{10}$/.test(item.val)){
                         item.txtshow = 0;
                         that.adop = 1;
                     }else{

@@ -3,7 +3,7 @@
  * @description  : 提交订单页面
  * @Date         : 2020-09-08 15:43:40
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-06-07 13:57:20
+ * @LastEditTime : 2021-06-09 09:48:01
  * @FilePath     : /vue-VFrontend/src/pages/order/views/submitOrder/index.vue
 -->
 <template>
@@ -4709,7 +4709,7 @@ export default {
                 delete subMitJson.lngLat;
             }
             // 支付卡可用为0是判断
-            if(this.card_info.can_deduction_amount <= 0 && util.functions.ifHaveFun(this.reqVal.deduction_info) && util.functions.ifHaveFun(this.reqVal.deduction_info.card)){
+            if(util.functions.ifHaveFun(this.card_info) && this.card_info.can_deduction_amount <= 0 && util.functions.ifHaveFun(this.reqVal.deduction_info) && util.functions.ifHaveFun(this.reqVal.deduction_info.card)){
                delete subMitJson.deduction_info.card;
             }
             subMitJson.reservedName = this.reservedName;
