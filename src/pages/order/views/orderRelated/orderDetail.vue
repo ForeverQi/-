@@ -3,7 +3,7 @@
  * @description  : 订单详情页
  * @Date         : 2020-11-05 19:14:09
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-06-09 10:38:30
+ * @LastEditTime : 2021-06-09 14:59:54
  * @FilePath     : /vue-VFrontend/src/pages/order/views/orderRelated/orderDetail.vue
 -->
 <template>
@@ -2095,7 +2095,7 @@ export default {
         },
         // 图片查看
         openImg(url,name) {
-            window.location = `/dom/downFile.php?file_url=${url}>&file_name=${name}`
+            window.location = `/dom/downFile.php?file_url=${url}&file_name=${name}`;
         },
         // 查看图片
         dowLoadImg(url) {

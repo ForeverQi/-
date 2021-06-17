@@ -1591,7 +1591,6 @@ export default {
             this.nameValue = data.userName; // 收货人姓名
             this.cityValue = data.provinceName + " " + data.cityName + " " + data.countryName; //(省、市、区)
             this.addressValue = data.detailInfo; //详细收货地址信息
-            this.addressValue = data.detailInfo; //详细收货地址信息
             this.phoneValue = data.telNumber; //收货人手机号码
             this.codeValue = data.postalCode; // 邮编
             // 隐藏获取微信收货地址

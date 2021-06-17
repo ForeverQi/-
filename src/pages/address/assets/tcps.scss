@@ -168,4 +168,44 @@
         justify-content: center;
         align-items: center;
     }
+    .Tips {
+        background: #f0fff8;
+        width: 100%;
+        height: 0.8rem;
+    }
+
+    .Tips_img {
+        width: 0.35rem;
+        height: 0.28rem;
+        float: left;
+        margin: 0.26rem 0.25rem 0rem 0.25rem;
+    }
+
+    .Tips_img img {
+        width: 100%;
+        display: block;
+    }
+
+    .Tips_txt {
+        font-size: 0.24rem;
+        color: #15bf75;
+        line-height: 0.8rem;
+        float: left;
+    }
+
+    .Tips_close {
+        width: 0.8rem;
+        float: right;
+        // padding: 0.3rem 0.25rem 0rem 0rem;
+        height: 100%;
+        padding-right: 0.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Tips_close img {
+        width: 0.2rem;
+        height: 0.2rem;
+    }
 }

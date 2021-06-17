@@ -1012,7 +1012,7 @@
             videoDetails(id, type) {
                 let that = this
                 if (this.requestIndex = 0) {
-
+                    
                     that.showLoading = true
                     that.loading = true
                 }

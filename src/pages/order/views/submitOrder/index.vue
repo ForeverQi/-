@@ -3,7 +3,7 @@
  * @description  : 提交订单页面
  * @Date         : 2020-09-08 15:43:40
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-06-09 09:48:01
+ * @LastEditTime : 2021-06-17 19:13:08
  * @FilePath     : /vue-VFrontend/src/pages/order/views/submitOrder/index.vue
 -->
 <template>
@@ -4304,10 +4304,10 @@ export default {
                 //物流配送
                 if(this.changeNewWay == 2){
                     //跳转添加地址页面
-                    this.$router.push({
-                        path:"/address/views/tcpsAdd",
-                        query:queryJson
-                    })
+                    location.href =
+                        "//" +
+                        document.domain +
+                        `/VFrontend/address/views/tcpsAdd?username=${this.$route.query.username}`;
                 }else{
                     location.href =
                         "//" +

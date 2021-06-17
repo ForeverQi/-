@@ -558,14 +558,18 @@ export default {
         editadd(id) {
             // 同城配送跳转页面判断
             if (util.functions.ifHaveFun(this.$route.query.deliveryType) && this.$route.query.deliveryType == 'city') {
-                this.setCookies();
-                this.$router.push({
-                    path: "/address/views/tcpsAdd",
-                    query: {
-                        username: this.$route.query.username,
-                        id:id
-                    }
-                });
+                this.setCookies(id);
+                // this.$router.push({
+                //     path: "/address/views/tcpsAdd",
+                //     query: {
+                //         username: this.$route.query.username,
+                //         id:id
+                //     }
+                // });
+                location.href =
+                        "//" +
+                        document.domain +
+                        `/VFrontend/address/views/tcpsAdd?username=${this.$route.query.username}`;
             } else {
                 this.setCookies(id);
                 location.href =
@@ -585,12 +589,16 @@ export default {
         addadd() {
             this.setCookies();
             if (util.functions.ifHaveFun(this.$route.query.deliveryType) && this.$route.query.deliveryType == 'city') {
-                this.$router.push({
-                    path: "/address/views/tcpsAdd",
-                    query: {
-                        username: this.$route.query.username
-                    }
-                });
+                // this.$router.push({
+                //     path: "/address/views/tcpsAdd",
+                //     query: {
+                //         username: this.$route.query.username
+                //     }
+                // });
+                location.href =
+                        "//" +
+                        document.domain +
+                        `/VFrontend/address/views/tcpsAdd?username=${this.$route.query.username}`;
             }else{
                 location.href =
                     "//" +

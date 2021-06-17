@@ -3,7 +3,7 @@
  * @description  : 同城配送添加地址
  * @Date         : 2021-04-19 14:51:19
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-06-05 14:05:32
+ * @LastEditTime : 2021-06-17 09:39:16
  * @FilePath     : /vue-VFrontend/src/pages/address/views/tcpsAdd.vue
 -->
 <template>
@@ -12,6 +12,15 @@
         <van-overlay :show="showLoading" />
         <div class="tspsAdd" v-if="allAddressInfo != ''">
             <Nav :numerical="2" :tips="clues" />
+            <div class="Tips" @click="getWeixinAddress()" v-if="getWxStatus">
+                <div class="Tips_img">
+                    <img src="https://aimg8.dlssyht.cn/xcx_pack/vip_shopmall/redesign_weixin.png" />
+                </div>
+                <div class="Tips_txt">点击获取微信收货地址</div>
+                <div class="Tips_close" @click.stop="getWxStatus = false">
+                    <img src="https://aimg8.dlssyht.cn/xcx_pack/vip_shopmall/redesign_colse1.png" />
+                </div>
+            </div>
             <div class="tspsAdd_box" >
                 <div class="tspsAdd_top">
                     <div v-for="(item, index) in addressInfo" :key="index">
@@ -25,6 +34,7 @@
                                     :value="addressValue ? cityValue +' '+ addressValue : ''"
                                     :disabled="true"
                                     type="text"
+                                    style="opacity:1"
                                 />
                                 <div class="nowLocation">
                                     <i
@@ -73,7 +83,6 @@
                         </div>
                     </div>
                 </div>
-
                 <!--默认收货地址-->
                 <div class="tspsAdd_bottom">
                     <div class="Tips_view1">
@@ -114,6 +123,8 @@ import util from "@/libs/util";
 import Hint from "@/plugins/hint";
 // 地图组件
 import BaiduGPS from "@/pages/shop/views/video/backend/components/BaiduGPS.vue";
+
+import { weixinShare } from "@/api/shop/video.frontend";
 export default {
     components:{
         Nav,
@@ -136,14 +147,15 @@ export default {
             latitude: "",
             longitude: "",
             showLoading:true,
-            addressId:0,
             queryJsonAdress:{},
             clues:'',
-            addrInfo2:{}
+            addrInfo2:{},
+            getWxStatus:false
         };
     },
     mounted() {
         const that = this;
+        that.weixinShareFun();
         let queryJsonAdress = {};
         if (!util.functions.ifHaveFun(that.$cookies.get("zz_userid"))) {
             location.href = `/dom/denglu.php?username=${that.$route.query.username}&wap=1`;
@@ -176,9 +188,12 @@ export default {
             let that = this,nowReq = util.functions.ifHaveFun(req) ? req : {};
             that.showLoading = true;
             nowReq.deliveryType = "city";
-            if(util.functions.ifHaveFun(that.$route.query.id)){
-                nowReq.id = that.$route.query.id;
+            if(that.addressId){
+                nowReq.id = that.addressId;
             }
+            // if(util.functions.ifHaveFun(that.$route.query.id)){
+            //     nowReq.id = that.$route.query.id;
+            // }
             let paramsJson = {
                 type: type,
                 req: JSON.stringify(nowReq),
@@ -310,7 +325,6 @@ export default {
                 that.dtStatus = false;
             }, 400);
             if (res && res.address != res.title) {
-                log(res)
                 let mapVal = util.functions.getMapValue(res);
                 that.cityValue = mapVal.cityValue;
                 that.addressValue = mapVal.addressValue;
@@ -399,6 +413,60 @@ export default {
                 that.newColor1 = util.functions.newColor(res.color).bgcColor1;
             });
         },
+        // 判断是否显示获取微信地址
+        weixinShareFun() {
+            weixinShare({
+                username: this.$route.query.username,
+                url: location.href
+            }).then(res => {
+                // 这里判断如果没配置过微信签名，则返回空
+                if (util.functions.ifHaveFun(res.signPackage) && util.functions.IsWX()) {
+                    this.getWxStatus = true;
+                }
+                this.$forceUpdate();
+            });
+        },
+        /**
+         * @Date: 2020-11-27 13:58:46
+         * @LastEditors: zhouqi
+         * @description: 获取微信收货地址
+         * @param {*}
+         * @return {*}
+         */
+        getWeixinAddress() {
+            util.wechat.share(this.wxRegCallback, location.href, this.$route.query.username, 3);
+        },
+        wxRegCallback(data) {
+            this.BDPoint(data);
+            this.nameValue = data.userName; // 收货人姓名
+            this.cityValue = data.provinceName + " " + data.cityName + " " + data.countryName; //(省、市、区)
+            this.addressValue = data.detailInfo; //详细收货地址信息
+            this.phoneValue = data.telNumber; //收货人手机号码
+            // 隐藏获取微信收货地址
+            this.getWxStatus = false;
+            this.addrInfo2.province = data.provinceName;
+            this.addrInfo2.city = data.cityName;
+            this.addrInfo2.district = data.countryName;
+        },
+        // 百度地图地址解析
+        BDPoint(data){
+            const that = this;
+            $.ajax({
+                url: "http://api.map.baidu.com/geocoding/v3/?address="+data.provinceName+data.cityName+data.countryName+data.detailInfo+"&output=json&ak=tYLSdsr5kI9c9tjf1Q0CxEPPB8wNgMdG",
+                type: "GET",
+                dataType: "jsonp",
+                async: false,
+                data: {},
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                },
+                success: function(res) {
+                    if(util.functions.ifHaveFun(res) && util.functions.ifHaveFun(res.result) && util.functions.ifHaveFun(res.result.location)){
+                        that.latitude = res.result.location.lat;
+                        that.longitude = res.result.location.lng;
+                    }
+                }
+            });
+        }
     }
 };
 </script>

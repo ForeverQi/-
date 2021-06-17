@@ -3,7 +3,7 @@
  * @description  : description
  * @Date         : 2020-11-19 17:28:41
  * @LastEditors  : zhouqi
- * @LastEditTime : 2021-06-03 09:43:00
+ * @LastEditTime : 2021-06-15 09:55:56
  * @FilePath     : /vue-VFrontend/src/pages/order/components/buystore.vue
 -->
 <template>
@@ -41,7 +41,7 @@
                                 >
                                     <div class="weixinAdress_closeIcon">
                                         <i class="sjzs-icon s-icon-location-1" style="color:#000;flex:none;"></i>
-                                        <div class="distribution_ListTop_left">
+                                        <div class="distribution_ListTop_left" style="align-items:flex-start;">
                                             <div>{{ item.name }}</div>
                                             <div style="color:#000;">
                                                 {{ item.province + item.city + item.district + item.address }}
